@@ -1,0 +1,74 @@
+.Navmain{
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: sticky;
+    top: 0px;
+    z-index: 200;
+
+}
+
+
+.button{
+    background-color: rgb(222, 148, 51);
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    color: white;
+  
+}
+
+.Navmain img{
+    width: 20%;
+}
+
+.button {
+    gap: 8px;
+    cursor: pointer;
+
+
+}
+
+
+.arrowBox {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+}
+
+.arrow {
+    position: absolute;
+    left: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    fill: white;
+}
+
+/* First arrow default */
+.arrow:first-child {
+    transform: translate(0, 0);
+}
+
+/* Second arrow niche se start */
+.arrow:last-child {
+    transform: translate(-10px, 20px);
+    opacity: 0;
+}
+
+/* Hover effect */
+.button:hover .arrow:first-child {
+    transform: translate(10px, -20px);
+    opacity: 0;
+}
+
+.button:hover .arrow:last-child {
+    transform: translate(0, 0);
+    opacity: 1;
+}

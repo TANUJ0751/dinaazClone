@@ -1,0 +1,55 @@
+.btnClinic {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 24px;
+  font-size: 13px;
+  font-weight: 100;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 200px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 30px; /* Optional: halka sa round corner */
+}
+
+.btnClinic:hover {
+  background-color: white;
+  color: black;
+}
+
+.iconContainer {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+
+.arrowSvg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Arrow 1: Pehle center mein hoga, hover pe upar-right jayega */
+.arrow1 {
+  transform: translate(0, 0);
+}
+
+/* Arrow 2: Pehle niche-left mein chhupa hoga, hover pe center aayega */
+.arrow2 {
+  transform: translate(-24px, 24px);
+}
+
+.btnClinic:hover .arrow1 {
+  transform: translate(24px, -24px);
+}
+
+.btnClinic:hover .arrow2 {
+  transform: translate(0, 0);
+}

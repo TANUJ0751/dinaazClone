@@ -1,0 +1,909 @@
+.HomePart2_main{
+background-color: white;
+    
+   position: relative; 
+    min-height: 150vh;
+    padding-bottom: 10vh;
+
+}
+
+
+
+.phase1{
+    position: relative;
+    padding-top: 13vh;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom:30vw ;
+    background-color: rgb(216, 235, 237);
+
+}
+
+
+
+.startImg{
+   position: absolute;
+   width: 90%;
+   top: 0vh;
+   filter: opacity(0.4) brightness(6);
+  
+}
+.pahse3Main{
+   display: flex;
+
+}
+.phase1_textarea1{
+    width: 50%;
+    font-weight: 900;
+    padding-bottom: 5vh;
+}
+.phase1_textarea1 p{
+    color: rgb(21, 144, 153);
+    font-size: 1.2rem;
+    font-weight: 300;
+     font-family: "Poppins", "Montserrat", Arial, sans-serif;
+     padding-bottom: 2vh;
+}
+.phase1_textarea1 h1{
+    font-size: 3rem;
+     font-family: "Poppins", "Montserrat", Arial, sans-serif;
+     
+}
+
+.phase1_textarea2{
+    color: rgb(120, 129, 130);
+    width: 40%;
+    font-size: 0.8rem;
+    font-family: "Poppins", "Montserrat", Arial, sans-serif;
+    font-weight: lighter;
+    line-height: 5vh;
+}
+.treatmentList{
+    position: relative;
+    left: 25px;
+}
+
+.imagePart1 , .imagePart2{
+  display: flex;
+  
+}
+.CircleText{
+  
+    position: absolute;
+ right: 38vw;
+ top: 19vw;
+ 
+ /* position: absolute;
+ right: 30%;
+ top: 30vh; */
+}
+
+.CircleText img{
+  width: 250px;
+}
+
+.img1{
+    position: absolute;
+    right: 14vw;
+    top: 10vw;
+}
+
+.img2{
+    position: absolute;
+    right: 55vw;
+    top: 40vw;
+}
+.img3{
+    position: absolute;
+    right: 25vw;
+    top: 45vw;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .pahse3Main {
+    display: flex;
+    flex-direction: row; /* Text aur Image side-by-side rahenge */
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* 📝 Left Text Area */
+  .phase1_textarea1 {
+    width: 45%; /* Thoda narrow kiya taaki images ke liye jagah bane */
+  }
+
+  .phase1_textarea1 h1 {
+    font-size: 2.2rem; /* Tablet ke liye optimized size */
+  }
+
+  .phase1_textarea2 {
+    width: 45%;
+    font-size: 0.75rem; /* Chhoti screen par text adjust kiya */
+    line-height: 4vh;
+  }
+
+  /* 🖼️ Right Image Area Positions */
+  /* Note: Hum right side se distance (vw) ko kam karenge taaki images screen ke andar rahein */
+
+  .CircleText {
+    right: 35vw;  /* Desktop par 38vw tha, tablet par edge ke paas laya */
+    top: 20vw;
+  }
+
+  .CircleText img {
+    width: 180px; /* Circle ka size chhota kiya */
+  }
+
+  .img1 {
+    right: 7vw;  /* Right edge se gap kam kiya */
+    top: 12vw;
+  }
+
+  .img2 {
+    right: 55vw; /* Circle ke left mein rahegi */
+    top: 50vw;
+  }
+
+  .img3 {
+    right: 15vw;  /* Circle ke niche/right mein */
+    top: 55vw;
+  }
+
+  /* Container height fix */
+  .phase1 {
+    padding-bottom: 40vw; /* Taaki images niche se cut na ho */
+  }
+}
+
+
+
+
+/* -------------------------------------------------------------------- */
+
+
+
+
+
+.phase2{
+    position: relative;
+/* padding-top: 13vh; */
+    padding-left: 6%;
+    padding-right: 6%;
+    background-color: rgb(216, 235, 237);
+    padding-bottom: 10vh;
+
+}
+.phase2_head{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* background-color: aquamarine; */
+    padding-bottom: 3vh;
+   
+    
+}
+.phase2_circle img{
+  width: 250px;
+  height: 250px;
+}
+.phase2_circle{
+     position: absolute;
+     left: 17%;
+     z-index: 2;
+     /* opacity: 1;    */
+     top: -5%;
+}
+.phase2text{
+    text-align: right;
+}
+.phase2text h3{
+    color: rgb(21, 144, 153);
+    font-size: 0.9rem;
+    font-weight: 300;
+     font-family: "Poppins", "Montserrat", Arial, sans-serif;
+     padding-bottom: 2vh;
+    
+
+}
+.phase2text h1{
+     font-size: 3rem;
+     font-family: "Poppins", "Montserrat", Arial, sans-serif;
+}
+
+.phase2ImageSection{
+    padding-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.phase2Button{
+    padding-top: 5vh;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .phase2 {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 8vh;
+  }
+
+  /* Header Section: Text and Circle */
+  .phase2_head {
+    justify-content: flex-end; /* Space create karne ke liye */
+    padding-bottom: 5vh;
+    position: relative;
+    /* min-height: 100px;  */
+  }
+
+  .phase2_circle {
+    left: 2%; /* Tablet par circle ko edge ke thoda paas shift kiya */
+    top: 1vw;
+  }
+
+  .phase2_circle img {
+    width: 180px; /* Size chota kiya taaki text se na takraye */
+    height: 180px;
+    
+  }
+
+  .phase2text {
+    width: 65%; /* Text area ko specific width di */
+    /* background-color: #0ea5a5; */
+  }
+
+  .phase2text h1 {
+    font-size: 2.2rem; /* Heading thodi chhoti ki */
+    line-height: 1.2;
+  }
+
+  .phase2text h3 {
+    font-size: 0.8rem;
+  }
+
+  /* Image Section (Cards) */
+  .phase2ImageSection {
+    flex-wrap: wrap; /* Agar cards bade hain toh wo niche shift ho jayein */
+    justify-content: center;
+    gap: 10px;
+ 
+  }
+
+  /* Button Section */
+  .phase2Button {
+    display: flex;
+    justify-content: center; /* Tablet par button center mein zyada acha lagta hai */
+    padding-top: 4vh;
+  }
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+
+
+
+
+.phase3{
+    background-color: white;
+    padding-top: 13vh;
+    /* padding-left: 6%;
+    padding-right: 6%; */
+    position: relative;
+}
+
+
+
+.phase3section1{
+  padding-left: 5%;
+}
+.phase3section1 p{
+  font-family: "Poppins", "Montserrat", Arial, sans-serif;
+  font-size: 0.8rem;
+  color: rgb(21, 144, 153);
+  letter-spacing: 0.2em; 
+}
+.phase3section1 h1{
+  font-family: "Poppins", "Montserrat", Arial, sans-serif;
+ /* letter-spacing: 0.2em;  */
+ font-size: 3rem;
+}
+
+
+.section {
+  background: #ffffff;
+  padding: 80px 0;
+}
+
+.container {
+   /* background-color: bisque; */
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+ 
+  .right {
+    display: none !important;
+  }
+
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .left {
+   position: absolute;
+   left: -23%;
+  }
+
+  .center {
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+
+  }
+
+  .phase3section3{
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+  }
+
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  
+ 
+
+  .phase4Card > div:nth-child(4) {
+    display: none !important;
+  }
+
+ 
+  .phase4Card {
+    display: flex;
+    justify-content: space-between; 
+    gap: 2px;
+  }
+
+  
+ .phase4Card > div {
+  width: 33%;      
+  min-width: 26vw; 
+}
+
+.phase5Text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  width: 85%; 
+  
+}
+
+.phase5TextArea {
+  margin-left: auto;   
+  position: relative;  
+}
+
+.phase5Text h1 {
+  font-size: 2.3rem !important;
+  line-height: 1.2;
+}
+
+
+.pahse5Seaction1{
+  position: relative;
+}
+.pahse5Seaction1_img {
+  position: relative;
+  right: 9%;
+   background-color: #333;
+   border: 20px solid white;
+   transform: rotate(-8deg);
+   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  width: 250px;  /* Aapki marzi ki width */
+  height: 300px; /* Aapki marzi ki height */
+  overflow: hidden; /* Taaki extra image bahar na dikhe */
+}
+
+.pahse5Seaction1_img img{
+  object-fit: cover;
+  display: block;
+}
+ 
+.phase5Circle {
+    top: 5vh;
+    left: 5%;
+    z-index: 1;
+  }
+
+  .phase5Circle img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+
+
+/* LEFT SIDE */
+
+.left{
+ position: relative;
+ right: 10%;
+}
+
+
+/* CENTER */
+
+.quoteBottom svg {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+.center {
+  width: 500px;
+  text-align: center;
+  position: relative;
+  /* background-color: antiquewhite; */
+}
+
+.quoteTop {
+  /* font-size: 80px; */
+  color: #0ea5a5;
+  text-align: left;
+
+
+}
+
+.quoteBottom {
+  font-size: 80px;
+  color: #0ea5a5;
+  text-align: right;
+}
+
+.text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  text-align: left;
+}
+
+.arrows {
+  /* margin-top: 30px; */
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  
+}
+
+.arrow {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #0ea5a5;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.arrow:hover {
+  border:2px solid #0c5858 ;
+  color: #0c5858 ;
+  
+}
+
+/* RIGHT SIDE */
+
+.right {
+  width: 350px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+
+.reverse {
+  animation-direction: reverse;
+}
+
+
+.circle {
+     /* animation: rotateCircle 6s ease-in-out infinite; */
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  position: relative;
+
+  animation: rotateCircle 4s ease-in-out infinite;
+}
+
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(-45deg);
+  }
+
+  25% {
+    transform: rotate(0deg);
+  }
+
+  40% {
+    transform: rotate(0deg); /* 2 sec hold */
+  }
+
+  65% {
+    transform: rotate(45deg);
+  }
+
+  80% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg); /* hold again */
+  }
+}
+
+
+
+.phase3section3{
+  width: 100%;
+  min-height: 20vh;
+
+}
+
+
+.textArea{
+  text-align: center;
+  font-family: "Poppins", "Montserrat", Arial, sans-serif;
+  
+}
+.textArea p{
+ 
+  font-size: 0.8rem;
+  color: rgb(21, 144, 153);
+  letter-spacing: 0.2em; 
+
+}
+
+.textArea h1{
+  font-size: 2.7rem;
+}
+
+
+
+.imgDiv{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgDiv img{
+  
+  width: 80%;
+}
+
+
+
+
+.phase4{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(218, 238, 240);
+  padding-top: 70px;
+  font-family: "Poppins", "Montserrat", Arial, sans-serif;
+  padding-bottom: 60px;
+  /* padding-bottom: 5vw; */
+  
+}
+.phase4TextArea{
+  width:95%;
+  min-height: 60px;
+  /* background-color: #0ea5a5; */
+  /* padding-left: 6%; */
+  padding-bottom: 40px;
+
+  
+}
+.phase4TextArea p{
+   font-size: 0.7rem;
+  color: rgb(21, 144, 153);
+  letter-spacing: 0.2em; 
+}
+.phase4TextArea h1{
+  font-size: 2.6rem;
+
+}
+
+.phase4Card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 3%;
+}
+
+.phase5{
+  padding-top: 80px;
+  padding-bottom: 40px;
+  font-family: "Poppins", "Montserrat", Arial, sans-serif;
+  position: relative;
+
+}
+.phase5Circle img{
+  width: 250px;
+  height: 250px;
+}
+.phase5Circle{
+  position: absolute;
+  top: 2px;
+  left: 8%;
+}
+
+.phase5TextArea{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.phase5TextArea p{
+    font-size: 0.8rem;
+  color: rgb(21, 144, 153);
+  letter-spacing: 0.2em; 
+  font-weight: 530;
+  padding-bottom: 5px;
+}
+.phase5TextArea h1{
+  font-size: 2.9rem;
+ 
+
+}
+
+.pahse5Seaction1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8%;
+  /* background-color: antiquewhite; */
+
+
+}
+.pahse5Seaction1_step{
+  min-width: 330px;
+  min-height: 280px;
+}
+.pahse5Seaction1_img img{
+  width: 330px;
+  height: 280px;
+}
+
+
+
+.pahse5Seaction2{
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pahse5Seaction2_img{
+  width: 80%;
+}
+
+.pahse5Seaction3{
+  padding-top: 50px;
+  position: relative;
+  font-family: "Poppins", "Montserrat", Arial, sans-serif;
+
+}
+.pahse5Seaction3_Text{
+}
+
+.pahse5Seaction3_Text span{
+ color: rgb(21, 144, 153);
+ font-size:0.8rem ;
+ word-spacing: 0.1rem;
+ letter-spacing: 0.2rem;
+ 
+
+}
+
+.pahse5Seaction3_Text h1{
+ font-size:2.7rem ;
+ word-spacing: 0.1rem;
+}
+.pahse5Seaction3_Text p{
+ color: rgb(23, 23, 23);
+ padding-top: 18px;
+ font-size:0.8rem ;
+}
+
+.pahse5Seaction3_input{
+  padding-top: 30px;
+}
+.pahse5Seaction3_input img{
+ 
+  width: 300px;
+}
+
+.input_secImg1{
+  position: absolute;
+  top: 30%;
+  right: 5%;
+
+}
+.input_secImg1 img{
+  width: 250px;
+  height: 250px;
+}
+.input_secImg2{
+  position: absolute;
+  /* top: 56%; */
+  left: 3%;
+  bottom: 3%;
+  
+}
+.input_secImg2 img{
+  width: 250px;
+  height: 250px;
+}
+.pahse5Seaction3_button{
+  padding-top: 30px;
+}
+
+
+
+
+.phase6{
+  padding-bottom: 30px;
+  padding-top: 30px;
+  position: relative;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+  /* height: 300px; */
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 50%, rgb(250, 238, 222) 50%);
+
+}
+.phase6Box{
+
+  background-color: orange;
+  overflow: hidden;
+  border-radius: 30px;
+  width: 90%;
+  /* min-height: 30vh; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+/* .phase6Box_img{
+  width: 50%;
+  height: 100%;
+} */
+
+.phase6Box_text{
+  padding-left: 5%;
+  width: 40%;
+  /* background-color: #333; */
+}
+.phase6Box_text h1{
+    line-height: 50px;
+    padding-bottom: 4%;
+  font-family: "Poppins", "Montserrat", Arial, sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+
+.phase6Box_img{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.phase6Box_img img{
+width: 65%;
+height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+.textBackground {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 250px;
+    width: 250px;
+    padding: 20px; 
+    border-radius: 50%;
+    text-align: center; 
+    overflow: hidden; 
+}
+
+.textBackground .smallcircel {
+    background-color: antiquewhite;
+    border-radius: 50%;
+    height: 60%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textBackground h2 {
+    position: absolute;
+    
+  
+    width: 100%;
+    margin: 0;
+    font-size: 1.2rem;
+    word-wrap: break-word; 
+    line-height: 1.2; 
+} */
+
+
+/* 
+.image {
+  position: relative;
+  width:200px; 
+  height: 200px;
+  cursor: pointer;
+}
+.backImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0%; 
+  transition: transform 0.8s ease-in-out, border-radius 0.6s ease;
+}
+
+.frontImage {
+  position: absolute;
+  top: 11%;
+  left: 15%;
+  height: 100%;
+  width: 100%;
+  transform:  scale(1);
+  transition: transform 0.5s ease-in-out;
+  z-index: 2;
+} */
+
+
+
+/* .image:hover .backImage {
+  transform: rotate(-180deg); 
+  border-radius: 50%; 
+}
+
+.image:hover .frontImage {
+  
+  transform: scale(1.3); 
+} */

@@ -1,0 +1,287 @@
+.phase1 {
+  width: 100%;
+  min-height: 70vh;
+  background-image: url("https://www.shutterstock.com/image-photo/tablet-woman-doctor-telehealth-healthcare-600nw-2495919269.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.textArea {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 40%;
+  padding-bottom: 5vh;
+  padding-top: 10vh;
+  gap: 3vh;
+  margin-left: 10%;
+
+  font-family: "Poppins", "Montserrat", Arial, sans-serif;
+  color: white;
+}
+.textArea h1 {
+  font-size: xx-large;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.textArea p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+.textArea_button {
+  display: flex;
+  gap: 3%;
+  min-width: 500px;
+  /* background-color: #dbe7e7; */
+}
+
+
+
+
+/* 
+.phase2{
+  padding-top: 5vh;
+}
+.phase2 h3{
+  color: rgb(21, 144, 153);
+}
+.mainArea{
+  padding-left: 10%;
+  padding-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section1{
+  width:100%;
+  background-color: #e9d8c6;
+  font-size: 12px;
+}
+.section2{
+  background-color: aqua;
+  width: 30%;
+}
+.section2 img{
+  width: 30%;
+}
+
+.section3 {
+  width: 65%;
+  margin: 80px auto;
+  padding: 50px;
+  border-radius: 24px;
+  background: linear-gradient(
+    135deg,
+    #dbe7e7,
+    #e9d8c6
+  );
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section3 p {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #2c2c2c;
+  font-weight: 500;
+} */
+
+/* ------------------------------------------------------- */
+
+.phase2 {
+  padding: 80px 5%;
+  /* background: #873434; */
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.phase2 h3 {
+  letter-spacing: 4px;
+  color: teal;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.phase2 h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.mainArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding-top: 40px;
+}
+.section1 {
+  width: 35%;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #555;
+  position: relative;
+  bottom: 80px;
+}
+
+.section1 ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.section1 li {
+  margin-bottom: 8px;
+}
+.section2 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  /* z-index: 1; */
+  right: 32%;
+}
+
+.section2 img {
+  width: 100%;
+  height: auto;
+}
+/* .section3_button{
+  border: 1px solid black;
+  border-radius: 20px;
+} */
+
+
+
+.section3 {
+  width: 30%;
+  padding: 40px;
+  border-radius: 20px;
+  z-index: 11;
+  background: linear-gradient(135deg, #dbe7e7, #e9d8c6);
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  align-items: flex-start;
+}
+
+.section3 p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  .textArea_button {
+    flex-direction: column;
+    gap: 2vh;
+  }
+}
+
+.tickerWrapper {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  transform: rotate(-4deg);
+  padding: 15px 0;
+  top: 3vh;
+}
+
+.ticker {
+  display: flex;
+  gap: 60px;
+  white-space: nowrap;
+  animation: scrollText 20s linear infinite;
+  font-weight: 500;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  .phase2 {
+    padding: 60px 3%; /* Side space thoda kam */
+    /* min-height: 80vh; */
+  }
+
+  .phase2 h1 {
+    font-size: 32px; /* Heading thodi chhoti */
+    margin-bottom: 40px;
+  }
+
+  .mainArea {
+    flex-direction: row; /* Desktop jaisa hi rahega par size badlega */
+    position: relative;
+    height: 600px; /* Layout ko hold karne ke liye height fix karein */
+    align-items: flex-start;
+    padding-top: 0px;
+  }
+
+  /* 📝 Left Side Ka Content */
+  .section1 {
+    width: 40%;
+    bottom: 0; /* Position reset karein */
+    padding-top: 20px;
+    font-size: 14px;
+    z-index: 2;
+  }
+
+  /* 👩 Doctor Image (Center/Right Position) */
+  .section2 {
+    width: 45%; 
+    right: 35%; /* Desktop se thoda shift */
+    bottom: -10vw;
+    z-index: 1;
+  }
+
+  .section2 img {
+    min-width: 450px; /* Image bahut badi na ho jaye */
+  }
+
+  /* ✉️ Glassy Card (Right Side overlap) */
+  .section3 {
+    width: 30%;
+    height: 30vw;
+    position: absolute;
+
+
+    right: 7%;
+    bottom: 4vw; /* Niche ki taraf overlap karega */
+    padding: 25px;
+    z-index: 3; /* Image ke upar dikhne ke liye */
+    background: linear-gradient(135deg, rgba(219, 231, 231, 0.9), rgba(233, 216, 198, 0.9));
+    backdrop-filter: blur(5px); /* Professional look ke liye */
+    opacity: 0.8;
+  }
+
+  .section3 p {
+    font-size: 16px;
+  }
+
+  /* .section3_button {
+    width: 100%;
+  } */
+}
+
+
+
+@media (max-width: 480px){
+
+}

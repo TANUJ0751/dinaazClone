@@ -1,0 +1,129 @@
+.arrow{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1.2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 5vh;
+    right: 10%; 
+    z-index: 2;
+  }
+
+.arrow:hover{
+    background-color: white;
+    border: none;
+}  
+
+.card {
+  position: relative;
+  width: 280px;
+  height: 380px;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 8px;
+  border: 1px solid gray;
+  transition: all 0.3s ease;  /* सिर्फ ये add */
+}
+
+.top {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  transform: rotate(-2deg);
+  border-radius: 20px;
+  top: -1vh;
+  transition: background 0.5s ease, transform 0.4s ease;  /* सिर्फ ये add */
+}
+
+.top_part {
+  position: absolute;
+  top: 5vh;
+  left: 5%;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);  /* सिर्फ ये add */
+}
+
+.top_part img {
+  width: 80px;
+  height: 80px;
+  transition: all 0.4s ease-out;  /* सिर्फ ये add */
+}
+
+.top_part h2 {
+  font-size: 1.5rem;
+  font-family: "Poppins", "Montserrat", Arial, sans-serif;
+  transition: font-size 0.3s ease;  /* सिर्फ ये add */
+}
+
+.button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: absolute;
+  bottom: 5vh;
+  right: 3%;
+  transition: all 0.3s ease;  /* सिर्फ ये add */
+}
+
+.card_main {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  /* border: 1px solid gray; */
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 45vh;
+  border-radius: 15px;
+  background: linear-gradient(to right, #f3e5d8, #d3e9eb);
+  transform: rotate(-2deg);
+  position: absolute;
+  bottom: -29vh;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.bottom ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-left: 10%;
+  font-size: small;
+  color: gray;
+  line-height: 20px;
+  transition: color 0.3s ease;  /* सिर्फ ये add */
+}
+
+/* आपके existing hover rules same रहेंगे */
+.card:hover .bottom {
+  bottom: 0vh;
+}
+
+.card:hover .top {
+  background: linear-gradient(to right, #f3e5d8, #d3e9eb);
+}
+
+.card:hover .top_part {
+  top: 1vh;
+  left: 1%;
+  padding: 10px;
+}
+
+.card:hover .top_part img {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.card:hover .top_part h2 {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,84 @@
+/* Review.module.css - Complete CSS */
+
+.circleWrapper {
+  position: relative;
+  width: 250px;
+  height: 230px;
+  /* background-color: palegreen;   */
+  /* margin: 50px auto; */
+  /* overflow-y: hidden;        */
+ /* overflow-x: visible;          */
+}
+
+.reviewItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+}
+
+.reviewItem p {
+  margin: 0;
+  font-size: 14px;
+  color: gray;
+}
+
+.reviewItemText {
+  min-width: 130px;
+  /* background-color: wheat; */
+  padding: 3px;
+  border-radius: 8px;
+  overflow: visible;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid #333;
+  position: relative;
+}
+
+.profile {
+  position: absolute;
+  width: 130px;  
+  height: 80px;
+  transition: all 1s ease-in-out;
+  pointer-events: none;
+    z-index: 10;  
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* POSITION SET 1 */
+.pos1 .p1 { top: 0%; left: 110%; transform: translateX(-70%); }
+.pos1 .p2 { left: 95%; top: 60%; transform: translateY(-70%); }
+.pos1 .p3 { top: 75%; left: 105%; transform: translateX(-50%); }
+.pos1 .p4 { left: 70%; top: 120%; transform: translateY(-50%); }
+
+/* POSITION SET 2 */
+.pos2 .p1 { top: -30%; left: 100%; transform: translateX(-70%); }
+.pos2 .p2 { top: 0%; left: 110%; transform: translateX(-70%); }
+.pos2 .p3 {left: 95%; top: 60%; transform: translateY(-70%); }
+.pos2 .p4 { top: 75%; left: 105%; transform: translateX(-50%); }
+
+
+.pos2 .p1 { 
+  top: -30%; 
+  left: 100%; 
+  transform: translateX(-70%); 
+  opacity: 0; /* Upar jate waqt gayab ho jaye */
+}
+
+/* Jab p4 niche nikal jaye, use fade-out karna (optional) */
+.pos1 .p4 { 
+  left: 70%; 
+  top: 120%; 
+  transform: translateY(-50%); 
+  opacity: 0; 
+}

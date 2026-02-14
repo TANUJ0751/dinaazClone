@@ -1,0 +1,76 @@
+.imageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.image {
+  position: relative;
+  width: 200px; 
+  height: 200px;
+  cursor: pointer;
+}
+
+.backImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0%; 
+  transition: transform 0.8s ease-in-out, border-radius 0.6s ease;
+}
+
+.frontImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 95%;
+  object-fit: contain;
+  z-index: 2;
+  transition: transform 0.5s ease-in-out;
+  pointer-events: none; /* Mouse hamesha parent ko detect karega */
+}
+
+/* Hover Effects */
+.image:hover .backImage {
+  transform: rotate(-180deg) scale(1.1) ; 
+  border-radius: 50%; 
+ 
+}
+
+.image:hover .frontImage {
+  transform: scale(1.1) translateY(10px) ; 
+}
+
+.description {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* 1. Main Container ka size chota kiya */
+  .imageBox {
+    width: 150px; /* Desktop par 200px tha */
+  }
+
+  /* 2. Image area ka size chota kiya */
+  .image {
+    width: 150px; 
+    height: 150px;
+  }
+
+  /* 3. Front Image ka translation (hover effect) adjust kiya */
+  .image:hover .frontImage {
+    /* Tablet par 10px niche jaana zyada lag sakta hai, isliye 5px kiya */
+    transform: scale(1.1) translateY(5px); 
+  }
+
+  /* 4. Description text ka size */
+  .description {
+    font-size: 0.8rem; /* Thoda chhota font takki proportionate lage */
+    margin-top: 10px;
+  }
+}

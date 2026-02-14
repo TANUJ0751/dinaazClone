@@ -1,0 +1,204 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popupCard {
+  background: #006b6b; 
+  width: 90%;
+  max-width: 850px;
+  border-radius: 24px;
+  position: relative;
+  /* overflow: hidden; */
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.4s ease-out;
+}
+
+.cardContent {
+  display: flex;
+  min-height: 450px;
+}
+.cardContent p{
+    font-size: 1.5rem;
+  font-family: "Poppins", "Montserrat", Arial, sans-serif;
+
+
+}
+
+
+/* Close Button Styling */
+.closeBtn {
+  position: absolute;
+  top: -40px;
+  right: -20px;
+  background: #009b9b;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Left Section with Background Image Effect */
+.leftSection {
+  flex: 1.2;
+  
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.italicTitle {
+  font-family: 'Playfair Display', serif; /* Use a serif font for italics */
+  font-style: italic;
+  font-size: 70px;
+  color: white;
+  margin: 0;
+  line-height: 1;
+}
+
+.subTitle {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/* Right Section: Form Fields */
+.rightSection {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.inputGroup label {
+  display: block;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.inputGroup input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15); /* Glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 12px 15px;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+}
+
+.inputGroup input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Book A Call Button */
+.bookBtn {
+  background: white;
+  color: black;
+  width: 100%;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  font-weight: 200;
+  /* cursor: pointer; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  /* transition: transform 0.2s; */
+}
+
+/* .bookBtn:hover {
+  transform: translateY(-2px);
+  background: #f0f0f0;
+} */
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+
+@media (max-width: 768px) {
+  
+  .overlay {
+    padding: 10px;
+  }
+
+ 
+  .cardContent {
+    flex-direction: column;
+    min-height: auto;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+ 
+  .leftSection {
+    padding: 40px 20px;
+    min-height: 220px; 
+    text-align: center;
+    justify-content: center;
+  }
+
+
+  .italicTitle {
+    font-size: 42px;
+    line-height: 0.8;
+  }
+
+  .subTitle {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  
+  .rightSection {
+    padding: 30px 20px;
+  }
+
+  
+  .inputGroup {
+    margin-bottom: 15px;
+  }
+
+  .bookBtn {
+    padding: 14px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+
+  .closeBtn {
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+  }
+}
