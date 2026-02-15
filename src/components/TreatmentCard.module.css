@@ -18,14 +18,15 @@
 }  
 
 .card {
+  background-color: white;
   position: relative;
   width: 280px;
   height: 380px;
   border-radius: 15px;
   overflow: hidden;
   padding: 8px;
-  border: 1px solid gray;
-  transition: all 0.3s ease;  /* सिर्फ ये add */
+  /* border: 1px solid gray; */
+  transition: all 0.3s ease;  
 }
 
 .top {

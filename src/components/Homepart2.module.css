@@ -293,6 +293,14 @@ background-color: white;
 }
 
 
+.mobileImg {
+  display: none;
+}
+
+/* Desktop image dikhao */
+.desktopImg {
+  display: block;
+}
 
 .phase3section1{
   padding-left: 5%;
@@ -422,16 +430,45 @@ background-color: white;
   display: block;
 }
  
-.phase5Circle {
-    top: 5vh;
-    left: 5%;
-    z-index: 1;
-  }
+.phase5Circle{
+  /* position: absolute; */
+  top: 42vw !important;
+  left: -2% !important;
+  z-index: 2;
+  opacity: 0.6;
+   transform: rotate(180deg);
+  
+}
+.pahse5Seaction1_button{
+  margin-top: 2vw;
+}
 
-  .phase5Circle img {
-    width: 180px;
-    height: 180px;
-  }
+.pahse5Seaction2{
+  padding-top: 3vw;
+}
+
+.pahse5Seaction2_img {
+  position: relative;
+  
+}
+
+
+.input_secImg1 img{
+  width: 200px !important;
+  height: 180px !important;
+}
+
+.input_secImg2 img{
+ width: 200px !important;
+  height: 200px !important;
+}
+
+.phase6Box_text h1{
+ 
+   font-size: 1.5rem !important;
+   font-weight: 300;
+}
+
 }
 
 
@@ -646,6 +683,7 @@ background-color: white;
   position: relative;
 
 }
+
 .phase5Circle img{
   width: 250px;
   height: 250px;
@@ -701,9 +739,11 @@ background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 .pahse5Seaction2_img{
   width: 80%;
+  
 }
 
 .pahse5Seaction3{
@@ -771,7 +811,7 @@ background-color: white;
 
 
 .phase6{
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   padding-top: 30px;
   position: relative;
     display: flex;
@@ -806,7 +846,7 @@ background-color: white;
   /* background-color: #333; */
 }
 .phase6Box_text h1{
-    line-height: 50px;
+    /* line-height: ; */
     padding-bottom: 4%;
   font-family: "Poppins", "Montserrat", Arial, sans-serif;
     color: white;
@@ -825,85 +865,192 @@ height: 100%;
 }
 
 
+@media (max-width: 786px){
+  .phase1_textarea1{
+    width: 80vw;
+    /* background-color: #333; */
 
-
-
-
-
-
-
-
-/* 
-.textBackground {
-    background-color: aquamarine;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    height: 250px;
-    width: 250px;
-    padding: 20px; 
-    border-radius: 50%;
-    text-align: center; 
-    overflow: hidden; 
-}
-
-.textBackground .smallcircel {
-    background-color: antiquewhite;
-    border-radius: 50%;
-    height: 60%;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.textBackground h2 {
-    position: absolute;
-    
-  
+  }
+  .phase1_textarea1 p{
     width: 100%;
-    margin: 0;
-    font-size: 1.2rem;
-    word-wrap: break-word; 
-    line-height: 1.2; 
-} */
+      font-size: 1rem;
+  }
+  .phase1_textarea1 h1{
+ width: 100%;
+      font-size: 2.4rem;
+  }
+  .CircleText{
+    position: absolute;
+    top: 4vw;
+    right: 30vw;
 
+  }
+  .CircleText img{
+    width: 150px;
+    height: 150px;
+  }
 
-/* 
-.image {
-  position: relative;
-  width:200px; 
-  height: 200px;
-  cursor: pointer;
-}
-.backImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0%; 
-  transition: transform 0.8s ease-in-out, border-radius 0.6s ease;
-}
+  .startImg{
+    top: 30vh;
+    right: 5vw;
+    width: 100% ;
+  }
 
-.frontImage {
+  .img1{
+    position: absolute;
+    right: 3vw;
+    top: 5vw;
+
+  }
+  .img2{
+    position: absolute;
+    right: 50vw;
+  }
+  .img3{
   position: absolute;
-  top: 11%;
-  left: 15%;
-  height: 100%;
-  width: 100%;
-  transform:  scale(1);
-  transition: transform 0.5s ease-in-out;
-  z-index: 2;
-} */
+  right: 10vw;
+  }
 
-
-
-/* .image:hover .backImage {
-  transform: rotate(-180deg); 
-  border-radius: 50%; 
+  .phase1_textarea2{
+    /* position: absolute; */
+    bottom: 0px;
+    padding-top: 80vh;
+    width: 100%;
+  }
+  .imageArea{
+    position: relative;
+  }
+  
+  /* ------------------------------------------------------- */
+.phase2_circle img{
+  width: 150px;
+  height: 150px;
+}
+.phase2_circle{
+  left: 5%;
+  top: 4vw;
+}
+.phase2text{
+  /* background-color: hsl(0, 0%, 20%); */
+  max-width: 300px;
+  min-height: 40px;
+  flex-wrap: wrap;
+  
+}
+.phase2text h3{
+font-size: 1rem;
+}
+.phase2text h1{
+font-size: 1.9rem;
+word-spacing:2px ;
+letter-spacing: 1px;
 }
 
-.image:hover .frontImage {
+ .phase2ImageSection {
+    flex-wrap: wrap; /* Agar cards bade hain toh wo niche shift ho jayein */
+    justify-content: center;
+    gap: 10px;
+ 
+  }
+
+}
+
+
+
+/* Mobile Screen (Phone) */
+@media screen and (max-width: 600px) {
+
+  .phase3section1 h1{
+    font-size: 2rem;
+  }
+
+  /* Right side ki image section ko hide kar do */
+  .right {
+    display: none !important;
+  }
+  .left{
+    right: 30%;
+  }
+
+  /* Container ko column mein change karein taaki text center mein rahe */
+  .container {
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  /* Left aur Center ko 100% width dein */
+  .left, .center {
+    width: 50% !important;
+    text-align: center;
+  }
+
+  /* Quote icons ko thoda chota karein mobile ke liye */
+  .quoteTop svg, .quoteBottom svg {
+    width: 60px;
+    height: 40px;
+  }
+
+  .text {
+    font-size: 1.3rem;
+    line-height: 1.3;
+    color: rgb(138, 138, 138);
+  }
+
+.phase3section3{
+  padding-bottom: 5vh;
+}
+
   
-  transform: scale(1.3); 
-} */
+.textArea h1{
+  font-size: 2rem ;
+}
+
+  .desktopImg {
+    display: none;
+  }
+  
+
+  .mobileImg {
+    display: block !important;
+    width: 100%; 
+
+  }
+
+
+
+
+ .phase4Card {
+        display: flex;
+        width: 400%;
+        animation: slideContinuous 10s linear infinite;
+    }
+
+    .cardWrapper {
+        flex: 0 0 25%; 
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+
+    @keyframes slideContinuous {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-75%);
+        }
+    }
+
+
+
+.phase5{
+  overflow: hidden;
+}
+
+
+
+}

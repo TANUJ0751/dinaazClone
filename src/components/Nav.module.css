@@ -8,7 +8,7 @@
     padding-right: 5%;
     position: sticky;
     top: 0px;
-    z-index: 200;
+    z-index: 10;
 
 }
 
@@ -51,18 +51,17 @@
     fill: white;
 }
 
-/* First arrow default */
+
 .arrow:first-child {
     transform: translate(0, 0);
 }
 
-/* Second arrow niche se start */
 .arrow:last-child {
     transform: translate(-10px, 20px);
     opacity: 0;
 }
 
-/* Hover effect */
+
 .button:hover .arrow:first-child {
     transform: translate(10px, -20px);
     opacity: 0;
@@ -71,4 +70,51 @@
 .button:hover .arrow:last-child {
     transform: translate(0, 0);
     opacity: 1;
+}
+.mobileOnly {
+    display: none;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .Navmain{
+        padding-left: 1%;
+
+        gap: 20%;
+    }
+    .mobileOnly {
+        display: none !important;
+    }
+    .desktopOnly {
+        display: block !important; 
+    }
+    
+    .Navmain img {
+        width: 150px; 
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .desktopOnly {
+        display: none !important;
+    }
+
+    .mobileOnly {
+        display: block !important;
+    }
+
+    .mobileOnly .button {
+        width: 110px;   
+        height: 35px;      
+        font-size: 0.8rem;
+    }
+
+
+    .mobileOnly .arrowBox {
+        width: 14px;
+        height: 14px;
+    }
 }

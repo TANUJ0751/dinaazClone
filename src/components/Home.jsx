@@ -20,14 +20,13 @@ const Home = () => {
             package-driven care.
           </p>
           <div className={sty_home.textArea_button}>
-           <CallButton/>
-           <AnimatedButton 
-  bgColor="rgb(222, 148, 51)" 
-  textColor="white" 
-  hoverBg="rgb(205, 138, 49)"  
-  hoverText="#ffffff" 
-/>
-            
+            <CallButton />
+            <AnimatedButton
+              bgColor="rgb(222, 148, 51)"
+              textColor="white"
+              hoverBg="rgb(205, 138, 49)"
+              hoverText="#ffffff"
+            />
           </div>
         </div>
 
@@ -48,11 +47,12 @@ const Home = () => {
       {/* --------------------------------------------------------------------------- */}
 
       <div className={sty_home.phase2}>
-        <center>
+        <div className={sty_home.phase2HeadText_main} >
+        <div className={sty_home.phase2HeadText} >
           <h3>THE DOCTOR</h3>
           <h1>Treatment By An Award-Winning Dermatologist</h1>
-        </center>
-
+        </div>
+</div>
         <div className={sty_home.mainArea}>
           <div className={sty_home.section1}>
             <p>
@@ -81,25 +81,28 @@ const Home = () => {
               Patients trust Dinaaz because medical decisions are always made by
               a qualified dermatologist, not consultants or sales staff.
             </p>
-            <div style={{ border: "1px solid black", borderRadius: "50px", display: "inline-block", overflow: "hidden" }}>
-
-                  <AnimatedButton 
-  bgColor="#ffffff13" 
-  textColor="black" 
-  hoverBg="rgb(21, 144, 153)"  
-  hoverText="#ffffff" 
-  style={{ border: "1px solid black", borderRadius: "20px" }}
-/>
-           </div>
+            <div
+             style={{
+  border: "1px solid black",
+  borderRadius: "50px",
+  display: "inline-block",
+  overflow: "hidden",
+  minWidth: "200px", // CamelCase aur quotes use karein
+}}
+            >
+              <AnimatedButton
+                bgColor="#ffffff13"
+                textColor="black"
+                hoverBg="rgb(21, 144, 153)"
+                hoverText="#ffffff"
+                style={{ border: "1px solid black", borderRadius: "20px" ,    }}
+              />
+            </div>
           </div>
         </div>
       </div>
 
-
       {/* ------------------------------------------------------------------------------------- */}
-    
-  
-
     </div>
   );
 };

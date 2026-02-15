@@ -2,27 +2,23 @@ import React, { useState } from "react";
 import BookingForm from "./BookingForm"; 
 import styles from "./AnimatedButton.module.css";
 
-// Humne 2 naye props add kiye: hoverBg aur hoverText
+
 const AnimatedButton = ({ bgColor, textColor, hoverBg, hoverText }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
   const togglePopup = () => setIsOpen(!isOpen);
 
-  // Default colors setup
   const defaultBg = bgColor || "#007a7a";
   const defaultText = textColor || "#ffffff";
   
-  // Agar hover props nahi diye, toh default mein colors swap (ulta) ho jayenge
   const finalHoverBg = hoverBg || defaultText;
   const finalHoverText = hoverText || defaultBg;
 
   const buttonStyle = {
     backgroundColor: isHovered ? finalHoverBg : defaultBg,
     color: isHovered ? finalHoverText : defaultText,
-    // border: `1.5px solid ${isHovered ? finalHoverText : defaultText}`,
-    // transition: "all 0.3s ease",
-    // transform: isHovered ? "scale(1.05)" : "scale(1)" // Chota sa zoom effect
+    
   };
 
   return (

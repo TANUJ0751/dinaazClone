@@ -29,6 +29,7 @@ import input_secImg2 from "../assets/Group 9 (1).png";
 import phase6img from "../assets/Ellipse 16.png";
 import circle1 from "../assets/circle1.png";
 import circle2 from "../assets/circle2.png";
+import multiImgPhone from "../assets/result.png"
 
 const HomePart2 = () => {
   const images = [phase31, phase32];
@@ -45,36 +46,18 @@ const HomePart2 = () => {
   return (
     <div className={styles.HomePart2_main}>
       <div className={styles.phase1}>
+
+
+
         <div className={styles.pahse3Main}>
           <div className={styles.phase1_mainTextArea}>
             <div className={styles.phase1_textarea1}>
               <p>THE REAL PROBLEM</p>
               <h1>Why Most Hair & Skin Treatments Fail</h1>
             </div>
-            <div className={styles.phase1_textarea2}>
-              <div className={styles.infoSection}>
-                <p className={styles.introText}>
-                  Many patients come to us after trying:
-                </p>
-                <ul className={styles.treatmentList}>
-                  <li>Salon treatments with no diagnosis</li>
-                  <li>One-size-fits-all packages</li>
-                  <li>
-                    Expensive procedures without understanding the root cause
-                  </li>
-                </ul>
-                <p className={styles.summaryText}>
-                  Skin and hair problems often look similar but require very
-                  different medical treatments. Without proper diagnosis,
-                  results are unpredictable, and sometimes harmful.
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <img src={star} alt="" className={styles.startImg} />
 
-          <div className={styles.imageArea}>
+             <div className={styles.imageArea}>
             <div className={styles.imagePart1}>
               <div className={styles.CircleText}>
                 {/* <Circle   firstLine="At" 
@@ -109,6 +92,31 @@ const HomePart2 = () => {
               </div>
             </div>
           </div>
+
+            <div className={styles.phase1_textarea2}>
+              <div className={styles.infoSection}>
+                <p className={styles.introText}>
+                  Many patients come to us after trying:
+                </p>
+                <ul className={styles.treatmentList}>
+                  <li>Salon treatments with no diagnosis</li>
+                  <li>One-size-fits-all packages</li>
+                  <li>
+                    Expensive procedures without understanding the root cause
+                  </li>
+                </ul>
+                <p className={styles.summaryText}>
+                  Skin and hair problems often look similar but require very
+                  different medical treatments. Without proper diagnosis,
+                  results are unpredictable, and sometimes harmful.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <img src={star} alt="" className={styles.startImg} />
+
+      
         </div>
       </div>
 
@@ -268,6 +276,10 @@ const HomePart2 = () => {
           </div>
         </div>
 
+
+{/* --------------------------------------------------------------------------         */} 
+
+
         <div className={styles.phase3section3}>
           <div className={styles.textArea}>
             <p>RESULTS</p>
@@ -276,9 +288,14 @@ const HomePart2 = () => {
             </h1>
           </div>
           <div className={styles.imgDiv}>
-            <img src={multiImg} alt="" />
+            <img src={multiImg} alt="" className={styles.desktopImg} />
+            <img src={multiImgPhone} className={styles.mobileImg} alt="Mobile" />
           </div>
         </div>
+
+
+
+
 
         <div className={styles.phase4}>
           <div className={styles.phase4TextArea}>
@@ -337,20 +354,19 @@ const HomePart2 = () => {
         </div>
       </div>
 
-{/* ------------------------------------------------------------------------------------ */}
+      {/* ------------------------------------------------------------------------------------ */}
 
       <div className={styles.phase5}>
         <div className={styles.phase5Circle}>
           <img src={phase5_circle} alt="" />
         </div>
         <div className={styles.phase5TextArea}>
-             <div className={styles.phase5Text}>
+          <div className={styles.phase5Text}>
             <p>OUR PROCESS</p>
             <h1>What to Expext at Dinaaz </h1>
-           </div>
+          </div>
         </div>
 
-        
         <div className={styles.pahse5Seaction1}>
           <div className={styles.pahse5Seaction1_img}>
             <img src={phase5Img} alt="" />
@@ -360,7 +376,7 @@ const HomePart2 = () => {
           </div>
         </div>
 
-        <center>
+        <center className={styles.pahse5Seaction1_button}>
           <AnimatedButton
             bgColor="rgb(222, 148, 51)"
             textColor="white"
@@ -368,11 +384,16 @@ const HomePart2 = () => {
             hoverText="#ffffff"
           />
         </center>
+
+
         <div className={styles.pahse5Seaction2}>
           <div className={styles.pahse5Seaction2_img}>
             <StorySection />
           </div>
         </div>
+
+
+        
 
         <div className={styles.pahse5Seaction3}>
           <div className={styles.input_secImg1}>
@@ -416,8 +437,7 @@ const HomePart2 = () => {
         </div>
       </div>
 
-
-{/* ---------------------------------------------------------------------------------  */}
+      {/* ---------------------------------------------------------------------------------  */}
 
       <div className={styles.phase6}>
         <div className={styles.phase6Box}>

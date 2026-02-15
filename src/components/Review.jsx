@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Review.module.css";
+import image from "../assets/Ellipse 13.png"
 
 const Review = () => {
   const [positionSet, setPositionSet] = useState('pos1');
@@ -30,7 +31,7 @@ const Review = () => {
             >
               <div className={styles.reviewItem}>
                 <img
-                  src={`https://randomuser.me/api/portraits/men/${30 + index}.jpg`}
+                  src={image}
                   alt=""
                 />
                 <div className={styles.reviewItemText}>

@@ -45,7 +45,7 @@
   height: 80px;
   transition: all 1s ease-in-out;
   pointer-events: none;
-    z-index: 10;  
+    z-index: 5;  
 }
 
 .profile img {
@@ -81,4 +81,49 @@
   top: 120%; 
   transform: translateY(-50%); 
   opacity: 0; 
+}
+
+
+
+@media screen and (max-width: 600px) {
+  
+  .reviewItemText {
+    display: none !important;
+  }
+
+
+  .reviewItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+ 
+
+  
+.pos1 .p1 { top: 5%; left: 70%; transform: translate(-50%, -50%); }
+  .pos1 .p2 { top: 50%; left: 95%; transform: translate(-50%, -50%); }
+  .pos1 .p3 { top: 92%; left: 92%; transform: translate(-50%, -50%); }
+  .pos1 .p4 { top: 110%; left: 70%; transform: translate(-50%, -50%); }
+
+  /* 3. POSITION SET 2 (Border aligned) */
+  .pos2 .p1 { top: -8%; left: 50%; transform: translate(-50%, -50%); }
+  .pos2 .p2 { top: 5%; left: 70%; transform: translate(-50%, -50%); }
+  .pos2 .p3 { top: 50%; left: 95%; transform: translate(-50%, -50%); }
+  .pos2 .p4 { top: 100%; left: 88%; transform: translate(-50%, -50%); }
+
+
+.circle {
+    width: 230px !important;
+    height: 230px !important;
+
+  }
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}  
+
 }

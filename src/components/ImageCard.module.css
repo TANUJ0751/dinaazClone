@@ -74,3 +74,29 @@
     margin-top: 10px;
   }
 }
+
+
+@media (max-width: 786px) {
+  /* 1. Main Container ka size chota kiya */
+  .imageBox {
+    width: 100px; /* Desktop par 200px tha */
+  }
+
+  /* 2. Image area ka size chota kiya */
+  .image {
+    width: 100px; 
+    height: 100px;
+  }
+
+  /* 3. Front Image ka translation (hover effect) adjust kiya */
+  .image:hover .frontImage {
+    /* Tablet par 10px niche jaana zyada lag sakta hai, isliye 5px kiya */
+    transform: scale(1.1) translateY(5px); 
+  }
+
+  /* 4. Description text ka size */
+  .description {
+    font-size: 0.8rem; /* Thoda chhota font takki proportionate lage */
+    margin-top: 10px;
+  }
+}

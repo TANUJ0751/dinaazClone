@@ -1,3 +1,6 @@
+
+
+
 .overlay {
   position: fixed;
   top: 0;
@@ -9,19 +12,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 9999 !important;
 }
 
 .popupCard {
   background: #006b6b; 
   width: 90%;
-  max-width: 850px;
+  max-width: 1000px;
   border-radius: 24px;
   position: relative;
   /* overflow: hidden; */
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
   animation: slideUp 0.4s ease-out;
 }
+
+
 
 .cardContent {
   display: flex;
@@ -91,6 +96,8 @@
 
 .inputGroup {
   margin-bottom: 20px;
+  min-width:230px;
+  /* background-color: aqua; */
 }
 
 .inputGroup label {
@@ -145,24 +152,26 @@
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 800px){
   
   .overlay {
     padding: 10px;
+    height: 100%;
+
   }
 
- 
+
   .cardContent {
     flex-direction: column;
-    min-height: auto;
-    max-height: 90vh;
-    overflow-y: auto;
+    /* min-height: auto; */
+    max-height: 100%;
+    /* overflow-y: auto; */
   }
 
  
   .leftSection {
-    padding: 40px 20px;
-    min-height: 220px; 
+    /* padding: 40px 20px; */
+    /* min-height: 220px;  */
     text-align: center;
     justify-content: center;
   }
@@ -181,17 +190,23 @@
   
   .rightSection {
     padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   
   .inputGroup {
     margin-bottom: 15px;
+    max-width: 450px;
   }
 
   .bookBtn {
     padding: 14px;
     font-size: 16px;
     margin-top: 10px;
+    max-width: 250px;
   }
 
 
@@ -201,4 +216,24 @@
     width: 32px;
     height: 32px;
   }
+}
+
+
+
+@media screen and (min-width: 800px) and (max-width: 1024px){
+
+ .popupCard{
+  /* width: 50%;
+  max-width: 40px; */
+ }
+
+.brandingText h1{
+  font-size:2.7rem !important;
+}
+.brandingText p{
+  font-size: 1.3rem !important;
+}
+
+
+
 }
