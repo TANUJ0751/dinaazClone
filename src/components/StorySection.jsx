@@ -11,9 +11,10 @@ const StorySection = () => {
         
         {/* Left Content Column */}
         <div className={styles.contentCol}>
+          <div className={styles.head}>
           <span className={styles.subheading}>ABOUT US</span>
           <h2 className={styles.heading}>The Story Behind Dinaaz</h2>
-          
+          </div>
           <p className={styles.description}>
             Dinaaz Hair & Skin Clinic was founded by Mr. Munna, known as the 
             "real-life Munna Bhai", after experiencing early hair loss himself. 

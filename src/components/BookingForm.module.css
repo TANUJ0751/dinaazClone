@@ -1,6 +1,3 @@
-
-
-
 .overlay {
   position: fixed;
   top: 0;
@@ -16,9 +13,11 @@
 }
 
 .popupCard {
-  background: #006b6b; 
-  width: 90%;
-  max-width: 1000px;
+
+  background-image: url("../assets/bluebackground.png");
+  width: 964px;
+  height: 472;
+  /* max-width: 1000px; */
   border-radius: 24px;
   position: relative;
   /* overflow: hidden; */
@@ -26,19 +25,20 @@
   animation: slideUp 0.4s ease-out;
 }
 
+.brandingText h1{
+  font-size: 4rem !important;
+}
+.brandingText p{
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  font-family: "Poppins", "Montserrat", Arial, sans-serif;
 
+}
 
 .cardContent {
   display: flex;
-  min-height: 450px;
+  /* min-height: 450px; */
 }
-.cardContent p{
-    font-size: 1.5rem;
-  font-family: "Poppins", "Montserrat", Arial, sans-serif;
-
-
-}
-
 
 /* Close Button Styling */
 .closeBtn {
@@ -47,8 +47,8 @@
   right: -20px;
   background: #009b9b;
   border: none;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   color: white;
   cursor: pointer;
@@ -61,7 +61,6 @@
 /* Left Section with Background Image Effect */
 .leftSection {
   flex: 1.2;
-  
   background-size: cover;
   background-position: center;
   display: flex;
@@ -70,9 +69,9 @@
 }
 
 .italicTitle {
-  font-family: 'Playfair Display', serif; /* Use a serif font for italics */
+  font-family: 'Playfair Display', serif; 
   font-style: italic;
-  font-size: 70px;
+  /* font-size: 70px; */
   color: white;
   margin: 0;
   line-height: 1;
@@ -96,7 +95,7 @@
 
 .inputGroup {
   margin-bottom: 20px;
-  min-width:230px;
+  min-width:268px;
   /* background-color: aqua; */
 }
 
@@ -110,7 +109,7 @@
 
 .inputGroup input {
   width: 100%;
-  background: rgba(255, 255, 255, 0.15); /* Glass effect */
+  background: rgba(255, 255, 255, 0); /* Glass effect */
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 12px 15px;
   border-radius: 8px;
@@ -126,7 +125,8 @@
 .bookBtn {
   background: white;
   color: black;
-  width: 100%;
+  width: 280px;
+  height: 56px;
   padding: 15px;
   border-radius: 50px;
   border: none;
@@ -141,6 +141,11 @@
   /* transition: transform 0.2s; */
 }
 
+.rightSection form{
+  width: 280px;
+  height: 308px;
+}
+
 /* .bookBtn:hover {
   transform: translateY(-2px);
   background: #f0f0f0;
@@ -152,88 +157,101 @@
 }
 
 
-@media screen and (max-width: 800px){
-  
-  .overlay {
-    padding: 10px;
-    height: 100%;
-
-  }
-
-
-  .cardContent {
-    flex-direction: column;
-    /* min-height: auto; */
-    max-height: 100%;
-    /* overflow-y: auto; */
-  }
-
- 
-  .leftSection {
-    /* padding: 40px 20px; */
-    /* min-height: 220px;  */
-    text-align: center;
-    justify-content: center;
-  }
-
-
-  .italicTitle {
-    font-size: 42px;
-    line-height: 0.8;
-  }
-
-  .subTitle {
-    font-size: 16px;
-    margin-top: 15px;
-  }
-
-  
-  .rightSection {
-    padding: 30px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  
-  .inputGroup {
-    margin-bottom: 15px;
-    max-width: 450px;
-  }
-
-  .bookBtn {
-    padding: 14px;
-    font-size: 16px;
-    margin-top: 10px;
-    max-width: 250px;
-  }
-
-
-  .closeBtn {
-    top: 10px;
-    right: 10px;
-    width: 32px;
-    height: 32px;
-  }
-}
 
 
 
-@media screen and (min-width: 800px) and (max-width: 1024px){
+@media screen and (min-width: 786px) and (max-width: 1024px){
 
  .popupCard{
-  /* width: 50%;
-  max-width: 40px; */
+  width: 640px;
+  height: 364px;
+  padding-bottom: 32px;
+  padding-left: 40px;
+  padding-right: 40px;
+
  }
 
 .brandingText h1{
-  font-size:2.7rem !important;
+  font-size:2rem !important;
 }
 .brandingText p{
-  font-size: 1.3rem !important;
+  font-size: 0.9rem !important;
+}
+.rightSection form{
+  width: 268px;
+  height: 212px;
+
+}
+.leftSection{
+  width: 268px;
+  height: 212px;
+}
+.rightSection{
+  /* padding: 1px !important ; */
+}
+.bookBtn{
+  position: relative;
+  right: 50%;
+  width: 218px;
+  height: 56px;
+
+}
+
 }
 
 
+@media screen and (max-width: 600px){
+ .popupCard{
+  width: 300px;
+  height: 554px;
+   /* padding-bottom: 32px; */
+   /* padding-top: 32px; */
+  padding-left: 20px ;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+ }
+ .cardContent{
+  flex-direction: column;
+  /* justify-content: space-evenly ; */
+  /* justify-content: center; */
+  gap: 6vh;
+ }
+ .leftSection{
+  width: 260px;
+  height: 212px;
+  padding: 2px;
+  
+ }
+ .rightSection{
+  width: 260px;
+  height: 204px;    
+   padding: 2px;
+
+ }
+
+
+ .brandingText h1{
+  font-size:2rem !important;
+  font-weight: 300 !important;
+}
+.brandingText p{
+  font-size: 0.9rem !important;
+}
+.bookBtn{
+  /* position: relative;
+  right: 50%;
+  width: 218px;
+  height: 56px; */
+
+}
+.inputGroup{
+  height: 55px;
+}
+
+.closeBtn{
+  width: 40px;
+  height: 40px;
+}
 
 }

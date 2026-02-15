@@ -15,7 +15,9 @@ background-color: white;
     padding-left: 6%;
     padding-right: 6%;
     padding-bottom:30vw ;
-    background-color: rgb(216, 235, 237);
+    /* background-color: rgb(216, 235, 237); */
+    background-image: url("../assets/Frame\ 1707335215.png");
+
 
 }
 
@@ -101,56 +103,56 @@ background-color: white;
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .pahse3Main {
     display: flex;
-    flex-direction: row; /* Text aur Image side-by-side rahenge */
+    flex-direction: row; 
     justify-content: space-between;
     align-items: flex-start;
   }
 
-  /* 📝 Left Text Area */
+  /* Left Text Area */
   .phase1_textarea1 {
-    width: 45%; /* Thoda narrow kiya taaki images ke liye jagah bane */
+    width: 45%; 
   }
 
   .phase1_textarea1 h1 {
-    font-size: 2.2rem; /* Tablet ke liye optimized size */
+    font-size: 2.2rem; 
   }
 
   .phase1_textarea2 {
     width: 45%;
-    font-size: 0.75rem; /* Chhoti screen par text adjust kiya */
+    font-size: 0.75rem; 
     line-height: 4vh;
   }
 
-  /* 🖼️ Right Image Area Positions */
-  /* Note: Hum right side se distance (vw) ko kam karenge taaki images screen ke andar rahein */
+  /* Right Image Area Positions */
+ 
 
   .CircleText {
-    right: 35vw;  /* Desktop par 38vw tha, tablet par edge ke paas laya */
+    right: 35vw; 
     top: 20vw;
   }
 
   .CircleText img {
-    width: 180px; /* Circle ka size chhota kiya */
+    width: 180px; 
   }
 
   .img1 {
-    right: 7vw;  /* Right edge se gap kam kiya */
+    right: 7vw; 
     top: 12vw;
   }
 
   .img2 {
-    right: 55vw; /* Circle ke left mein rahegi */
+    right: 55vw;
     top: 50vw;
   }
 
   .img3 {
-    right: 15vw;  /* Circle ke niche/right mein */
+    right: 15vw;  
     top: 55vw;
   }
 
-  /* Container height fix */
+
   .phase1 {
-    padding-bottom: 40vw; /* Taaki images niche se cut na ho */
+    padding-bottom: 40vw; 
   }
 }
 
@@ -168,7 +170,8 @@ background-color: white;
 /* padding-top: 13vh; */
     padding-left: 6%;
     padding-right: 6%;
-    background-color: rgb(216, 235, 237);
+    /* background-color: rgb(216, 235, 237); */
+    background-image: url("../assets/Frame\ 1707335215.png");
     padding-bottom: 10vh;
 
 }
@@ -231,30 +234,30 @@ background-color: white;
 
   /* Header Section: Text and Circle */
   .phase2_head {
-    justify-content: flex-end; /* Space create karne ke liye */
+    justify-content: flex-end; 
     padding-bottom: 5vh;
     position: relative;
     /* min-height: 100px;  */
   }
 
   .phase2_circle {
-    left: 2%; /* Tablet par circle ko edge ke thoda paas shift kiya */
+    left: 2%; 
     top: 1vw;
   }
 
   .phase2_circle img {
-    width: 180px; /* Size chota kiya taaki text se na takraye */
+    width: 180px; 
     height: 180px;
     
   }
 
   .phase2text {
-    width: 65%; /* Text area ko specific width di */
+    width: 65%;
     /* background-color: #0ea5a5; */
   }
 
   .phase2text h1 {
-    font-size: 2.2rem; /* Heading thodi chhoti ki */
+    font-size: 2.2rem;
     line-height: 1.2;
   }
 
@@ -264,7 +267,7 @@ background-color: white;
 
   /* Image Section (Cards) */
   .phase2ImageSection {
-    flex-wrap: wrap; /* Agar cards bade hain toh wo niche shift ho jayein */
+    flex-wrap: wrap; 
     justify-content: center;
     gap: 10px;
  
@@ -273,7 +276,7 @@ background-color: white;
   /* Button Section */
   .phase2Button {
     display: flex;
-    justify-content: center; /* Tablet par button center mein zyada acha lagta hai */
+    justify-content: center; 
     padding-top: 4vh;
   }
 }
@@ -285,7 +288,8 @@ background-color: white;
 
 
 .phase3{
-    background-color: white;
+    /* background-color: white; */
+    background-image: url("../assets/reviewBack.png");
     padding-top: 13vh;
     /* padding-left: 6%;
     padding-right: 6%; */
@@ -297,7 +301,7 @@ background-color: white;
   display: none;
 }
 
-/* Desktop image dikhao */
+
 .desktopImg {
   display: block;
 }
@@ -420,9 +424,9 @@ background-color: white;
    border: 20px solid white;
    transform: rotate(-8deg);
    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-  width: 250px;  /* Aapki marzi ki width */
-  height: 300px; /* Aapki marzi ki height */
-  overflow: hidden; /* Taaki extra image bahar na dikhe */
+  width: 250px;  
+  height: 300px; 
+  overflow: hidden;
 }
 
 .pahse5Seaction1_img img{
@@ -577,7 +581,7 @@ background-color: white;
   }
 
   40% {
-    transform: rotate(0deg); /* 2 sec hold */
+    transform: rotate(0deg); 
   }
 
   65% {
@@ -589,7 +593,7 @@ background-color: white;
   }
 
   100% {
-    transform: rotate(0deg); /* hold again */
+    transform: rotate(0deg);
   }
 }
 
@@ -750,6 +754,7 @@ background-color: white;
   padding-top: 50px;
   position: relative;
   font-family: "Poppins", "Montserrat", Arial, sans-serif;
+  overflow: hidden;
 
 }
 .pahse5Seaction3_Text{
@@ -809,60 +814,66 @@ background-color: white;
 
 
 
-
-.phase6{
-  /* padding-bottom: 30px; */
-  padding-top: 30px;
+.phase6 {
+  padding: 50px 0;
   position: relative;
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
   width: 100%;
-  /* height: 300px; */
-  background: linear-gradient(to bottom, rgb(255, 255, 255) 50%, rgb(250, 238, 222) 50%);
 
+  background: linear-gradient(to bottom, #ffffff 50%, #faeed6 50%);
 }
-.phase6Box{
 
-  background-color: orange;
+.phase6Box {
+  background-image: url("../assets/background.png");
+  background-size: cover; 
   overflow: hidden;
   border-radius: 30px;
   width: 90%;
-  /* min-height: 30vh; */
+  max-width: 1200px;
   display: flex;
-  align-items: center;
+  align-items: stretch; 
   justify-content: space-between;
-  
 }
-/* .phase6Box_img{
-  width: 50%;
-  height: 100%;
-} */
 
-.phase6Box_text{
-  padding-left: 5%;
-  width: 40%;
+.phase6Img_Desktop {
+display: block;
+  width: 100%; 
+  height: 100%; 
+}
+
+
+
+.phase6Img_Mobile {
+  display: none !important ;
+}
+
+.phase6Box_text {
+  padding: 40px 0 40px 5%; 
+  width: 45%; 
   /* background-color: #333; */
 }
-.phase6Box_text h1{
-    /* line-height: ; */
-    padding-bottom: 4%;
-  font-family: "Poppins", "Montserrat", Arial, sans-serif;
-    color: white;
-    font-size: 2rem;
+
+.phase6Box_text h1 {
+  margin: 0;
+  padding-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 2rem;
+  line-height: 1.2; 
 }
 
-.phase6Box_img{
-  width: 60%;
+
+.phase6Box_img {
+  width: 55%; 
   display: flex;
-  align-items: center;
+  align-items: flex-end; 
   justify-content: flex-end;
+  height: auto; 
 }
-.phase6Box_img img{
-width: 65%;
-height: 100%;
-}
+
+
 
 
 @media (max-width: 786px){
@@ -957,7 +968,7 @@ letter-spacing: 1px;
 
 
 
-/* Mobile Screen (Phone) */
+
 @media screen and (max-width: 600px) {
 
   .phase3section1 h1{
@@ -1050,7 +1061,182 @@ letter-spacing: 1px;
 .phase5{
   overflow: hidden;
 }
+.pahse5Seaction1{
+  flex-direction: column;
+}
 
-
+.phase5Circle img{
+  
+  width: 120px;
+  height: 120px;
 
 }
+.phase5Circle{
+  top: 32vw;
+  z-index: 2;
+  opacity: 0.8;
+  transform: rotate(180deg);
+}
+.phase5TextArea{
+  width: 320px;
+  height: 95px;
+}
+.phase5Text{
+  padding-left: 5%;
+
+}
+.phase5Text h1{
+  font-size: 2.2rem;
+}
+.pahse5Seaction1_img{
+  width: 240px;
+  height: 300px;
+ border-style: solid;
+  border-color: white;
+  border-width: 16px 16px 32px 16px;
+ object-fit: cover;
+ display: block;
+box-sizing: border-box;
+box-shadow: 0 8px 150px lightgray;
+transform: rotate(-6.8deg);
+}
+.pahse5Seaction1_img img{
+  width: 100%;
+  height: 100%;
+}
+
+.input_secImg1{
+  top: 50%;
+  right: 20%;
+}
+.input_secImg2{
+  top: 15%;
+  left: 15%;
+}
+.input_secImg1 img{
+  width: 152px;
+  height: 152px;  
+}
+.input_secImg2 img{
+  width: 152px;
+  height: 152px;
+}
+
+.pahse5Seaction3Head{
+  justify-content: right;
+
+}
+.pahse5Seaction3_Text{
+ padding-right: 20px;
+  width: calc(100% - 20px);
+  display: flex;
+  flex-direction: column;
+  /* Sabse Important: Saare bacho (span, h1, p) ko right side dhakelnay ke liye */
+  align-items: flex-end; 
+  justify-content: right;
+  
+}
+.pahse5Seaction3_Text span {
+   display: block;    /* Sabse zaroori: Isse span poori width lega */
+   text-align: right; /* Ab ye right mein shift ho jayega */
+   width: 100%;       /* Display block ke sath ye kaam karega */
+   /* background-color: #ccc;  */
+}
+.pahse5Seaction3_Text h1{
+   display: block;
+  text-align: right; /* Text ko box ke andar right karne ke liye */
+  width: 50%; /* Ab ye 50% box khud right side shift ho jayega */
+  /* background-color: bisque; */
+  font-size: 2rem;
+  margin: 0; /* Extra space hatane ke liye */
+}
+.pahse5Seaction3_Text p{
+   display: block;
+  text-align: right; /* Text ko box ke andar right karne ke liye */
+  width: 50%; /* Ab ye 50% box khud right side shift ho jayega */
+  font-size: 0.8rem;
+  color: grey;
+
+}
+
+
+
+
+
+
+.phase6Box {
+  width: 320px;
+  height: 398px;
+    /* Image ko text ke upar lane ke liye reverse column */
+    flex-direction: column-reverse; 
+    padding: 30px 0; /* Mobile par thoda extra space */
+    text-align: center; /* Sab kuch center align karne ke liye */
+  }
+
+  .phase6Box_img {
+    width: 100%; /* Full width mobile par */
+    justify-content: center; /* Image center mein dikhegi */
+    margin-bottom: 20px; /* Text se thoda gap */
+  }
+
+  .phase6Box_img img {
+    width: 80%; /* Mobile par image thodi badi dikhegi */
+    height: auto;
+  }
+
+  .phase6Box_text {
+    width: 90%; /* Text ko thodi breathing space di */
+    padding-left: 0; /* Padding reset ki kyunki ab center align hai */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Button ko bhi center karne ke liye */
+  }
+
+  .phase6Box_text h1 {
+    font-size: 1.5rem; /* Mobile ke liye heading thodi choti */
+    padding-bottom: 20px;
+  }
+
+
+
+
+
+ .phase6Box_img {
+    width: 100% !important; 
+    display: flex;
+    justify-content: center;
+    margin: 0; 
+  }
+
+  .phase6Img_Desktop {
+    display: none !important;
+  }
+
+  .phase6Img_Mobile {
+    display: block !important;
+    width: 100% !important; /* Ab ye poori width lega */
+    height: auto;
+    object-fit: cover; /* Agar image ko stretch hone se bachana hai */
+  }
+  
+  /* 2. Box ka padding bhi check karein */
+  .phase6Box {
+    flex-direction: column-reverse;
+    padding: 0; /* Agar aapko edge-to-edge image chahiye */
+  }
+}
+
+.pahse5Seaction3Head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: #0ea5a5; */
+}
+.pahse5Seaction3_Text{
+  text-align: center;
+  /* background-color: #333; */
+}
+
+

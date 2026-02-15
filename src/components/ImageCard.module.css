@@ -29,12 +29,12 @@
   object-fit: contain;
   z-index: 2;
   transition: transform 0.5s ease-in-out;
-  pointer-events: none; /* Mouse hamesha parent ko detect karega */
+  /* pointer-events: none; */
 }
 
 /* Hover Effects */
 .image:hover .backImage {
-  transform: rotate(-180deg) scale(1.1) ; 
+  transform: rotate(-180deg) scale(1.1) !important; 
   border-radius: 50%; 
  
 }

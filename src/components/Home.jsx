@@ -87,7 +87,7 @@ const Home = () => {
   borderRadius: "50px",
   display: "inline-block",
   overflow: "hidden",
-  minWidth: "200px", // CamelCase aur quotes use karein
+  minWidth: "200px", 
 }}
             >
               <AnimatedButton

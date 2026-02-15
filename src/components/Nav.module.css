@@ -1,5 +1,5 @@
 .Navmain{
-    height: 70px;
+    height: 90px;
     background-color: white;
     display: flex;
     align-items: center;
@@ -11,8 +11,6 @@
     z-index: 10;
 
 }
-
-
 .button{
     background-color: rgb(222, 148, 51);
     width: 200px;
@@ -26,7 +24,9 @@
 }
 
 .Navmain img{
-    width: 20%;
+    /* width: 30%; */
+    width: 300px;
+    height: 59px;
 }
 
 .button {

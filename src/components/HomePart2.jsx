@@ -27,6 +27,7 @@ import input from "../assets/Frame 1707335232.png";
 import input_secImg1 from "../assets/Group 8.png";
 import input_secImg2 from "../assets/Group 9 (1).png";
 import phase6img from "../assets/Ellipse 16.png";
+import phase6img2 from "../assets/Ellipse 16 (1).png";
 import circle1 from "../assets/circle1.png";
 import circle2 from "../assets/circle2.png";
 import multiImgPhone from "../assets/result.png"
@@ -46,9 +47,6 @@ const HomePart2 = () => {
   return (
     <div className={styles.HomePart2_main}>
       <div className={styles.phase1}>
-
-
-
         <div className={styles.pahse3Main}>
           <div className={styles.phase1_mainTextArea}>
             <div className={styles.phase1_textarea1}>
@@ -403,7 +401,7 @@ const HomePart2 = () => {
             <img src={input_secImg2} alt="" />
           </div>
 
-          <center>
+          <div className={styles.pahse5Seaction3Head}>
             {" "}
             <div className={styles.pahse5Seaction3_Text}>
               <span>CONSULT US</span>
@@ -415,7 +413,7 @@ const HomePart2 = () => {
                 save time, <br /> money,and prevent unnecessary procedures
               </p>
             </div>
-          </center>
+          </div>
           <center>
             {" "}
             <div className={styles.pahse5Seaction3_input}>
@@ -453,7 +451,11 @@ const HomePart2 = () => {
             />
           </div>
           <div className={styles.phase6Box_img}>
-            <img src={phase6img} alt="" />
+            {/* <img src={phase6img} alt=""  />  */}
+            <img src={phase6img} alt="Laptop View" className={styles.phase6Img_Desktop} />
+  
+  {/* Yeh image sirf mobile par dikhegi */}
+  <img src={phase6img2} alt="Mobile View" className={styles.phase6Img_Mobile} />
           </div>
         </div>
       </div>

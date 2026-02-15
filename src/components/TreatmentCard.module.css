@@ -18,7 +18,8 @@
 }  
 
 .card {
-  background-color: white;
+  /* background-color: white; */
+  background-image: url("../assets/card.png");
   position: relative;
   width: 280px;
   height: 380px;

@@ -1,7 +1,7 @@
 .phase1 {
   width: 100%;
   min-height: 70vh;
-  background-image: url("https://www.shutterstock.com/image-photo/tablet-woman-doctor-telehealth-healthcare-600nw-2495919269.jpg");
+  background-image: url("../assets/cover.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -129,7 +129,7 @@
   width: 30%;
   padding: 40px;
   border-radius: 20px;
-  z-index: 11;
+  z-index: 1;
   background: linear-gradient(135deg, #dbe7e7, #e9d8c6);
 
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
