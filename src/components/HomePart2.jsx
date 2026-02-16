@@ -31,6 +31,8 @@ import phase6img2 from "../assets/Ellipse 16 (1).png";
 import circle1 from "../assets/circle1.png";
 import circle2 from "../assets/circle2.png";
 import multiImgPhone from "../assets/result.png"
+import skinimg from "../assets/girlSkin.png"
+import washimg from "../assets/wash.png" 
 
 const HomePart2 = () => {
   const images = [phase31, phase32];
@@ -58,18 +60,13 @@ const HomePart2 = () => {
              <div className={styles.imageArea}>
             <div className={styles.imagePart1}>
               <div className={styles.CircleText}>
-                {/* <Circle   firstLine="At" 
-        highlight1="Dinaaz" 
-        secondLine=" we start with medical understanding," 
-        highlight2="not assumptions."
-        /> */}
                 <img src={circle1} alt="" />
               </div>
               <div className={styles.img1}>
                 <ImageCard
                   backImg={backImg}
                   frontImg={img1}
-                  text="Ye doosri image ka description hai"
+                  text=" salon treatments with no diagnosis"
                 />
               </div>
             </div>
@@ -78,14 +75,14 @@ const HomePart2 = () => {
                 <ImageCard
                   backImg={backImg}
                   frontImg={img2}
-                  text="Ye doosri image ka description hai"
+                  text=" Expensive procedures without understanding the root cause"
                 />
               </div>
               <div className={styles.img3}>
                 <ImageCard
                   backImg={backImg}
                   frontImg={img3}
-                  text="Ye doosri image ka description hai"
+                  text="One-size-fits-all packages "
                 />
               </div>
             </div>
@@ -123,11 +120,6 @@ const HomePart2 = () => {
       <div className={styles.phase2}>
         <div className={styles.phase2_head}>
           <div className={styles.phase2_circle}>
-            {/* <Circle   firstLine="skin & Hair" 
-        highlight1="Treatment is medical , " 
-        secondLine=" Not cosmetic" 
-        highlight2=""
-        /> */}
             <img src={circle2} alt="" />
           </div>
 
@@ -176,7 +168,7 @@ const HomePart2 = () => {
         <div className={styles.phase3section1}>
           <p>TESTIMONIALS</p>
           <h1>
-            What Our Patients Say <br /> About Our Services
+            What Our Patients Say About Our Services
           </h1>
         </div>
 
@@ -221,7 +213,10 @@ const HomePart2 = () => {
                   <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
                 </svg>
               </div>
-
+                  <div className={styles.reviewItemText}>
+                                  <h4>Sandeep IV</h4>
+                                  <p>4.9 ⭐ | 26/12/2025</p>
+                                </div>
               <div className={styles.arrows}>
                 <button className={styles.arrow}>
                   <svg
@@ -314,30 +309,30 @@ const HomePart2 = () => {
             />
 
             <TreatmentCard
-              icon={hairIcon}
-              title1="Hair"
+              icon={skinimg}
+              title1="Skin"
               title2="Treatment"
               listItems={[
-                "Hair loss diagnosis & treatment",
-                "PRP therapy",
-                "Hair restoration solutions",
-                "Scalp & trichology care",
+                "Acne & acne scar treatment",
+                "Pigmentation & melasma",
+                "Medical skin conditions (eczema, psoriasis)",
+                "Anti-aging & skin rejuvenation",
               ]}
             />
 
             <TreatmentCard
-              icon={hairIcon}
-              title1="Hair"
-              title2="Treatment"
+              icon={washimg}
+              title1="Aesthetic"
+              title2="Dermatology"
               listItems={[
-                "Hair loss diagnosis & treatment",
-                "PRP therapy",
-                "Hair restoration solutions",
-                "Scalp & trichology care",
+                "Botox & fillers (medically guided)",
+                "Non-surgical facial enhancements",
+                "Skin tightening & rejuvenation",
+               
               ]}
             />
 
-            <TreatmentCard
+            {/* <TreatmentCard
               icon={hairIcon}
               title1="Hair"
               title2="Treatment"
@@ -347,7 +342,7 @@ const HomePart2 = () => {
                 "Hair restoration solutions",
                 "Scalp & trichology care",
               ]}
-            />
+            /> */}
           </div>
         </div>
       </div>
@@ -361,7 +356,7 @@ const HomePart2 = () => {
         <div className={styles.phase5TextArea}>
           <div className={styles.phase5Text}>
             <p>OUR PROCESS</p>
-            <h1>What to Expext at Dinaaz </h1>
+            <h1>What to Expext At  Dinaaz </h1>
           </div>
         </div>
 

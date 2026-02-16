@@ -12,8 +12,8 @@ const Callus = () => {
     backgroundColor: isHovered ? hoverBg : defaultBg,
     color: "#ffffff",
     padding: "0 12px",
-    minWidth: "110px",
-    height: "38px",
+    minWidth: "174px",
+    height: "48px",
     display: "flex",
     alignItems: "center",      // Fix: 'align-items' nahi 'alignItems' hoga
     justifyContent: "center",   // Fix: 'justify-content' nahi 'justifyContent' hoga
@@ -35,7 +35,7 @@ const Callus = () => {
         <span style={{ fontSize: "0.85rem", fontWeight: "600" }}>Call Us</span>
         
         <div className={styles.arrowBox}>
-          {/* SVG fill white rakha hai taaki contrast achha dikhe */}
+
           <svg className={styles.arrow} viewBox="0 0 16 16" style={{ fill: "white", width: "14px", height: "14px" }}>
             <path fillRule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
           </svg>

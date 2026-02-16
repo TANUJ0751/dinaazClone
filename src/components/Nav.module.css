@@ -1,5 +1,5 @@
 .Navmain{
-    height: 90px;
+    height: 80px;
     background-color: white;
     display: flex;
     align-items: center;
@@ -23,11 +23,23 @@
   
 }
 
-.Navmain img{
-    /* width: 30%; */
+.logo2 {
+    display: none; /* Pehle dusra logo chhupa rahe hain */
+
+   
+}
+
+.logo1 {
+    display: block;
     width: 300px;
     height: 59px;
 }
+
+/* .logo1{
+    
+    width: 300px;
+    height: 59px;
+} */
 
 .button {
     gap: 8px;
@@ -75,11 +87,12 @@
     display: none;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
 
     .Navmain{
         padding-left: 1%;
-
+        /* background-color: antiquewhite; */
+        height: 80px;
         gap: 20%;
     }
     .mobileOnly {
@@ -89,14 +102,23 @@
         display: block !important; 
     }
     
-    .Navmain img {
-        width: 150px; 
+    .logo1 {
+      display: block !important;
+        width: clamp(245px, 30vw, 300px) !important; 
+        height: auto !important;
     }
 }
 
 
 
-@media screen and (max-width: 600px) {
+
+@media screen and (min-width: 250px) and (max-width: 600px) {
+    .Navmain{
+       /* width: calc(360px - 10%); */
+       /* padding: 5%; */
+       height: 80px;
+       /* background-color: aqua; */
+    }
 
     .desktopOnly {
         display: none !important;
@@ -116,5 +138,21 @@
     .mobileOnly .arrowBox {
         width: 14px;
         height: 14px;
+    }
+   .logo1 {
+        display: none !important; /* Pehla logo gayab */
+    }
+
+    .logo2 {
+        display: block !important; 
+        width: 48px !important; 
+        height: 48px;
+    }
+
+    .desktopOnly { display: none !important; }
+    .mobileOnly { display: block !important; }
+
+    .navLogo{
+      
     }
 }

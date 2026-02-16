@@ -3,7 +3,7 @@ background-color: white;
     
    position: relative; 
     min-height: 150vh;
-    padding-bottom: 10vh;
+    /* padding-bottom: 10vh; */
 
 }
 
@@ -17,6 +17,7 @@ background-color: white;
     padding-bottom:30vw ;
     /* background-color: rgb(216, 235, 237); */
     background-image: url("../assets/Frame\ 1707335215.png");
+    overflow: hidden;
 
 
 }
@@ -100,7 +101,7 @@ background-color: white;
     right: 25vw;
     top: 45vw;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   .pahse3Main {
     display: flex;
     flex-direction: row; 
@@ -127,8 +128,8 @@ background-color: white;
  
 
   .CircleText {
-    right: 35vw; 
-    top: 20vw;
+    right: 30vw; 
+    top: 35vw;
   }
 
   .CircleText img {
@@ -137,22 +138,28 @@ background-color: white;
 
   .img1 {
     right: 7vw; 
-    top: 12vw;
+    top: 26vw;
   }
 
   .img2 {
     right: 55vw;
-    top: 50vw;
+    /* top: clamp(65vw, 10vw, 10vw); */
+    top: 65vw;
   }
 
   .img3 {
     right: 15vw;  
-    top: 55vw;
+    top: 75vw;
   }
 
 
   .phase1 {
     padding-bottom: 40vw; 
+  }
+  .startImg{
+    top: 10vw ;
+    height: 100vw;
+    width: 100vw;
   }
 }
 
@@ -173,6 +180,7 @@ background-color: white;
     /* background-color: rgb(216, 235, 237); */
     background-image: url("../assets/Frame\ 1707335215.png");
     padding-bottom: 10vh;
+    /* overflow: hidden; */
 
 }
 .phase2_head{
@@ -225,7 +233,7 @@ background-color: white;
 }
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   .phase2 {
     padding-left: 4%;
     padding-right: 4%;
@@ -339,7 +347,7 @@ background-color: white;
 
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
  
   .right {
     display: none !important;
@@ -374,7 +382,7 @@ background-color: white;
 }
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   
  
 
@@ -387,6 +395,7 @@ background-color: white;
     display: flex;
     justify-content: space-between; 
     gap: 2px;
+    margin-right: 2%;
   }
 
   
@@ -395,22 +404,30 @@ background-color: white;
   min-width: 26vw; 
 }
 
+
+
+
 .phase5Text {
   display: flex;
   flex-direction: column;
   align-items: flex-end; 
   width: 85%; 
+  /* background-color: #0ea5a5; */
   
 }
 
 .phase5TextArea {
   margin-left: auto;   
   position: relative;  
+  
+  bottom: 3vh;
+  
 }
 
 .phase5Text h1 {
   font-size: 2.3rem !important;
   line-height: 1.2;
+
 }
 
 
@@ -419,7 +436,7 @@ background-color: white;
 }
 .pahse5Seaction1_img {
   position: relative;
-  right: 9%;
+  right: 4%;
    background-color: #333;
    border: 20px solid white;
    transform: rotate(-8deg);
@@ -436,11 +453,11 @@ background-color: white;
  
 .phase5Circle{
   /* position: absolute; */
-  top: 42vw !important;
-  left: -2% !important;
+  top: 53vw !important;
+  left: -6% !important;
   z-index: 2;
   opacity: 0.6;
-   transform: rotate(180deg);
+  transform: rotate(180deg);
   
 }
 .pahse5Seaction1_button{
@@ -513,10 +530,31 @@ background-color: white;
 }
 
 .text {
+  /* width: 590px; */
+  flex-wrap: wrap;
   font-size: 15px;
   line-height: 1.6;
   color: #333;
   text-align: left;
+}
+
+
+.reviewItemText {
+  display: none;
+  min-width: 130px;
+  padding: 3px;
+  overflow: visible;
+  text-align: left;
+  /* margin-bottom: 2vh; */
+  position: relative;
+  bottom: 4vh;
+}
+.reviewItemText p{
+  color: gray;
+}
+
+.reviewItemText h4{
+  font-size: 1rem ;
 }
 
 .arrows {
@@ -644,12 +682,13 @@ background-color: white;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  width: 100%;
+  width: calc(100% - 40px);
   overflow: hidden;
   background-color: rgb(218, 238, 240);
   padding-top: 70px;
   font-family: "Poppins", "Montserrat", Arial, sans-serif;
   padding-bottom: 60px;
+  padding-right: 40px;
   /* padding-bottom: 5vw; */
   
 }
@@ -675,9 +714,9 @@ background-color: white;
 .phase4Card{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-direction: row;
-  gap: 3%;
+  gap: 5%;
 }
 
 .phase5{
@@ -694,8 +733,8 @@ background-color: white;
 }
 .phase5Circle{
   position: absolute;
-  top: 2px;
-  left: 8%;
+  top: 3vw;
+  left: 9vw;
 }
 
 .phase5TextArea{
@@ -703,7 +742,9 @@ background-color: white;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
 }
+
 
 .phase5TextArea p{
     font-size: 0.8rem;
@@ -713,7 +754,7 @@ background-color: white;
   padding-bottom: 5px;
 }
 .phase5TextArea h1{
-  font-size: 2.9rem;
+  font-size: 2.6rem;
  
 
 }
@@ -821,7 +862,7 @@ background-color: white;
   align-items: center;
   justify-content: center;
   width: 100%;
-
+  
   background: linear-gradient(to bottom, #ffffff 50%, #faeed6 50%);
 }
 
@@ -830,6 +871,8 @@ background-color: white;
   background-size: cover; 
   overflow: hidden;
   border-radius: 30px;
+  /* max-height:290px ; */
+  height: 300px;
   width: 90%;
   max-width: 1200px;
   display: flex;
@@ -876,7 +919,7 @@ display: block;
 
 
 
-@media (max-width: 786px){
+@media screen and (min-width: 250px) and (max-width: 600px){
   .phase1_textarea1{
     width: 80vw;
     /* background-color: #333; */
@@ -884,48 +927,56 @@ display: block;
   }
   .phase1_textarea1 p{
     width: 100%;
-      font-size: 1rem;
+      font-size: 0.7rem;
+      font-weight: 700;
   }
   .phase1_textarea1 h1{
  width: 100%;
-      font-size: 2.4rem;
+   font-size: 1.8rem;
   }
+
+
   .CircleText{
     position: absolute;
-    top: 4vw;
-    right: 30vw;
+    top: 1vh;
+    /* right: 30vw; */
+    left: 3vw;
 
   }
   .CircleText img{
-    width: 150px;
-    height: 150px;
+    width: 128px;
+    height: 128px;
   }
 
   .startImg{
     top: 30vh;
     right: 5vw;
-    width: 100% ;
+    width: 50vh ;
+    height: 50vh;
   }
 
   .img1{
     position: absolute;
-    right: 3vw;
-    top: 5vw;
+    right: 2vw;
+    top: -1vw;
 
   }
   .img2{
     position: absolute;
-    right: 50vw;
+    /* right: 50vw; */
+    top: 27vh;
+    left: 2vh;
   }
   .img3{
   position: absolute;
-  right: 10vw;
+  right: 3vw;
+  top: 32vh;
   }
 
   .phase1_textarea2{
     /* position: absolute; */
     bottom: 0px;
-    padding-top: 80vh;
+    padding-top: 60vh;
     width: 100%;
   }
   .imageArea{
@@ -934,12 +985,12 @@ display: block;
   
   /* ------------------------------------------------------- */
 .phase2_circle img{
-  width: 150px;
-  height: 150px;
+  width: 127px;
+  height: 122px;
 }
 .phase2_circle{
-  left: 5%;
-  top: 4vw;
+  left: 12%;
+  top: 12vh;
 }
 .phase2text{
   /* background-color: hsl(0, 0%, 20%); */
@@ -969,8 +1020,16 @@ letter-spacing: 1px;
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 250px) and (max-width: 600px) {
 
+
+  .reviewItemText{
+    display: block;
+  }
+
+   .phase3section1{
+    width: 320px;
+   }
   .phase3section1 h1{
     font-size: 2rem;
   }
@@ -978,9 +1037,12 @@ letter-spacing: 1px;
   /* Right side ki image section ko hide kar do */
   .right {
     display: none !important;
+  
   }
+
   .left{
-    right: 30%;
+    right: 45%;
+    transform: rotate(8deg);
   }
 
   /* Container ko column mein change karein taaki text center mein rahe */
@@ -992,15 +1054,28 @@ letter-spacing: 1px;
   }
 
   /* Left aur Center ko 100% width dein */
-  .left, .center {
+  .left {
     width: 50% !important;
     text-align: center;
+  }
+  .center{
+      width: 198px !important;
+      /* background-color: #333; */
+      /* font-size: 0.2rem !important; */
+  }
+
+  .center p{
+    font-size: 0.8rem;
   }
 
   /* Quote icons ko thoda chota karein mobile ke liye */
   .quoteTop svg, .quoteBottom svg {
     width: 60px;
     height: 40px;
+  }
+  .quoteBottom{
+    position: relative;
+    bottom: 3vh;
   }
 
   .text {
@@ -1011,6 +1086,7 @@ letter-spacing: 1px;
 
 .phase3section3{
   padding-bottom: 5vh;
+  padding-top: 3vh;
 }
 
   
@@ -1032,12 +1108,48 @@ letter-spacing: 1px;
 
 
 
+
+
+
+
+
+
+  .phase4{
+      padding-right: 0px !important;
+      width: calc(100% - 0px) !important;
+  }
+
  .phase4Card {
+        /* display: flex;
+        overflow-y: scroll;
+        width: 200%;
+        animation: slideContinuous 10s linear infinite;  */
+
+
         display: flex;
-        width: 400%;
-        animation: slideContinuous 10s linear infinite;
+    flex-direction: row;
+    /* Animation hatayein agar cards gayab ho rahe hain */
+    animation: none !important; 
+    /* Horizontal scrolling allow karein */
+    overflow-x: auto; 
+    overflow-y: hidden;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    /* Scrollbar hide karne ke liye */
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    scroll-snap-type: x mandatory; /* Cards ko snap karne ke liye */
     }
 
+     .phase4Card::-webkit-scrollbar {
+    display: none;
+  }
+
+  .phase4Card > div {
+    flex: 0 0 200px; 
+    scroll-snap-align: center;
+  }
     .cardWrapper {
         flex: 0 0 25%; 
         width: 100vw;
@@ -1058,6 +1170,11 @@ letter-spacing: 1px;
 
 
 
+
+
+
+
+
 .phase5{
   overflow: hidden;
 }
@@ -1072,17 +1189,21 @@ letter-spacing: 1px;
 
 }
 .phase5Circle{
-  top: 32vw;
+  top: 40vw;
+  left: -7vw;
   z-index: 2;
   opacity: 0.8;
-  transform: rotate(180deg);
+  transform: rotate(-210deg);
 }
 .phase5TextArea{
   width: 320px;
   height: 95px;
+  position: relative;
+  bottom: 2vh;
 }
 .phase5Text{
-  padding-left: 5%;
+  padding-left: 5%; 
+
 
 }
 .phase5Text h1{

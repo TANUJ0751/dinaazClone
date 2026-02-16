@@ -78,8 +78,8 @@ const Home = () => {
 
           <div className={sty_home.section3}>
             <p>
-              Patients trust Dinaaz because medical decisions are always made by
-              a qualified dermatologist, not consultants or sales staff.
+              Patients <b> trust Dinaaz </b> because  <b> medical decisions are always made by
+              a  qualified dermatologist </b> , not consultants or sales staff.
             </p>
             <div
              style={{

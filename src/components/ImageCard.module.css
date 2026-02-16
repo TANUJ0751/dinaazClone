@@ -2,13 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 200px;
+  /* width: 200px; */
+  width: 218px;
+  min-height: 255px;
+  /* background-color: aquamarine; */
 }
 
 .image {
   position: relative;
-  width: 200px; 
-  height: 200px;
+  width: 218px; 
+  height: 207px;
   cursor: pointer;
 }
 
@@ -47,18 +50,22 @@
   margin-top: 15px;
   text-align: center;
   font-size: 14px;
+  color: gray;
+    font-family: "Poppins", "Montserrat", Arial, sans-serif;
+
 }
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   /* 1. Main Container ka size chota kiya */
   .imageBox {
-    width: 150px; /* Desktop par 200px tha */
+    width: 168px;
+    min-height: 180px; 
   }
 
   /* 2. Image area ka size chota kiya */
   .image {
-    width: 150px; 
+    width: 148px; 
     height: 150px;
   }
 
@@ -76,10 +83,10 @@
 }
 
 
-@media (max-width: 786px) {
+@media screen and (min-width: 250px) and (max-width: 600px) {
   /* 1. Main Container ka size chota kiya */
   .imageBox {
-    width: 100px; /* Desktop par 200px tha */
+    width: 131px; /* Desktop par 200px tha */
   }
 
   /* 2. Image area ka size chota kiya */
@@ -96,7 +103,7 @@
 
   /* 4. Description text ka size */
   .description {
-    font-size: 0.8rem; /* Thoda chhota font takki proportionate lage */
+    font-size: 0.7rem; /* Thoda chhota font takki proportionate lage */
     margin-top: 10px;
   }
 }

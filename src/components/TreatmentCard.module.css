@@ -20,8 +20,11 @@
 .card {
   /* background-color: white; */
   background-image: url("../assets/card.png");
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
-  width: 280px;
+  width: 300px;
   height: 380px;
   border-radius: 15px;
   overflow: hidden;
@@ -50,13 +53,13 @@
 .top_part img {
   width: 80px;
   height: 80px;
-  transition: all 0.4s ease-out;  /* सिर्फ ये add */
+  transition: all 0.4s ease-out; 
 }
 
 .top_part h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Poppins", "Montserrat", Arial, sans-serif;
-  transition: font-size 0.3s ease;  /* सिर्फ ये add */
+  transition: font-size 0.3s ease; 
 }
 
 .button {
@@ -99,18 +102,23 @@
   flex-direction: column;
   padding-left: 10%;
   font-size: small;
-  color: gray;
-  line-height: 20px;
+  color: transparent;
+  line-height: 25px;
   transition: color 0.3s ease;  /* सिर्फ ये add */
 }
 
-/* आपके existing hover rules same रहेंगे */
+
 .card:hover .bottom {
   bottom: 0vh;
+    
+}
+.card:hover .bottom ul {
+  color: gray;
+    
 }
 
 .card:hover .top {
-  background: linear-gradient(to right, #f3e5d8, #d3e9eb);
+  background: linear-gradient(to right,  #d3e9eb , #f3e5d8);
 }
 
 .card:hover .top_part {
@@ -128,4 +136,134 @@
 
 .card:hover .top_part h2 {
   font-size: 1.2rem;
+}
+
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  /* 1. Card ka size thoda kam karein taaki side-by-side fit ho sakein */
+  .card {
+    width: 210px; 
+    height: 420px;
+    /* margin: 15px auto; */
+  }
+
+  /* 2. Top section ki height adjust karein */
+  .top {
+    height: 18vh;
+    top: -0.5vh;
+  }
+
+  /* 3. Bottom panel ki position aur height */
+  .bottom {
+    height: 45vh;
+    bottom: -33vh; /* Tablet screen height ke hisaab se adjustment */
+  }
+
+  /* 4. Text aur Image sizes */
+  .top_part img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .top_part h2 {
+    font-size: 1.15rem;
+  }
+
+  /* 5. List items ka gap aur size */
+  .bottom ul {
+    padding-left: 12%;
+    line-height: 22px;
+    font-size: 0.85rem;
+  }
+
+  /* 6. Arrow button position */
+  .arrow {
+    width: 38px;
+    height: 38px;
+    right: 8%;
+    bottom: 4vh;
+  }
+
+  /* 7. Hover effect adjustment */
+  .card:hover .top_part {
+    top: 2vh;
+    left: 2%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 200px;  /* Aapki mangi hui width */
+    height: 420px; /* Aapki mangi hui height */
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+    cursor: default; /* Hover indicator hatane ke liye */
+  }
+
+  /* 1. Bottom part ko hamesha upar dikhane ke liye */
+  .bottom {
+    position: absolute;
+    bottom: 0 !important; /* Forcefully hamesha upar rakhega */
+    height: 43vh ; /* Card ka 60% hissa cover karega */
+    background: linear-gradient(to right, #f3e5d8, #d3e9eb);
+    transform: rotate(-1deg); /* Tilt hatane se mobile par saaf dikhta hai */
+    transition: none; /* No animations needed on mobile */
+  }
+
+  /* 2. List items ko hamesha visible rakhne ke liye */
+  .bottom ul {
+    color: gray !important; /* Force visibility */
+    padding-left: 10%;
+    font-size: 0.8rem;
+    line-height: 20px;
+    display: block;
+    margin-top: 10px;
+  }
+
+  /* 3. Top part ko fixed rakhne ke liye */
+  .top {
+    min-height: 5vh;
+    transform: rotate(-2deg); /* Mobile par clean look */
+    top: 0;
+    background: linear-gradient(to right, #d3e9eb, #f3e5d8);
+  }
+
+  .top_part {
+    top: 10px !important;
+    left: 5% !important;
+    padding: 0;
+  }
+
+  .top_part img {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .top_part h2 {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+
+  /* 4. Arrow ko remove ya reposition karna */
+  .arrow {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  /* 5. Sabhi hover effects ko disable karna */
+  .card:hover .bottom, 
+  .card:hover .top, 
+  .card:hover .top_part, 
+  .card:hover .top_part img {
+    all: unset; /* Mobile par hover hone par kuch nahi badlega */
+    /* Reset properties taaki static rahe */
+    width: inherit;
+    height: inherit;
+    position: absolute;
+  }
 }

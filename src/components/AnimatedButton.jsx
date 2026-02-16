@@ -3,7 +3,7 @@ import BookingForm from "./BookingForm";
 import styles from "./AnimatedButton.module.css";
 
 
-const AnimatedButton = ({ bgColor, textColor, hoverBg, hoverText }) => {
+const AnimatedButton = ({ bgColor, textColor, hoverBg, hoverText , fontSize  }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -18,6 +18,8 @@ const AnimatedButton = ({ bgColor, textColor, hoverBg, hoverText }) => {
   const buttonStyle = {
     backgroundColor: isHovered ? finalHoverBg : defaultBg,
     color: isHovered ? finalHoverText : defaultText,
+
+    fontSize: fontSize || "clamp(13px, 2vw, 15px)",
     
   };
 
