@@ -28,7 +28,6 @@ const Steps = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
 
   const handleClick = () => {
-    // Agar pehle se animated nahi hai, tabhi state badle
     if (!hasAnimated) {
       setHasAnimated(true);
     }
@@ -42,7 +41,7 @@ const Steps = () => {
           className={`${styles.step} ${hasAnimated ? styles.animate : ""}`}
           style={{ "--i": index }}
         >
-          {/* Vertical Line Container */}
+        
           {index !== stepsData.length - 1 && (
             <div className={styles.line_container}>
                <div className={styles.line_bg}></div> {/* Grey Line */}

@@ -1,6 +1,10 @@
 .button {
   background-color: rgb(222, 148, 51);
-  padding: 10px 22px;
+  /* padding: 10px 22px; */
+  padding-left: 52px;
+  padding-top:12px ;
+  padding-bottom: 12px;
+  padding-right: 40px;
   border-radius: 50px;
   color: white;
   display: inline-flex;

@@ -133,22 +133,22 @@ const HomePart2 = () => {
           <MedicalCard
             title="Ethical Medical Advice"
             description="Sometimes, the right decision is not to treat, and we’re honest about that."
-            img={cardImg1} // Yahan aapka imported asset jayega
+            img={cardImg1} 
           />
           <MedicalCard
             title="Ethical Medical Advice"
             description="Sometimes, the right decision is not to treat, and we’re honest about that."
-            img={cardImg2} // Yahan aapka imported asset jayega
+            img={cardImg2} 
           />
           <MedicalCard
             title="Ethical Medical Advice"
             description="Sometimes, the right decision is not to treat, and we’re honest about that."
-            img={cardImg3} // Yahan aapka imported asset jayega
+            img={cardImg3}
           />
           <MedicalCard
             title="Ethical Medical Advice"
             description="Sometimes, the right decision is not to treat, and we’re honest about that."
-            img={cardImg4} // Yahan aapka imported asset jayega
+            img={cardImg4} 
           />
         </div>
 
@@ -331,18 +331,6 @@ const HomePart2 = () => {
                
               ]}
             />
-
-            {/* <TreatmentCard
-              icon={hairIcon}
-              title1="Hair"
-              title2="Treatment"
-              listItems={[
-                "Hair loss diagnosis & treatment",
-                "PRP therapy",
-                "Hair restoration solutions",
-                "Scalp & trichology care",
-              ]}
-            /> */}
           </div>
         </div>
       </div>
@@ -449,7 +437,7 @@ const HomePart2 = () => {
             {/* <img src={phase6img} alt=""  />  */}
             <img src={phase6img} alt="Laptop View" className={styles.phase6Img_Desktop} />
   
-  {/* Yeh image sirf mobile par dikhegi */}
+ 
   <img src={phase6img2} alt="Mobile View" className={styles.phase6Img_Mobile} />
           </div>
         </div>

@@ -1,12 +1,14 @@
 .wrapper {
   margin-top: 60px;
-  background-color: #007a7a; /* Teal Background */
+  /* background-color: #007a7a;  */
+  background-image: url("../assets/bluebackground.png");
   padding: 25px 20px;
   color: white;
   display: flex;
   justify-content: center;
   font-family: 'Poppins', sans-serif;
   position: relative;
+  /* width: 100%; */
 }
 
 .container {
@@ -24,31 +26,44 @@
     width: 50%;
 }
 .subheading {
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 2px;
   opacity: 1;
   display: block;
   margin-bottom: 10px;
+   font-family: 'Inter', sans-serif;
 }
 
 .heading {
-  font-size: 2.7rem;
+font-family: 'Inter', sans-serif;
+/* font-size: 2.7rem; */
+font-size: 56px;
   line-height: 1.2;
   margin-bottom: 10px;
   font-weight: 600;
 }
 
+.head{
+font-family: 'Inter', sans-serif;
+
+}
 .description, .footerText {
-  font-size: 12px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 24px;
   margin-bottom: 20px;
   opacity: 0.9;
+  font-family: 'Instrument Sans', sans-serif;
 }
+
 
 .pointsList {
   list-style: none;
   padding: 0;
   margin-bottom: 10px;
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 16px;
+    font-weight: 700;
+  font-style: italic;
 }
 
 .pointsList li {
@@ -81,14 +96,6 @@
     transform: rotate(-3deg);
 }
 
-/* .photoFrame {
-  background: white;
-  
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-  padding: 10px;
-  width: 90%;
-  overflow: hidden;
-} */
 
 .actualImage {
   width: 90%;
@@ -99,50 +106,51 @@
 
 
 
-/* Mobile Responsive */
-/* Mobile Responsive Logic */
+
 
 @media (max-width: 600px) {
   .container {
-    /* Image ko upar lane ke liye reverse column use kiya */
     flex-direction: column-reverse; 
     gap: 30px;
-    text-align: left; /* Content left aligned rahega */
+    text-align: left; 
     padding: 20px 0;
   }
 
   .contentCol, .imageCol {
-    width: 100%; /* Mobile par full width */
+    width: 100%; 
   }
-
+  .imageCol{
+    position: relative;
+    top: 2%;
+  }
   
   .heading {
-    font-size: 2rem; 
+  
+    font-size: 32px;
     text-align: right; 
     position: absolute;
     top: calc(2% + 17px);
     text-align: right;
-    /* background-color: antiquewhite; */
-    /* width: calc(100% - 25px); */
     height: 78px;
-    /* width: 313px; */
-    width: 50%;
+    width: 70%;
     
   }
   .head{
     display: flex;
     align-items: center;
     justify-content: end;
+    /* padding-bottom: 60%; */
   }
 
   .subheading {
-    text-align: right; /* ABOUT US text bhi right side */
+    text-align: right; 
     position: absolute;
     top: 2%;
     text-align: right;
     /* background-color: antiquewhite; */
     width: calc(100% - 25px);
     height: 17px;
+    font-size: 12px;
   }
 
   .actualImage {
@@ -158,13 +166,26 @@
     
   }
 
-  /* Hover effect ko mobile par disable ya subtle kar sakte hain */
   .wrapper:hover .imageCol {
     transform: none; 
   }
 
   .pointsList li {
-    font-size: 12px; /* Padhne mein asani ke liye thoda bada */
+    font-size: 12px;
     line-height: 15px;
   }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px){
+ .subheading{
+  font-size:12px ;
+ }
+  
+ .heading{
+  font-size: 40px;
+ }
+.description , .pointsList , .footerText{
+  font-size: 14px;
+}
+
 }

@@ -36,23 +36,32 @@ background-color: white;
 
 }
 .phase1_textarea1{
-    width: 50%;
+    width: 60%;
     font-weight: 900;
     padding-bottom: 5vh;
+    font-family: 'Inter', sans-serif;
+
 }
 .phase1_textarea1 p{
     color: rgb(21, 144, 153);
-    font-size: 1.2rem;
-    font-weight: 300;
-     font-family: "Poppins", "Montserrat", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+     /* font-family: "Poppins", "Montserrat", Arial, sans-serif; */
      padding-bottom: 2vh;
+     line-height: 145%;
+     letter-spacing: 16%;
+
 }
 .phase1_textarea1 h1{
-    font-size: 3rem;
-     font-family: "Poppins", "Montserrat", Arial, sans-serif;
+    font-size: 56px;
+    /* background-color: seashell; */
+     /* font-family: "Poppins", "Montserrat", Arial, sans-serif; */
      
 }
 
+.infoSection{
+  font-size: 12px;
+}
 .phase1_textarea2{
     color: rgb(120, 129, 130);
     width: 40%;
@@ -102,6 +111,20 @@ background-color: white;
     top: 45vw;
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
+
+   .pahse5Seaction3_Text h1{
+    font-size: 40px;
+   }
+   .pahse5Seaction3_Text span{
+    font-size: 12px;
+   }
+
+  .phase4TextArea h1{
+    font-size: 40px;
+  } 
+  .phase4TextArea p{
+    font-size: 12px;
+  }
   .pahse3Main {
     display: flex;
     flex-direction: row; 
@@ -114,8 +137,12 @@ background-color: white;
     width: 45%; 
   }
 
+  .phase1_textarea1 p{
+    font-weight: 12px;
+   }
+
   .phase1_textarea1 h1 {
-    font-size: 2.2rem; 
+    font-size: 40px; 
   }
 
   .phase1_textarea2 {
@@ -205,19 +232,26 @@ background-color: white;
 }
 .phase2text{
     text-align: right;
+      font-family: 'Inter', sans-serif;
+
 }
 .phase2text h3{
     color: rgb(21, 144, 153);
-    font-size: 0.9rem;
-    font-weight: 300;
-     font-family: "Poppins", "Montserrat", Arial, sans-serif;
+    /* font-size: 0.9rem; */
+    font-size: 16px;
+    font-weight: 500;
+     /* font-family: "Poppins", "Montserrat", Arial, sans-serif; */
      padding-bottom: 2vh;
+     line-height: 145%;
+     letter-spacing: 16%;
     
 
 }
 .phase2text h1{
-     font-size: 3rem;
-     font-family: "Poppins", "Montserrat", Arial, sans-serif;
+     /* font-size: 3rem; */
+     font-size: 56px;
+     font-weight: 500px;
+     /* font-family: "Poppins", "Montserrat", Arial, sans-serif; */
 }
 
 .phase2ImageSection{
@@ -265,12 +299,12 @@ background-color: white;
   }
 
   .phase2text h1 {
-    font-size: 2.2rem;
+    font-size: 40px;
     line-height: 1.2;
   }
 
   .phase2text h3 {
-    font-size: 0.8rem;
+    font-size: 12px;
   }
 
   /* Image Section (Cards) */
@@ -316,17 +350,22 @@ background-color: white;
 
 .phase3section1{
   padding-left: 5%;
+    font-family: 'Inter', sans-serif;
+
 }
 .phase3section1 p{
-  font-family: "Poppins", "Montserrat", Arial, sans-serif;
-  font-size: 0.8rem;
+  /* font-family: "Poppins", "Montserrat", Arial, sans-serif; */
+  font-size: 16px;
   color: rgb(21, 144, 153);
-  letter-spacing: 0.2em; 
+  font-weight: 500;
+  letter-spacing: 16%;
+  line-height: 145%; 
 }
 .phase3section1 h1{
-  font-family: "Poppins", "Montserrat", Arial, sans-serif;
+  /* font-family: "Poppins", "Montserrat", Arial, sans-serif; */
  /* letter-spacing: 0.2em;  */
- font-size: 3rem;
+ font-size: 56px;
+ font-weight: bold;
 }
 
 
@@ -345,14 +384,32 @@ background-color: white;
 
 }
 
+/* .phase5Text h1{
+  font-size: 56px;
+} */
 
+/* .phase5Text{
+  width: 680px;
+} */
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
- 
+
+  .textArea h1{
+    font-size:40px ;
+  }
+  .textArea p{
+    font-size: 12px;
+  }
   .right {
     display: none !important;
   }
 
+   .phase3section1 p{
+     font-size: 12px;
+   }
+   .phase3section1 h1{
+    font-size: 40px;
+   }
 
   .container {
     display: flex;
@@ -425,8 +482,8 @@ background-color: white;
 }
 
 .phase5Text h1 {
-  font-size: 2.3rem !important;
-  line-height: 1.2;
+  font-size: 40px !important;
+  /* line-height: 1.2; */
 
 }
 
@@ -486,8 +543,8 @@ background-color: white;
 
 .phase6Box_text h1{
  
-   font-size: 1.5rem !important;
-   font-weight: 300;
+   font-size: 24px !important;
+   font-weight: 600;
 }
 
 }
@@ -532,10 +589,11 @@ background-color: white;
 .text {
   /* width: 590px; */
   flex-wrap: wrap;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
   color: #333;
   text-align: left;
+  font-family: 'Manrope', sans-serif;
 }
 
 
@@ -646,19 +704,24 @@ background-color: white;
 
 .textArea{
   text-align: center;
-  font-family: "Poppins", "Montserrat", Arial, sans-serif;
+  /* font-family: "Poppins", "Montserrat", Arial, sans-serif; */
   
+    font-family: 'Inter', sans-serif;
+
 }
 .textArea p{
  
-  font-size: 0.8rem;
+  font-size: 16px;
   color: rgb(21, 144, 153);
-  letter-spacing: 0.2em; 
+  letter-spacing: 16%;
+  line-height: 145%; 
+  font-weight: 500;
 
 }
 
 .textArea h1{
-  font-size: 2.7rem;
+  font-size: 56px;
+  font-weight: bold;
 }
 
 
@@ -698,16 +761,21 @@ background-color: white;
   /* background-color: #0ea5a5; */
   /* padding-left: 6%; */
   padding-bottom: 40px;
+  font-family: 'Inter', sans-serif;
+
 
   
 }
 .phase4TextArea p{
-   font-size: 0.7rem;
+   font-size: 16px;
   color: rgb(21, 144, 153);
-  letter-spacing: 0.2em; 
+  letter-spacing: 16%; 
+  line-height: 145%;
+  font-weight: 500;
 }
 .phase4TextArea h1{
-  font-size: 2.6rem;
+  font-size: 56px;
+  font-weight: bold;
 
 }
 
@@ -733,8 +801,8 @@ background-color: white;
 }
 .phase5Circle{
   position: absolute;
-  top: 3vw;
-  left: 9vw;
+  top: 4vw;
+  left: 7vw;
 }
 
 .phase5TextArea{
@@ -747,15 +815,22 @@ background-color: white;
 
 
 .phase5TextArea p{
-    font-size: 0.8rem;
+    font-size: 16px;
   color: rgb(21, 144, 153);
-  letter-spacing: 0.2em; 
+  letter-spacing: 16%; 
   font-weight: 530;
-  padding-bottom: 5px;
+  line-height: 145%;
+  /* padding-bottom: 5px; */
+  font-weight: 500;
+      font-family: 'Inter', sans-serif;
+
 }
+
 .phase5TextArea h1{
-  font-size: 2.6rem;
- 
+  font-size: 56px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+
 
 }
 
@@ -784,6 +859,7 @@ background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background-color: #0ea5a5; */
   
 }
 .pahse5Seaction2_img{
@@ -794,8 +870,8 @@ background-color: white;
 .pahse5Seaction3{
   padding-top: 50px;
   position: relative;
-  font-family: "Poppins", "Montserrat", Arial, sans-serif;
   overflow: hidden;
+     font-family: 'Inter', sans-serif;
 
 }
 .pahse5Seaction3_Text{
@@ -803,15 +879,16 @@ background-color: white;
 
 .pahse5Seaction3_Text span{
  color: rgb(21, 144, 153);
- font-size:0.8rem ;
- word-spacing: 0.1rem;
- letter-spacing: 0.2rem;
+ font-size:16px ;
+ /* word-spacing: 0.1rem; */
+ line-height: 145%;
+ letter-spacing: 15%;
  
 
 }
 
 .pahse5Seaction3_Text h1{
- font-size:2.7rem ;
+ font-size:56px ;
  word-spacing: 0.1rem;
 }
 .pahse5Seaction3_Text p{
@@ -863,7 +940,7 @@ background-color: white;
   justify-content: center;
   width: 100%;
   
-  background: linear-gradient(to bottom, #ffffff 50%, #faeed6 50%);
+  background: linear-gradient(to bottom, #ffffff 50%, rgb(250, 238, 222)50%);
 }
 
 .phase6Box {
@@ -901,10 +978,12 @@ display: block;
 .phase6Box_text h1 {
   margin: 0;
   padding-bottom: 20px;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+      font-family: 'Inter', sans-serif;
+
   color: white;
-  font-size: 2rem;
-  line-height: 1.2; 
+  font-size: 40px;
+  /* line-height: 1.2;  */
 }
 
 
@@ -920,6 +999,18 @@ display: block;
 
 
 @media screen and (min-width: 250px) and (max-width: 600px){
+
+  .pahse5Seaction2_img{
+    width: 100%;
+  }
+
+  .phase4TextArea h1{
+    font-size: 32px;
+  } 
+  .phase4TextArea p{
+    font-size: 12px;
+  }
+
   .phase1_textarea1{
     width: 80vw;
     /* background-color: #333; */
@@ -927,12 +1018,13 @@ display: block;
   }
   .phase1_textarea1 p{
     width: 100%;
-      font-size: 0.7rem;
-      font-weight: 700;
+      /* font-size: 0.7rem; */
+      font-size: 12px;
+      font-weight: 500;
   }
   .phase1_textarea1 h1{
  width: 100%;
-   font-size: 1.8rem;
+   font-size: 32px;
   }
 
 
@@ -1000,16 +1092,16 @@ display: block;
   
 }
 .phase2text h3{
-font-size: 1rem;
+font-size: 12px;
 }
 .phase2text h1{
-font-size: 1.9rem;
+font-size: 32px;
 word-spacing:2px ;
 letter-spacing: 1px;
 }
 
  .phase2ImageSection {
-    flex-wrap: wrap; /* Agar cards bade hain toh wo niche shift ho jayein */
+    flex-wrap: wrap; 
     justify-content: center;
     gap: 10px;
  
@@ -1030,11 +1122,13 @@ letter-spacing: 1px;
    .phase3section1{
     width: 320px;
    }
+    .phase3section1 p{
+    font-size: 12px;
+  }
   .phase3section1 h1{
-    font-size: 2rem;
+    font-size: 32px;
   }
 
-  /* Right side ki image section ko hide kar do */
   .right {
     display: none !important;
   
@@ -1045,7 +1139,6 @@ letter-spacing: 1px;
     transform: rotate(8deg);
   }
 
-  /* Container ko column mein change karein taaki text center mein rahe */
   .container {
     flex-direction: row;
     padding: 20px;
@@ -1053,7 +1146,6 @@ letter-spacing: 1px;
     justify-content: space-evenly;
   }
 
-  /* Left aur Center ko 100% width dein */
   .left {
     width: 50% !important;
     text-align: center;
@@ -1068,7 +1160,6 @@ letter-spacing: 1px;
     font-size: 0.8rem;
   }
 
-  /* Quote icons ko thoda chota karein mobile ke liye */
   .quoteTop svg, .quoteBottom svg {
     width: 60px;
     height: 40px;
@@ -1091,9 +1182,11 @@ letter-spacing: 1px;
 
   
 .textArea h1{
-  font-size: 2rem ;
+  font-size: 32px;
 }
-
+.textArea p{
+  font-size: 12px;
+}
   .desktopImg {
     display: none;
   }
@@ -1128,18 +1221,15 @@ letter-spacing: 1px;
 
         display: flex;
     flex-direction: row;
-    /* Animation hatayein agar cards gayab ho rahe hain */
     animation: none !important; 
-    /* Horizontal scrolling allow karein */
     overflow-x: auto; 
     overflow-y: hidden;
     width: 100%;
     gap: 20px;
     padding: 20px;
-    /* Scrollbar hide karne ke liye */
     scrollbar-width: none; 
     -ms-overflow-style: none;
-    scroll-snap-type: x mandatory; /* Cards ko snap karne ke liye */
+    scroll-snap-type: x mandatory; 
     }
 
      .phase4Card::-webkit-scrollbar {
@@ -1207,7 +1297,7 @@ letter-spacing: 1px;
 
 }
 .phase5Text h1{
-  font-size: 2.2rem;
+  font-size: 32px;
 }
 .pahse5Seaction1_img{
   width: 240px;
@@ -1252,29 +1342,29 @@ transform: rotate(-6.8deg);
   width: calc(100% - 20px);
   display: flex;
   flex-direction: column;
-  /* Sabse Important: Saare bacho (span, h1, p) ko right side dhakelnay ke liye */
   align-items: flex-end; 
   justify-content: right;
   
 }
 .pahse5Seaction3_Text span {
-   display: block;    /* Sabse zaroori: Isse span poori width lega */
-   text-align: right; /* Ab ye right mein shift ho jayega */
-   width: 100%;       /* Display block ke sath ye kaam karega */
+   display: block;    
+   text-align: right; 
+   width: 100%;       
    /* background-color: #ccc;  */
+   font-size: 12px;
 }
 .pahse5Seaction3_Text h1{
    display: block;
-  text-align: right; /* Text ko box ke andar right karne ke liye */
-  width: 50%; /* Ab ye 50% box khud right side shift ho jayega */
+  text-align: right; 
+  width: 50%; 
   /* background-color: bisque; */
-  font-size: 2rem;
-  margin: 0; /* Extra space hatane ke liye */
+  font-size: 32px;
+  margin: 0; 
 }
 .pahse5Seaction3_Text p{
    display: block;
-  text-align: right; /* Text ko box ke andar right karne ke liye */
-  width: 50%; /* Ab ye 50% box khud right side shift ho jayega */
+  text-align: right; 
+  width: 50%; 
   font-size: 0.8rem;
   color: grey;
 
@@ -1288,35 +1378,34 @@ transform: rotate(-6.8deg);
 .phase6Box {
   width: 320px;
   height: 398px;
-    /* Image ko text ke upar lane ke liye reverse column */
     flex-direction: column-reverse; 
-    padding: 30px 0; /* Mobile par thoda extra space */
-    text-align: center; /* Sab kuch center align karne ke liye */
+    padding: 30px 0; 
+    text-align: center; 
   }
 
   .phase6Box_img {
-    width: 100%; /* Full width mobile par */
-    justify-content: center; /* Image center mein dikhegi */
-    margin-bottom: 20px; /* Text se thoda gap */
+    width: 100%; 
+    justify-content: center;
+    margin-bottom: 20px; 
   }
 
   .phase6Box_img img {
-    width: 80%; /* Mobile par image thodi badi dikhegi */
+    width: 80%; 
     height: auto;
   }
 
   .phase6Box_text {
-    width: 90%; /* Text ko thodi breathing space di */
-    padding-left: 0; /* Padding reset ki kyunki ab center align hai */
+    width: 90%;
+    padding-left: 0; 
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Button ko bhi center karne ke liye */
+    align-items: center; 
   }
 
   .phase6Box_text h1 {
-    font-size: 1.5rem; /* Mobile ke liye heading thodi choti */
-    padding-bottom: 20px;
+    font-size: 20px ;
+    /* padding-bottom: 20px; */
   }
 
 
@@ -1336,15 +1425,15 @@ transform: rotate(-6.8deg);
 
   .phase6Img_Mobile {
     display: block !important;
-    width: 100% !important; /* Ab ye poori width lega */
+    width: 100% !important; 
     height: auto;
-    object-fit: cover; /* Agar image ko stretch hone se bachana hai */
+    object-fit: cover; 
   }
   
-  /* 2. Box ka padding bhi check karein */
+
   .phase6Box {
     flex-direction: column-reverse;
-    padding: 0; /* Agar aapko edge-to-edge image chahiye */
+    padding: 0; 
   }
 }
 

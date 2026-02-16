@@ -57,53 +57,44 @@
 
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-  /* 1. Main Container ka size chota kiya */
+  
   .imageBox {
     width: 168px;
     min-height: 180px; 
   }
 
-  /* 2. Image area ka size chota kiya */
   .image {
     width: 148px; 
     height: 150px;
   }
 
-  /* 3. Front Image ka translation (hover effect) adjust kiya */
   .image:hover .frontImage {
-    /* Tablet par 10px niche jaana zyada lag sakta hai, isliye 5px kiya */
     transform: scale(1.1) translateY(5px); 
   }
 
-  /* 4. Description text ka size */
   .description {
-    font-size: 0.8rem; /* Thoda chhota font takki proportionate lage */
+    font-size: 0.8rem;
     margin-top: 10px;
   }
 }
 
 
 @media screen and (min-width: 250px) and (max-width: 600px) {
-  /* 1. Main Container ka size chota kiya */
   .imageBox {
-    width: 131px; /* Desktop par 200px tha */
+    width: 131px; 
   }
 
-  /* 2. Image area ka size chota kiya */
   .image {
     width: 100px; 
     height: 100px;
   }
 
-  /* 3. Front Image ka translation (hover effect) adjust kiya */
   .image:hover .frontImage {
-    /* Tablet par 10px niche jaana zyada lag sakta hai, isliye 5px kiya */
     transform: scale(1.1) translateY(5px); 
   }
 
-  /* 4. Description text ka size */
   .description {
-    font-size: 0.7rem; /* Thoda chhota font takki proportionate lage */
+    font-size: 0.7rem; 
     margin-top: 10px;
   }
 }

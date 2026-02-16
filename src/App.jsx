@@ -6,6 +6,8 @@ import ImageCard from './components/ImageCard'
 import Hero from './components/Hero'
 import Review from './components/Review'
 import TreatmentCard from './components/TreatmentCard'
+import Footer from './components/Footer'
+
 
 
 
@@ -15,9 +17,8 @@ const App = () => {
     <div>
       <Nav/>
       <Home/>  
-    
      <HomePart2/>
-    
+     <Footer/>
     </div>
   )
 }

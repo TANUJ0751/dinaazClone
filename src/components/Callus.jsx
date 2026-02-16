@@ -15,8 +15,8 @@ const Callus = () => {
     minWidth: "174px",
     height: "48px",
     display: "flex",
-    alignItems: "center",      // Fix: 'align-items' nahi 'alignItems' hoga
-    justifyContent: "center",   // Fix: 'justify-content' nahi 'justifyContent' hoga
+    alignItems: "center",     
+    justifyContent: "center",  
     borderRadius: "50px",
     cursor: "pointer",
     transition: "all 0.3s ease",
