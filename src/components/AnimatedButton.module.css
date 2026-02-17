@@ -9,7 +9,7 @@
   color: white;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 2px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -58,7 +58,19 @@
 
 
 
+@media screen and (min-width: 250px) and (max-width: 600px){
+  .button{
+      padding-left: 40px;
+        padding-right: 30px;
+  }
+}
 
+@media screen and (min-width: 600px) and (max-width: 1024px){
+  .button{
+      padding-left: 40px;
+        padding-right: 30px;
+  }
+}
 
 
 

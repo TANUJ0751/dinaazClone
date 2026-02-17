@@ -27,12 +27,14 @@ const Home = () => {
           </p>
           <div className={sty_home.textArea_button}>
             <CallButton />
-            <AnimatedButton
-              bgColor="rgb(222, 148, 51)"
-              textColor="white"
-              hoverBg="rgb(205, 138, 49)"
-              hoverText="#ffffff"
-            />
+          <div className={sty_home.specialMobileFont}>
+        <AnimatedButton
+          bgColor="rgb(222, 148, 51)"
+          textColor="white"
+          hoverBg="rgb(205, 138, 49)"
+          hoverText="#ffffff"
+        />
+    </div>
           </div>
         </div>
 
@@ -101,7 +103,7 @@ const Home = () => {
                 textColor="black"
                 hoverBg="rgb(21, 144, 153)"
                 hoverText="#ffffff"
-                style={{ border: "1px solid black", borderRadius: "20px" ,    }}
+                style={{ border: "1px solid black", borderRadius: "20px"  }}
               />
             </div>
           </div>

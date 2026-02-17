@@ -137,6 +137,11 @@
 
 @media screen and (min-width: 250px) and (max-width: 600px){
 
+    .specialMobileFont span {
+    /* font-size: 12px !important; */
+  }
+ 
+ 
   .phase2HeadText h3{
     font-size: 12px !important;
    }

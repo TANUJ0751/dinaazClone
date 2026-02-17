@@ -6,16 +6,19 @@
   color: white;
   border: 1px solid white;
   padding: 12px 24px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 100;
   cursor: pointer;
   transition: all 0.3s ease;
   width: 213px;
-  height: 48px;
+  height: 43px;
   overflow: hidden;
   position: relative;
   border-radius: 30px; 
+
+  box-sizing: border-box;
 }
+
 
 .btnClinic:hover {
   background-color: white;
