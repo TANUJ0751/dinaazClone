@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import styles from "./AnimatedButton.module.css"; 
+import BookingForm from "./BookingForm";
 
 const Callus = () => {
   const [isHovered, setIsHovered] = useState(false);
+
+  const [isOpen, setIsOpen] = useState(false); // <--- New State
 
   // Colors
   const defaultBg = "rgb(222, 148, 51)";
@@ -25,14 +28,16 @@ const Callus = () => {
   };
 
   return (
-    <a href="tel:+911234567890" style={{ textDecoration: "none" }}> 
+    <>
+    <div href="tel:+911234567890" style={{ textDecoration: "none" }}> 
       <div 
         className={styles.button} 
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onClick={() => setIsOpen(true)}
         style={buttonStyle}
       >
-        <span style={{ fontSize: "0.85rem", fontWeight: "600" }}>Call Us</span>
+        <span style={{ fontSize: "1rem", fontWeight: "500" }}>Call Us</span>
         
         <div className={styles.arrowBox}>
 
@@ -44,7 +49,9 @@ const Callus = () => {
           </svg>
         </div>
       </div>
-    </a>
+    </div>
+   {isOpen && <BookingForm onClose={() => setIsOpen(false)} />}
+   </> 
   );
 };
 

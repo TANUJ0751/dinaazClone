@@ -1123,7 +1123,9 @@ letter-spacing: 1px;
 
 @media screen and (min-width: 250px) and (max-width: 600px) {
 
-
+  .infoSection{
+    padding-top: 10px !important;
+  }
   .reviewItemText{
     display: block;
   }
@@ -1413,7 +1415,7 @@ transform: rotate(-6.8deg);
   }
 
   .phase6Box_text h1 {
-    font-size: 20px ;
+    font-size: 20px !important ;
     /* padding-bottom: 20px; */
   }
 
