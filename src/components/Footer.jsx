@@ -1,6 +1,7 @@
 import React from 'react'
 import sty_last from "./Footer.module.css"
 import logo from "../assets/Dinaaz-Hair-Skin-logo-vertical.png.png"
+import {Link} from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -85,9 +86,12 @@ const Footer = () => {
            {/* Bottom Bar */}
            <div className={sty_last.footer_bottom}>
              <div>
-               <span>PRIVACY POLICY</span>
+         <Link to="/privacy-policy" className={sty_last.privacy_link}>
+      <span>PRIVACY POLICY</span>
+    </Link>
                <span className={sty_last.divider}>|</span>
-               <span>TERMS AND CONDITIONS</span>
+            <Link to="/Terms-and-condition" className={sty_last.Terms}>   <span  >TERMS AND CONDITIONS</span>
+            </Link>
              </div>
              <p>©Copyright 2026 Dinaaz Hair and Skin. All rights reserved.</p>
            </div>

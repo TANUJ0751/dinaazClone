@@ -39,6 +39,31 @@
   color: rgb(135, 129, 122);
 }
 
+
+.Terms{
+   text-decoration: none;
+  color: inherit; 
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.Terms:hover {
+  color: rgb(21, 144, 153);
+
+}
+.privacy_link {
+  text-decoration: none;
+  color: inherit; 
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+.privacy_link:hover {
+  color: rgb(21, 144, 153);
+
+}
+
+
 .footer_links {
   flex: 1;
   min-width: 150px;

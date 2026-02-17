@@ -7,6 +7,10 @@ import Hero from './components/Hero'
 import Review from './components/Review'
 import TreatmentCard from './components/TreatmentCard'
 import Footer from './components/Footer'
+import Disclaimer from './components/Disclaimer'
+import Privacy from './components/Privacy'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+// import DisNav from './components/DisNav'
 
 
 
@@ -15,10 +19,19 @@ import Footer from './components/Footer'
 const App = () => {
   return (
     <div>
-      <Nav/>
-      <Home/>  
-     <HomePart2/>
-     <Footer/>
+
+      <BrowserRouter>
+       
+       <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/privacy-policy'   element={<Privacy/>} />
+        <Route path='Terms-and-condition' element={<Disclaimer/>}/>
+       </Routes>
+           <Footer/>
+      </BrowserRouter>
+
+ 
+
     </div>
   )
 }

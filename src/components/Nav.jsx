@@ -7,6 +7,7 @@ import logo2 from "../assets/navLogo (3).png"
 
 
 
+
 const Nav = () => {
   const [x, setx] = useState(false);
   return (

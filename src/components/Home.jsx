@@ -4,10 +4,16 @@ import AnimatedButton from "./AnimatedButton";
 // import heroImg from "../assets/hero.png";
 import girlImg from "../assets/doc-Photoroom 1.png";
 import CallButton from "./CallButton";
+import Nav from "./Nav";
+import HomePart2 from "./HomePart2";
 
 const Home = () => {
-  return (
+  return (<>
+    
+ <Nav/>
     <div className={sty_home.homeMain}>
+
+     
       {/* <img src={heroImg} alt="hero" /> */}
       <div className={sty_home.phase1}>
         <div className={sty_home.textArea}>
@@ -104,6 +110,9 @@ const Home = () => {
 
       {/* ------------------------------------------------------------------------------------- */}
     </div>
+
+    <HomePart2/>
+   </> 
   );
 };
 
