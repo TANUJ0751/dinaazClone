@@ -14,6 +14,22 @@
 }
 
 
+.navLinks li a, 
+.navLinks li Link,
+.navItem { 
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.navLinks li a:hover,
+.navItem:hover {
+    color: rgb(21, 144, 153) !important; /* !important lagane se inline style override ho jayega agar kahin reh gaya ho */
+}
+
 /* --- Desktop Menu (ul) Style --- */
 .navLinks {
     display: flex;             /* Laptop screens par dikhega */

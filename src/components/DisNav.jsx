@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {Link} from "react-router-dom"
 import styles from './DisNav.module.css'
 import logo from "../assets/logo.png"
 import logo2 from "../assets/navLogo (3).png"
@@ -23,7 +24,14 @@ const DisNav = () => {
       </div>
 
       <ul className={styles.navLinks}>
-        <li><a href="/">Home</a></li>
+        <li>
+  <Link 
+    to="/" 
+    style={{ textDecoration: 'none', color: 'inherit' }}
+  >
+    Home
+  </Link>
+</li>
         <li><a href="/about">About Us</a></li>
         
         {/* onClick Event use kiya gaya hai */}
