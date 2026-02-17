@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import { createPortal } from "react-dom"; // Portal import kiya
 import BookingForm from "./BookingForm"; 
 import styles from "./AnimatedButton.module.css";
 
-
-const AnimatedButton = ({ bgColor, textColor, hoverBg, hoverText , fontSize  }) => {
+const AnimatedButton = ({ bgColor, textColor, hoverBg, hoverText, fontSize }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -18,13 +18,13 @@ const AnimatedButton = ({ bgColor, textColor, hoverBg, hoverText , fontSize  }) 
   const buttonStyle = {
     backgroundColor: isHovered ? finalHoverBg : defaultBg,
     color: isHovered ? finalHoverText : defaultText,
-
     fontSize: fontSize || "clamp(13px, 2vw, 15px)",
-    
+    cursor: "pointer"
   };
 
   return (
     <div className={styles.container}>
+      {/* Button Section */}
       <div 
         className={styles.button} 
         onClick={togglePopup}
@@ -51,7 +51,11 @@ const AnimatedButton = ({ bgColor, textColor, hoverBg, hoverText , fontSize  }) 
         </div>
       </div>
 
-      {isOpen && <BookingForm onClose={togglePopup} />}
+      {/* Popup Section: Isse createPortal mein wrap kiya hai */}
+      {isOpen && createPortal(
+        <BookingForm onClose={togglePopup} />,
+        document.body // Yeh popup ko hierarchy se nikaal kar seedha body mein daal dega
+      )}
     </div>
   );
 };

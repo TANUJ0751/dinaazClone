@@ -93,7 +93,7 @@ const Footer = () => {
             <Link to="/Terms-and-condition" className={sty_last.Terms}>   <span  >TERMS AND CONDITIONS</span>
             </Link>
              </div>
-             <p>©Copyright 2026 Dinaaz Hair and Skin. All rights reserved.</p>
+             <p className={sty_last.copyright}>©Copyright 2026 Dinaaz Hair and Skin. All rights reserved.</p>
            </div>
      
            <div className={sty_last.developer_bar}>

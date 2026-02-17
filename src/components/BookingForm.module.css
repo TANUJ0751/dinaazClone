@@ -33,11 +33,12 @@
 
   .brandingText h1{
     /* font-size: 4rem !important; */
-    font-family: 'Instrument Serif', serif;
+    font-family: 'Instrument Serif', serif !important; 
     font-size: 88px;
     /* font-style: italic; */
     text-align: left;
-    font-weight: 400;
+    /* font-weight: 300; */
+    font-style: italic;
   }
   .brandingText p{
     font-size: 30px !important;
@@ -81,10 +82,13 @@
 
   .italicTitle {
     /* font-family: 'Playfair Display', serif;  */
-    font-style: italic;
+    /* font-style: italic; */
     color: white;
     margin: 0;
     line-height: 1;
+    font-family: 'Instrument Serif', serif !important;
+
+ 
   }
 
   .subTitle {
