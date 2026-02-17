@@ -18,7 +18,7 @@ const Home = () => {
       <div className={sty_home.phase1}>
         <div className={sty_home.textArea}>
           <h1>
-            Dermatologist-Led <br /> Hair & Skin Treatments <br /> You Can Trust
+            Dermatologist-Led  Hair & Skin Treatments <br /> You Can Trust
           </h1>
           <p>
             Medical-grade diagnosis and personalized treatment for hair loss,

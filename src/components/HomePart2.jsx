@@ -393,7 +393,7 @@ const HomePart2 = () => {
               </h1>
               <p>
                 Hair and skin concerns can be confusing . A proper diagnosis can
-                save time, <br /> money,and prevent unnecessary procedures
+                save time,  money,and prevent unnecessary procedures
               </p>
             </div>
           </div>

@@ -113,8 +113,12 @@ background-color: white;
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
 
+  .pahse5Seaction3_Text p{
+    width: 506px !important;
+  }
+
    .pahse5Seaction3_Text h1{
-    font-size: 40px;
+    font-size: 40px !important;
    }
    .pahse5Seaction3_Text span{
     font-size: 12px;
@@ -139,11 +143,11 @@ background-color: white;
   }
 
   .phase1_textarea1 p{
-    font-weight: 12px;
+    font-weight: 12px !important;
    }
 
   .phase1_textarea1 h1 {
-    font-size: 40px; 
+    font-size: 40px !important; 
   }
 
   .phase1_textarea2 {
@@ -168,7 +172,7 @@ background-color: white;
 
   .img1 {
     right: 7vw; 
-    top: 26vw;
+    top: 30vw;
   }
 
   .img2 {
@@ -302,12 +306,12 @@ background-color: white;
   }
 
   .phase2text h1 {
-    font-size: 40px;
+    font-size: 40px !important;
     line-height: 1.2;
   }
 
   .phase2text h3 {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 
   /* Image Section (Cards) */
@@ -891,13 +895,14 @@ background-color: white;
 }
 
 .pahse5Seaction3_Text h1{
- font-size:56px ;
+ font-size:56px  ;
  word-spacing: 0.1rem;
 }
 .pahse5Seaction3_Text p{
  color: rgb(23, 23, 23);
  padding-top: 18px;
  font-size:0.8rem ;
+ width: 590px;
 }
 
 .pahse5Seaction3_input{
@@ -1015,19 +1020,19 @@ display: block;
   }
 
   .phase1_textarea1{
-    width: 80vw;
+    /* width: 80vw; */
     /* background-color: #333; */
-
+    width: 320px !important;
   }
   .phase1_textarea1 p{
     width: 100%;
       /* font-size: 0.7rem; */
-      font-size: 12px;
+      font-size: 12px !important; 
       font-weight: 500;
   }
   .phase1_textarea1 h1{
  width: 100%;
-   font-size: 32px;
+   font-size: 32px !important;
   }
 
 
@@ -1089,16 +1094,17 @@ display: block;
 }
 .phase2text{
   /* background-color: hsl(0, 0%, 20%); */
-  max-width: 300px;
+  /* max-width: 300px; */
+  width: 167px !important;
   min-height: 40px;
   flex-wrap: wrap;
   
 }
 .phase2text h3{
-font-size: 12px;
+font-size: 12px !important;
 }
 .phase2text h1{
-font-size: 32px;
+font-size: 32px !important;
 word-spacing:2px ;
 letter-spacing: 1px;
 }
@@ -1289,7 +1295,7 @@ letter-spacing: 1px;
   transform: rotate(-210deg);
 }
 .phase5TextArea{
-  width: 320px;
+  width: 320px !important;
   height: 95px;
   position: relative;
   bottom: 2vh;
@@ -1297,10 +1303,9 @@ letter-spacing: 1px;
 .phase5Text{
   padding-left: 5%; 
 
-
 }
 .phase5Text h1{
-  font-size: 32px;
+  font-size: 32px !important;
 }
 .pahse5Seaction1_img{
   width: 240px;
@@ -1324,16 +1329,16 @@ transform: rotate(-6.8deg);
   right: 20%;
 }
 .input_secImg2{
-  top: 15%;
-  left: 15%;
+  top: 20%;
+  left: 3%;
 }
 .input_secImg1 img{
-  width: 152px;
-  height: 152px;  
+  width: 152px !important;
+  height: 152px !important;
 }
 .input_secImg2 img{
-  width: 152px;
-  height: 152px;
+  width: 152px !important;
+  height: 152px !important;
 }
 
 .pahse5Seaction3Head{
@@ -1342,7 +1347,8 @@ transform: rotate(-6.8deg);
 }
 .pahse5Seaction3_Text{
  padding-right: 20px;
-  width: calc(100% - 20px);
+  /* width: calc(100% - 20px); */
+  width: 320px !important;
   display: flex;
   flex-direction: column;
   align-items: flex-end; 
@@ -1359,16 +1365,16 @@ transform: rotate(-6.8deg);
 .pahse5Seaction3_Text h1{
    display: block;
   text-align: right; 
-  width: 50%; 
+  width:70%; 
   /* background-color: bisque; */
-  font-size: 32px;
+  font-size: 32px !important;
   margin: 0; 
 }
 .pahse5Seaction3_Text p{
    display: block;
   text-align: right; 
   width: 50%; 
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   color: grey;
 
 }
