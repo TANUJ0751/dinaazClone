@@ -11,6 +11,11 @@
   align-items: flex-start; 
   padding-top: 50px;
   z-index: 9999 !important;
+  /* overflow: hidden; */
+
+  /* overflow-x: scroll; */
+
+  /* padding-bottom: 70%; */
 }
 
 .popupCard {
@@ -21,15 +26,24 @@
   position: relative;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
   animation: slideDown 0.5s ease-out forwards;
+  /* padding-bottom: 5%;
+  margin-bottom: 20%; */
+
 }
 
 .brandingText h1{
-  font-size: 4rem !important;
+  /* font-size: 4rem !important; */
+  font-family: 'Instrument Serif', serif;
+  font-size: 88px;
+  font-style: italic;
+  text-align: left;
+  font-weight: 400;
 }
 .brandingText p{
-  font-size: 1.2rem !important;
+  font-size: 30px !important;
   font-weight: 700 !important;
-  font-family: "Poppins", "Montserrat", Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
+  text-align: left;
 }
 
 .cardContent {
@@ -61,11 +75,12 @@
   background-position: center;
   display: flex;
   align-items: center;
+  justify-content: left;
   padding: 40px;
 }
 
 .italicTitle {
-  font-family: 'Playfair Display', serif; 
+  /* font-family: 'Playfair Display', serif;  */
   font-style: italic;
   color: white;
   margin: 0;
@@ -91,7 +106,13 @@
 .inputGroup {
   margin-bottom: 20px;
   min-width:268px;
+  /* display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: left;
+  background-color: #009b9b; */
 }
+
 
 .inputGroup label {
   display: block;
@@ -99,6 +120,8 @@
   font-size: 14px;
   margin-bottom: 8px;
   font-weight: 500;
+  text-align: left;
+  width: 100%;
 }
 
 .inputGroup input {
@@ -151,7 +174,7 @@
 }
 
 
-@media screen and (min-width: 786px) and (max-width: 1024px){
+@media screen and (min-width: 600px) and (max-width: 1024px){
  .popupCard{
   width: 640px;
   height: 364px;
@@ -159,7 +182,7 @@
   padding-left: 40px;
   padding-right: 40px;
  }
-.brandingText h1{ font-size:2rem !important; }
+.brandingText h1{ font-size:56px !important; }
 .brandingText p{ font-size: 0.9rem !important; }
 .rightSection form{ width: 268px; height: 212px; }
 .leftSection{ width: 268px; height: 212px; }
@@ -171,10 +194,13 @@
 }
 }
 
+
+
+
 @media screen and (max-width: 600px){
  .popupCard{
   width: 300px;
-  height: 554px;
+  height: 584px;
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
@@ -186,7 +212,7 @@
  }
  .leftSection{ width: 260px; height: 212px; padding: 2px; }
  .rightSection{ width: 260px; height: 204px; padding: 2px; }
- .brandingText h1{ font-size:2rem !important; font-weight: 300 !important; }
+ .brandingText h1{ font-size:55px !important; line-height: 100%; }
  .brandingText p{ font-size: 0.9rem !important; }
  .inputGroup{ height: 55px; }
  .closeBtn{ width: 40px; height: 40px; }

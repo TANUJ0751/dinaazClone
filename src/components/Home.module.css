@@ -170,7 +170,7 @@
   position: relative;
     /* right:  5vh !important; */
     width: 253px !important;
-    height: 152px !important;
+    min-height: 152px !important;
    opacity: 0.8;
    bottom: 10vw;
    z-index: 3 !important;
@@ -179,7 +179,7 @@
  }
  .section3 p{
   font-size: 16px !important;
-    line-height: 28px;
+    /* line-height: 145%; */
   
  }
  .mainArea{
@@ -327,7 +327,7 @@
 
 .section3 p {
   font-size: 24px;
-  line-height: 36px;
+  line-height: 145%;
   color: #333;
 }
 
@@ -403,7 +403,7 @@
 
   .section3 p {
     font-size: 18px;
-      line-height: 28px;
+      line-height: 145%;
   }
 
   /* .section3_button {

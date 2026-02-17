@@ -65,10 +65,11 @@ background-color: white;
 .phase1_textarea2{
     color: rgb(120, 129, 130);
     width: 40%;
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
     font-family: "Poppins", "Montserrat", Arial, sans-serif;
-    font-weight: lighter;
-    line-height: 5vh;
+    font-weight: 500;
+    /* line-height: 5vh; */
+    line-height: 150%;
 }
 .treatmentList{
     position: relative;
@@ -147,8 +148,10 @@ background-color: white;
 
   .phase1_textarea2 {
     width: 45%;
-    font-size: 0.75rem; 
-    line-height: 4vh;
+    font-size: 12px; 
+    /* line-height: 4vh; */
+    
+
   }
 
   /* Right Image Area Positions */
@@ -176,7 +179,7 @@ background-color: white;
 
   .img3 {
     right: 15vw;  
-    top: 75vw;
+    top: 70vw;
   }
 
 
@@ -1068,7 +1071,7 @@ display: block;
   .phase1_textarea2{
     /* position: absolute; */
     bottom: 0px;
-    padding-top: 60vh;
+    padding-top: 100%;   
     width: 100%;
   }
   .imageArea{
