@@ -5,29 +5,38 @@ const CallButton = () => {
   return (
     <button className={styles.btnClinic}>
       <span>Call The Clinic</span>
-      
       <div className={styles.iconContainer}>
         {/* Pehla Arrow */}
-        <svg 
-          className={`${styles.arrowSvg} ${styles.arrow1}`} 
-          width="24" height="24" viewBox="0 0 24 24" 
-          fill="none" stroke="currentColor" strokeWidth="2" 
-          strokeLinecap="round" strokeLinejoin="round"
-        >
-          <line x1="7" y1="17" x2="17" y2="7"></line>
-          <polyline points="7 7 17 7 17 17"></polyline>
-        </svg>
+       <svg
+  className={`${styles.arrowSvg} ${styles.arrow1}`}
+  width="26"
+  height="26"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  strokeWidth="1.3"   // 🔹 arrow thickness yahi se control hota hai
+  strokeLinecap="round"
+  strokeLinejoin="round"
+>
+  <path d="M3 13L13 3M13 3H6M13 3V10" />
+</svg>
+
 
         {/* Dusra Arrow */}
-        <svg 
-          className={`${styles.arrowSvg} ${styles.arrow2}`} 
-          width="24" height="24" viewBox="0 0 24 24" 
-          fill="none" stroke="currentColor" strokeWidth="2" 
-          strokeLinecap="round" strokeLinejoin="round"
-        >
-          <line x1="7" y1="17" x2="17" y2="7"></line>
-          <polyline points="7 7 17 7 17 17"></polyline>
-        </svg>
+        <svg
+  className={`${styles.arrowSvg} ${styles.arrow2}`}
+  width="26"
+  height="26"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  strokeWidth="1.3"   // 🔹 arrow thickness yahi se control hota hai
+  strokeLinecap="round"
+  strokeLinejoin="round"
+>
+  <path d="M3 13L13 3M13 3H6M13 3V10" />
+</svg>
+
       </div>
     </button>
   );

@@ -1,17 +1,36 @@
 .button {
   background-color: rgb(222, 148, 51);
+  width: 293px;
+  height: 56px;
+  box-sizing: border-box;
   /* padding: 10px 22px; */
   padding-left: 52px;
-  padding-top:12px ;
+  padding-top: 12px;
   padding-bottom: 12px;
   padding-right: 40px;
   border-radius: 50px;
   color: white;
   display: inline-flex;
   align-items: center;
-  gap: 2px;
+  /* justify-content: center; */
+  justify-content: flex-start ;
+  gap: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+
+}
+.book{
+  /* min-width: none; */
+  white-space: nowrap;
+  font-size: 18px;
+  line-height: 32px;
+   font-family: "Instrument Sans", sans-serif;
+   /* background-color: antiquewhite; */
+  
+}
+
+.container{
+
 }
 
 .button:hover {
@@ -20,16 +39,20 @@
 
 .arrowBox {
   position: relative;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   overflow: hidden;
+  /* flex-shrink: 0; */
 }
 
 .arrow {
   position: absolute;
   left: 0;
   fill: currentColor;
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+   
 }
 
 /* First arrow */
@@ -54,25 +77,27 @@
   opacity: 1;
 }
 
-
-
-
-
-@media screen and (min-width: 250px) and (max-width: 600px){
-  .button{
-      padding-left: 40px;
-        padding-right: 30px;
+@media screen and (min-width: 250px) and (max-width: 600px) {
+  .button {
+    padding-left: 30px;
+    padding-right: 25px;
+    width: 213px ;
+  height: 48px;
   }
+  .book{
+  font-size: 14px !important;
+  line-height: 20px !important;
+  font-family: "Instrument Sans", sans-serif;
+  width: 132px !important;
+  /* height: 20px !important; */
+  
 }
 
-@media screen and (min-width: 600px) and (max-width: 1024px){
-  .button{
-      padding-left: 40px;
-        padding-right: 30px;
-  }
 }
 
-
-
-
-
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .button {
+    padding-left: 40px;
+    padding-right: 30px;
+  }
+}

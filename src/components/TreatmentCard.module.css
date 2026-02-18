@@ -37,10 +37,10 @@
   width: 100%;
   height: 30%;
   position: relative;
-  transform: rotate(-2deg);
+
   border-radius: 20px;
   top: -1vh;
-  transition: background 0.5s ease, transform 0.4s ease;  /* सिर्फ ये add */
+  transition: background 0.5s ease, transform 0.4s ease;  
 }
 
 .top_part {
@@ -57,8 +57,10 @@
 }
 
 .top_part h2 {
-  font-size: 1.3rem;
-  font-family: "Poppins", "Montserrat", Arial, sans-serif;
+  /* font-size: 1.3rem; */
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Instrument Sans", sans-serif;
   transition: font-size 0.3s ease; 
 }
 
@@ -88,9 +90,13 @@
   justify-content: flex-start;
   width: 100%;
   height: 68%;
-  border-radius: 15px;
-  background: linear-gradient(to right, #f3e5d8, #d3e9eb);
-  transform: rotate(-2deg);
+   transform: rotate(-1deg);  
+  /* padding-top: 100px; */
+  background-image: url("../assets/bottomImg1.svg"); 
+  background-size: 100% auto;               
+  background-repeat: no-repeat;
+  background-size: cover;     
+  background-position: center;
   position: absolute;
   bottom: -29vh;
   transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -101,10 +107,11 @@
   justify-content: flex-start;
   flex-direction: column;
   padding-left: 10%;
-  font-size: small;
   color: transparent;
-  line-height: 25px;
-  transition: color 0.3s ease;  /* सिर्फ ये add */
+  transition: color 0.3s ease;  
+   font-family: "Instrument Sans", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 
@@ -113,12 +120,18 @@
     
 }
 .card:hover .bottom ul {
-  color: gray;
+  color: #4D4D4D;
     
 }
 
 .card:hover .top {
-  background: linear-gradient(to right,  #d3e9eb , #f3e5d8);
+  background-image: url("../assets/topImg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;     
+  background-position: center;
+  /* height: 30%; */
+  width: 100%;     
+    transform: rotate(-2deg);           
 }
 
 .card:hover .top_part {
@@ -200,7 +213,7 @@
     bottom: -50%; 
     height: 68%;
     width: 100%;
-    transform: rotate(-2deg);
+    /* transform: rotate(-2deg); */
     transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 

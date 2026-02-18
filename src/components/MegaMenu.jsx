@@ -5,7 +5,7 @@ const MegaMenu = () => {
   return (
     <div className={styles.megaMenuWrapper}>
       <div className={styles.megaContent}>
-        
+
         {/* Column 1: Hair Treatments */}
         <div className={styles.megaColumn}>
           <h3 className={styles.columnTitle}>

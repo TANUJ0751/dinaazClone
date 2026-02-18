@@ -9,30 +9,31 @@ import star from "../assets/star.png";
 import Circle from "./Circle";
 import AnimatedButton from "./AnimatedButton";
 import MedicalCard from "./MedicalCard";
-import cardImg1 from "../assets/cardImg1.png";
-import cardImg2 from "../assets/cardImg2.png";
-import cardImg3 from "../assets/cardImg3.png";
-import cardImg4 from "../assets/cardImg4.png";
+import cardImg1 from "../assets/cardImg1.svg";
+import cardImg2 from "../assets/cardImg2.svg";
+import cardImg3 from "../assets/Property 1=3.svg";
+import cardImg4 from "../assets/cardImg4.svg";
 import Review from "./Review";
 import phase31 from "../assets/phase31.png";
 import phase32 from "../assets/phase32.png";
-import multiImg from "../assets/multiImg.png";
+import multiImg from "../assets/multiImg.svg";
 import hairIcon from "../assets/icons.png";
 import TreatmentCard from "./TreatmentCard";
 import phase5Img from "../assets/img.png";
 import phase5_circle from "../assets/Group 9.png";
 import Steps from "./Steps";
 import StorySection from "./StorySection";
-import input from "../assets/Frame 1707335232.png";
+// import input from "../assets/Frame 1707335232.png";
 import input_secImg1 from "../assets/Group 8.png";
 import input_secImg2 from "../assets/Group 9 (1).png";
 import phase6img from "../assets/Ellipse 16.png";
 import phase6img2 from "../assets/Ellipse 16 (1).png";
 import circle1 from "../assets/circle1.png";
 import circle2 from "../assets/circle2.png";
-import multiImgPhone from "../assets/result.png"
+import multiImgPhone from "../assets/multiImgPhone.svg"
 import skinimg from "../assets/girlSkin.png"
-import washimg from "../assets/wash.png" 
+import washimg from "../assets/wash.png"
+import Form from "./Form"
 
 const HomePart2 = () => {
   const images = [phase31, phase32];
@@ -57,36 +58,36 @@ const HomePart2 = () => {
             </div>
 
 
-             <div className={styles.imageArea}>
-            <div className={styles.imagePart1}>
-              <div className={styles.CircleText}>
-                <img src={circle1} alt="" />
+            <div className={styles.imageArea}>
+              <div className={styles.imagePart1}>
+                <div className={styles.CircleText}>
+                  <img src={circle1} alt="" />
+                </div>
+                <div className={styles.img1}>
+                  <ImageCard
+                    backImg={backImg}
+                    frontImg={img1}
+                    text=" salon treatments with no diagnosis"
+                  />
+                </div>
               </div>
-              <div className={styles.img1}>
-                <ImageCard
-                  backImg={backImg}
-                  frontImg={img1}
-                  text=" salon treatments with no diagnosis"
-                />
+              <div className={styles.imagePart2}>
+                <div className={styles.img2}>
+                  <ImageCard
+                    backImg={backImg}
+                    frontImg={img2}
+                    text=" Expensive procedures without understanding the root cause"
+                  />
+                </div>
+                <div className={styles.img3}>
+                  <ImageCard
+                    backImg={backImg}
+                    frontImg={img3}
+                    text="One-size-fits-all packages "
+                  />
+                </div>
               </div>
             </div>
-            <div className={styles.imagePart2}>
-              <div className={styles.img2}>
-                <ImageCard
-                  backImg={backImg}
-                  frontImg={img2}
-                  text=" Expensive procedures without understanding the root cause"
-                />
-              </div>
-              <div className={styles.img3}>
-                <ImageCard
-                  backImg={backImg}
-                  frontImg={img3}
-                  text="One-size-fits-all packages "
-                />
-              </div>
-            </div>
-          </div>
 
             <div className={styles.phase1_textarea2}>
               <div className={styles.infoSection}>
@@ -111,7 +112,7 @@ const HomePart2 = () => {
 
           <img src={star} alt="" className={styles.startImg} />
 
-      
+
         </div>
       </div>
 
@@ -131,24 +132,24 @@ const HomePart2 = () => {
 
         <div className={styles.phase2ImageSection}>
           <MedicalCard
-            title="Ethical Medical Advice"
-            description="Sometimes, the right decision is not to treat, and we’re honest about that."
-            img={cardImg1} 
+            title="Dermatologist Diagnosis First"
+            description="Every concern is medically evaluated before treatment begins."
+            img={cardImg1}
           />
           <MedicalCard
-            title="Ethical Medical Advice"
-            description="Sometimes, the right decision is not to treat, and we’re honest about that."
-            img={cardImg2} 
+            title="Customized Treatment Plans"
+            description="No fixed packages. No unnecessary procedures."
+            img={cardImg2}
           />
           <MedicalCard
-            title="Ethical Medical Advice"
-            description="Sometimes, the right decision is not to treat, and we’re honest about that."
+            title="Long-Term Skin & Hair Health"
+            description="We focus on sustainable results, not short-term cosmetic fixes."
             img={cardImg3}
           />
           <MedicalCard
-            title="Ethical Medical Advice"
+            title="Ethical Medical Advice "
             description="Sometimes, the right decision is not to treat, and we’re honest about that."
-            img={cardImg4} 
+            img={cardImg4}
           />
         </div>
 
@@ -168,7 +169,7 @@ const HomePart2 = () => {
         <div className={styles.phase3section1}>
           <p>TESTIMONIALS</p>
           <h1>
-            What Our Patients Say About Our Services
+            What Our Patients Say <br className={styles.breakLine} /> About Our Services
           </h1>
         </div>
 
@@ -176,6 +177,7 @@ const HomePart2 = () => {
           <div className={styles.container}>
             {/* LEFT SIDE */}
             <div className={styles.left}>
+              
               <Review />
             </div>
 
@@ -184,8 +186,8 @@ const HomePart2 = () => {
               <div className={styles.quoteTop}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="100"
-                  height="60"
+                  width="50"
+                  height="40"
                   fill="currentColor"
                   class="bi bi-quote"
                   viewBox="0 0 16 16"
@@ -204,8 +206,8 @@ const HomePart2 = () => {
               <div className={styles.quoteBottom}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="100"
-                  height="60"
+                  width="50"
+                  height="40"
                   fill="currentColor"
                   class="bi bi-quote"
                   viewBox="0 0 16 16"
@@ -213,10 +215,10 @@ const HomePart2 = () => {
                   <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
                 </svg>
               </div>
-                  <div className={styles.reviewItemText}>
-                                  <h4>Sandeep IV</h4>
-                                  <p>4.9 ⭐ | 26/12/2025</p>
-                                </div>
+              <div className={styles.reviewItemText}>
+                <h4>Sandeep IV</h4>
+                <p>4.9 ⭐ | 26/12/2025</p>
+              </div>
               <div className={styles.arrows}>
                 <button className={styles.arrow}>
                   <svg
@@ -270,7 +272,7 @@ const HomePart2 = () => {
         </div>
 
 
-{/* --------------------------------------------------------------------------         */} 
+        {/* --------------------------------------------------------------------------         */}
 
 
         <div className={styles.phase3section3}>
@@ -328,7 +330,7 @@ const HomePart2 = () => {
                 "Botox & fillers (medically guided)",
                 "Non-surgical facial enhancements",
                 "Skin tightening & rejuvenation",
-               
+
               ]}
             />
           </div>
@@ -344,7 +346,7 @@ const HomePart2 = () => {
         <div className={styles.phase5TextArea}>
           <div className={styles.phase5Text}>
             <p>OUR PROCESS</p>
-            <h1>What to Expext At  Dinaaz </h1>
+            <h1>What to Expext At <br className={styles.phase5LineBreak} /> Dinaaz </h1>
           </div>
         </div>
 
@@ -374,7 +376,7 @@ const HomePart2 = () => {
         </div>
 
 
-        
+
 
         <div className={styles.pahse5Seaction3}>
           <div className={styles.input_secImg1}>
@@ -400,7 +402,7 @@ const HomePart2 = () => {
           <center>
             {" "}
             <div className={styles.pahse5Seaction3_input}>
-              <img src={input} alt="" />
+              <Form />
             </div>
           </center>
 
@@ -436,9 +438,7 @@ const HomePart2 = () => {
           <div className={styles.phase6Box_img}>
             {/* <img src={phase6img} alt=""  />  */}
             <img src={phase6img} alt="Laptop View" className={styles.phase6Img_Desktop} />
-  
- 
-  <img src={phase6img2} alt="Mobile View" className={styles.phase6Img_Mobile} />
+            <img src={phase6img2} alt="Mobile View" className={styles.phase6Img_Mobile} />
           </div>
         </div>
       </div>

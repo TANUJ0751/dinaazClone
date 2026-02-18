@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 import styles from './DisNav.module.css'
 import logo from "../assets/logo.png"
 import logo2 from "../assets/navLogo (3).png"
@@ -25,31 +25,31 @@ const DisNav = () => {
 
       <ul className={styles.navLinks}>
         <li>
-  <Link 
-    to="/" 
-    style={{ textDecoration: 'none', color: 'inherit' }}
-  >
-    Home
-  </Link>
-</li>
+          <Link
+            to="/"
+            style={{ textDecoration: 'none', color: 'inherit' }}
+          >
+            Home
+          </Link>
+        </li>
         <li><a href="/about">About Us</a></li>
-        
+
         {/* onClick Event use kiya gaya hai */}
         <li className={styles.dropdown}>
-          <a 
-            href="#" 
-            className={styles.navItem} 
+          <a
+            href="#"
+            className={styles.navItem}
             onClick={handleServicesClick}
           >
-            Services 
+            Services
             <span className={`${styles.arrowDown} ${showServices ? styles.rotate : ''}`}></span>
           </a>
-          
+
           {/* Agar showServices true hai tabhi MegaMenu dikhega */}
           {showServices && (
-             <div className={styles.megaMenuWrapper}>
-                <MegaMenu />
-             </div>
+            <div className={styles.megaMenuWrapper}>
+              <MegaMenu />
+            </div>
           )}
         </li>
 

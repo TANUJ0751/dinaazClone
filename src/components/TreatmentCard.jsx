@@ -1,12 +1,14 @@
 import React from "react";
 import sty_card from "./TreatmentCard.module.css";
 
+
 const TreatmentCard = ({ 
   icon, 
   title1, 
   title2, 
   listItems = [],
   className = "" 
+  
 }) => {
   return (
     <div className={`${sty_card.card} ${className}`}>
@@ -24,6 +26,7 @@ const TreatmentCard = ({
         </div>
         
         <div className={sty_card.bottom}>
+           
           <ul>
             {listItems.map((item, index) => (
               <li key={index} className="list-item">{item}</li>

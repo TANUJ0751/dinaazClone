@@ -41,11 +41,11 @@ const Steps = () => {
           className={`${styles.step} ${hasAnimated ? styles.animate : ""}`}
           style={{ "--i": index }}
         >
-        
+
           {index !== stepsData.length - 1 && (
             <div className={styles.line_container}>
-               <div className={styles.line_bg}></div> {/* Grey Line */}
-               <div className={styles.line_active}></div> {/* Teal Moving Line */}
+              <div className={styles.line_bg}></div> {/* Grey Line */}
+              <div className={styles.line_active}></div> {/* Teal Moving Line */}
             </div>
           )}
 

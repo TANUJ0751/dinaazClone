@@ -1,21 +1,22 @@
 .card {
-  width: 100%;
-  max-width: 300px;
+  width: var(--card-width);
   background-color: #fff;
   padding: 20px;
   box-sizing: border-box;
-  height: 400px;
+  height:var(--card-height);
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction:column ;
+  flex-direction: column;
 }
 
 .imageContainer {
-  width: 85%;
+  width: 100%;
   aspect-ratio: 4 / 5;
   /* border-radius: 10px; */
-  overflow: hidden; 
+  overflow: hidden;
+  flex-shrink: 1;
+
 }
 
 .zoomImage {
@@ -26,20 +27,24 @@
   display: block;
 }
 
-
 .imageContainer:hover .zoomImage {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin: 15px 0 10px;
-  color: #1a1a1a;
+  font-size: var(--card-heading);
+  line-height: var(--card-heading-line);
+  font-weight: 500;
+  /* margin: 15px 0 10px; */
+  color: #161616;
+  font-family: "Instrument Sans", sans-serif;
 }
 
 .description {
-  font-size: 0.9rem;
-  color: #666;
-  line-height: 1.4;
+  font-size: var(--font-size-para) ;
+  line-height:var(--line-height-para) ;
+  letter-spacing: var(--letter-spacing-para);
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400;
+  color: #16161680;
 }

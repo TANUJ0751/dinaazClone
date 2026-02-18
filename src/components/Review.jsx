@@ -21,29 +21,29 @@ const Review = () => {
   }, []);
 
   return (
-    
-      <div className={styles.circleWrapper}>
-        <div className={`${styles.circle} ${styles[positionSet]}`}>
-          {reviews.map((item, index) => (
-            <div
-              key={item.id}
-              className={`${styles.profile} ${styles[`p${index + 1}`]} ${styles[positionSet]}`}
-            >
-              <div className={styles.reviewItem}>
-                <img
-                  src={image}
-                  alt=""
-                />
-                <div className={styles.reviewItemText}>
-                  <h4>{item.name}</h4>
-                  <p>4.9 ⭐ | 26/12/2025</p>
-                </div>
+
+    <div className={styles.circleWrapper}>
+      <div className={`${styles.circle} ${styles[positionSet]}`}>
+        {reviews.map((item, index) => (
+          <div
+            key={item.id}
+            className={`${styles.profile} ${styles[`p${index + 1}`]} ${styles[positionSet]}`}
+          >
+            <div className={styles.reviewItem}>
+              <img
+                src={image}
+                alt=""
+              />
+              <div className={styles.reviewItemText}>
+                <h4>{item.name}</h4>
+                <p>4.9 ⭐ | 26/12/2025</p>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    
+    </div>
+
   );
 };
 

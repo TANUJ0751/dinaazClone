@@ -1,8 +1,9 @@
 .footer {
   background: rgb(250, 238, 222);
   padding: 60px 80px 0;
-  font-family: 'Inter', sans-serif;
-  color: #333;
+  font-family: "Instrument Sans", sans-serif;
+
+   color: rgba(22, 22, 22, 0.6);
   overflow: hidden;
 }
 
@@ -39,30 +40,25 @@
   color: rgb(135, 129, 122);
 }
 
-
-.Terms{
-   text-decoration: none;
-  color: inherit; 
+.Terms {
+  text-decoration: none;
+  color: inherit;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 .Terms:hover {
   color: rgb(21, 144, 153);
-
 }
 .privacy_link {
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
-
 .privacy_link:hover {
   color: rgb(21, 144, 153);
-
 }
-
 
 .footer_links {
   flex: 1;
@@ -74,6 +70,7 @@
   margin-top: 10px;
   margin-bottom: 15px;
   font-weight: 600;
+  color: rgb(22, 22, 22);
 }
 
 .footer_links ul {
@@ -120,7 +117,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 11px;
-  color: black;
+color: rgb(22, 22, 22);
 }
 
 .divider {
@@ -190,7 +187,7 @@
     display: flex;
     flex-direction: column;
   }
-  .copyright{
+  .copyright {
     font-size: 10px;
   }
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./AnimatedButton.module.css"; 
+import styles from "./AnimatedButton.module.css";
 import BookingForm from "./BookingForm";
 
 const Callus = () => {
@@ -18,40 +18,41 @@ const Callus = () => {
     minWidth: "174px",
     height: "48px",
     display: "flex",
-    alignItems: "center",     
-    justifyContent: "center",  
+    alignItems: "center",
+    justifyContent: "center",
     borderRadius: "50px",
     cursor: "pointer",
     transition: "all 0.3s ease",
     border: "none",
+    boxSizing: "border-box",
     gap: "8px"
   };
 
   return (
     <>
-    <div href="tel:+911234567890" style={{ textDecoration: "none" }}> 
-      <div 
-        className={styles.button} 
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        onClick={() => setIsOpen(true)}
-        style={buttonStyle}
-      >
-        <span style={{ fontSize: "1rem", fontWeight: "500" }}>Call Us</span>
-        
-        <div className={styles.arrowBox}>
+      <div href="tel:+911234567890" style={{ textDecoration: "none" }}>
+        <div
+          className={styles.button}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          onClick={() => setIsOpen(true)}
+          style={buttonStyle}
+        >
+          <span style={{ fontSize: "18px", fontWeight: "400" , lineHeight:"24px"   }}>Call Us</span>
 
-          <svg className={styles.arrow} viewBox="0 0 16 16" style={{ fill: "white", width: "14px", height: "14px" }}>
-            <path fillRule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
-          </svg>
-          <svg className={styles.arrow} viewBox="0 0 16 16" style={{ fill: "white", width: "14px", height: "14px" }}>
-            <path fillRule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
-          </svg>
+          <div className={styles.arrowBox}>
+
+            <svg    className={styles.arrow} viewBox="0 0 16 16" style={{ fill: "white", width: "24px", height: "24px" , }}>
+              <path fillRule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+            </svg>
+            <svg className={styles.arrow} viewBox="0 0 16 16" style={{ fill: "white", width: "24px", height: "24px" }}>
+              <path fillRule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+            </svg>
+          </div>
         </div>
       </div>
-    </div>
-   {isOpen && <BookingForm onClose={() => setIsOpen(false)} />}
-   </> 
+      {isOpen && <BookingForm onClose={() => setIsOpen(false)} />}
+    </>
   );
 };
 
