@@ -3,6 +3,7 @@ import sty_nav from "./Nav.module.css"
 import AnimatedButton from './AnimatedButton'
 import logo from "../assets/logo.svg"
 import logo2 from "../assets/navLogo (3).png"
+import {Link} from "react-router-dom"
 
 
 
@@ -11,13 +12,13 @@ const Nav = () => {
   const [x, setx] = useState(false);
   return (
     <div className={sty_nav.Navmain}>
-      <div className={sty_nav.navLogo}>
+     <Link to="/">  <div className={sty_nav.navLogo}>
 
 
         <img src={logo2} alt="" className={sty_nav.logo2} />
         <img src={logo} alt="logo" className={sty_nav.logo1} />
 
-      </div>
+      </div> </Link>
       <div className={sty_nav.navActions} onClick={() => setx(!x)}>
         {/* Desktop Button Container */}
         <div className={sty_nav.desktopOnly}>

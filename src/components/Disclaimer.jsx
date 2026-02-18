@@ -1,14 +1,18 @@
 // Disclaimer.jsx
 import DisNav from './DisNav';
+import Nav from './Nav';
 import styles from './sty_dis.module.css';
 
 const Disclaimer = () => {
   return (<>
-    <DisNav />
+    {/* <DisNav /> */}
+    <Nav/>
 
     <div className={styles.container}>
 
-      <div className={styles.header}>DISCLAIMER</div>
+      <div className={styles.header}>
+        <p>LEGAL</p>
+        <h1>  DISCLAIMER </h1></div>
       <div className={styles.content}>
         <ol className={styles.list}>
           <li>

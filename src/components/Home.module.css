@@ -13,30 +13,31 @@
   gap: 40px;
 }
 
-.upperImg {
+/* .upperImg {
   position: absolute;
-  top: 0;           /* upar se distance */
-  right: 0;         /* right side */
-  width: 100%;      /* ya apni required width */
-  max-width: 600px; /* optional, max size control */
+  bottom: 0;           
+  right: 0;         
+  width: 100%;      
   height: auto;
-  z-index: -1;      /* text ke peeche */
-  pointer-events: none; /* click ya hover effect na ho */
-}
+  z-index: 1;      
+  pointer-events: none; 
+} */
 
 .upperImg {
   width: 100%;
   height: 100%;
   position: absolute;
   bottom: 0px;
-  width: 300px;    /* conflicting */
+  right: 0px;
   height: auto;    /* conflicting */
-  z-index: -1;
+  z-index: 0;
   pointer-events: none;
+  opacity: 0.3;
 }
 
 
 .textArea {
+  position: absolute;
   display: flex;
   /* align-items: center; */
   justify-content: left;
@@ -48,6 +49,7 @@
   /* margin-left: 10%; */
   /* color: white; */
   padding-bottom: 14vh;
+  z-index: 1;
 }
 .textArea h1 {
   font-size: 56px;
@@ -74,7 +76,7 @@
 
 .textArea_button {
   display: flex;
-  gap: 3%;
+  gap: 12px;
   margin-top: 38px;
   /* min-width: 500px; */
   /* margin-top: px; */
@@ -154,7 +156,7 @@
 
   .textArea_button {
     flex-direction: row;
-    gap: 2vh;
+    gap: 8px;
   }
 
   .phase2 {
@@ -490,6 +492,18 @@
   min-width: 200px;
   transition: all 0.3s ease;
 }
+
+  .buttonWrapper1{
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    display: inline-block;
+    overflow: hidden;
+    min-width: auto;
+    transition: all 0.3s ease;
+  }
+  .buttonWrapper1:hover {
+    border: none;
+  }
 .buttonWrapper:hover {
   border: none;
 }

@@ -12,7 +12,7 @@
 }
 
 .container {
-  max-width: 1300px;
+  /* max-width: 1300px; */
   display: flex;
   align-items: center;
   justify-content: space-between ;
@@ -51,6 +51,7 @@ font-family: 'Inter', sans-serif;
 
 }
 .footerText {
+font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 20px;
@@ -59,30 +60,32 @@ font-family: 'Inter', sans-serif;
 }
 
 .description{
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 20px;
   opacity: 0.9;
-      font-family: 'Instrument Sans', sans-serif;
+  font-family: 'Instrument Sans', sans-serif;
 
 }
 .pointsList {
   list-style: none;
-  padding: 0;
   margin-bottom: 10px;
   font-family: 'Instrument Sans', sans-serif;
-  font-size: 16px;
-    font-weight: 700;
-  font-style: italic;
+ line-height: 24px;
+  text-align: left;
+  
 }
 
 .pointsList li {
-    font-size: 13px;
+  font-size: 16px;
   position: relative;
-  padding-left: 20px;
-  margin-bottom: 2px;
+  padding-left: 24px;
+  margin-bottom: 24px;
   font-style: italic;
-  font-weight: 600;
+  font-weight: bold;
+  font-size: 16px;
+
 }
 
 .pointsList li::before {
@@ -112,13 +115,26 @@ font-family: 'Inter', sans-serif;
   height: 100%;
   
 }
-
+.buttonWrapper1{
+   border: 1px solid #FFFFFF;
+  border-radius: 50px;
+  display: inline-block;
+  overflow: hidden;
+  min-width: auto;
+  transition: all 0.3s ease;
+}
+.buttonWrapper1:hover {
+  border: none;
+}
 
 
 
 
 
 @media (max-width: 786px) {
+  .textwrapper{
+    max-width: 550px;
+  }
   .container {
     flex-direction: column-reverse; 
     gap: 30px;
@@ -183,8 +199,20 @@ font-family: 'Inter', sans-serif;
 
   .pointsList li {
     font-size: 12px;
-    line-height: 15px;
+    line-height: 22px !important;
   }
+
+ .pointsList {
+  font-size: 14px;
+  line-height: 22px;
+}
+.description ,.footerText{
+  font-size: 14px !important;
+  line-height: 22px;
+
+}
+
+
 }
 
 @media screen and (min-width: 786px) and (max-width: 1024px){
@@ -195,8 +223,13 @@ font-family: 'Inter', sans-serif;
  .heading{
   font-size: 40px;
  }
-.description , .pointsList , .footerText{
+.pointsList {
   font-size: 14px;
+  line-height: 20px;
 }
+.description ,.footerText{
+  font-size: 14px !important;
+  line-height: 20px;
 
+}
 }

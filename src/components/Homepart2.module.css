@@ -507,6 +507,8 @@
 
   .pahse5Seaction2 {
     padding-top: 3vw;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
   }
 
   .pahse5Seaction2_img {
@@ -815,6 +817,9 @@
 }
 
 .pahse5Seaction2 {
+  padding-left: 120px;
+  padding-right: 120px;
+  box-sizing: border-box;
   width: 100%;
   display: flex;
   align-items: center;
@@ -822,7 +827,7 @@
   /* background-color: #0ea5a5; */
 }
 .pahse5Seaction2_img {
-  width: 80%;
+  width: auto;
 }
 
 .pahse5Seaction3 {
@@ -953,6 +958,10 @@
 @media screen and (min-width: 250px) and (max-width: 786px) {
   .pahse5Seaction2_img {
     width: 100%;
+  }
+  .pahse5Seaction2{
+    padding-left: 0% !important;
+    padding-right: 0% !important;
   }
 
 

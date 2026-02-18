@@ -18,11 +18,12 @@ const DisNav = () => {
 
   return (
     <div className={styles.Navmain}>
+     <Link to="/">
       <div className={styles.navLogo}>
         <img src={logo2} alt="" className={styles.logo2} />
         <img src={logo} alt="logo" className={styles.logo1} />
       </div>
-
+   </Link>
       <ul className={styles.navLinks}>
         <li>
           <Link

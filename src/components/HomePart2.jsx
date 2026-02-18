@@ -155,7 +155,7 @@ const HomePart2 = () => {
 
         <center className={styles.phase2Button}>
           <AnimatedButton
-            bgColor="rgb(222, 148, 51)"
+            bgColor="#DD9233"
             textColor="white"
             hoverBg="rgb(205, 138, 49)"
             hoverText="#ffffff"
@@ -361,7 +361,7 @@ const HomePart2 = () => {
 
         <center className={styles.pahse5Seaction1_button}>
           <AnimatedButton
-            bgColor="rgb(222, 148, 51)"
+            bgColor="#DD9233"
             textColor="white"
             hoverBg="rgb(205, 138, 49)"
             hoverText="#ffffff"
@@ -410,10 +410,11 @@ const HomePart2 = () => {
             {" "}
             <div className={styles.pahse5Seaction3_button}>
               <AnimatedButton
-                bgColor="rgb(222, 148, 51)"
+                bgColor="#DD9233"
                 textColor="white"
                 hoverBg="rgb(205, 138, 49)"
                 hoverText="#ffffff"
+                 showPopup={false} 
               />
             </div>{" "}
           </center>

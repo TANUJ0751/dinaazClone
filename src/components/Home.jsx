@@ -3,7 +3,7 @@ import sty_home from "./Home.module.css";
 import AnimatedButton from "./AnimatedButton";
 // import heroImg from "../assets/hero.png";
 import girlImg from "../assets/doc-Photoroom 1.png";
-import CallButton from "./CallButton";
+// import CallButton from "./CallButton";
 import Nav from "./Nav";
 import coverBack from "../assets/coverBack.png"
 import HomePart2 from "./HomePart2";
@@ -14,11 +14,15 @@ const Home = () => {
       <Nav />
       <div className={sty_home.homeMain}>
         {/* <img src={heroImg} alt="hero" /> */}
-        <div className={sty_home.phase1}> <img 
+        <div className={sty_home.phase1}> 
+          
+          
+        <div className={sty_home.coverImg}>  <img 
     src={coverBack} 
     alt="Top Layer" 
     className={sty_home.upperImg} 
   />
+  </div>
 
           <div className={sty_home.textArea}>
             <h1>Dermatologist-Led Hair & Skin Treatments You Can Trust</h1>
@@ -28,10 +32,20 @@ const Home = () => {
               package-driven care.
             </p>
             <div className={sty_home.textArea_button}>
-              <CallButton />
+              {/* <CallButton /> */}
+              <div className={sty_home.buttonWrapper1} >
+                <AnimatedButton
+                buttonText = "Call The Clinic" 
+                  bgColor="transparent"
+                  textColor="white"
+                  hoverBg="white"
+                  hoverText="black"
+                    showPopup={false} 
+                />
+                </div>
               <div className={sty_home.specialMobileFont}>
                 <AnimatedButton
-                  bgColor="rgb(222, 148, 51)"
+                  bgColor="#DD9233"
                   textColor="white"
                   hoverBg="rgb(205, 138, 49)"
                   hoverText="#ffffff"
