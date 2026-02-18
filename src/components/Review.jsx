@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Review.module.css";
-import image from "../assets/Ellipse 13.png"
+import image from "../assets/Ellipse 13.webp"
 
 const Review = () => {
   const [positionSet, setPositionSet] = useState('pos1');

@@ -9,10 +9,10 @@ import star from "../assets/star.png";
 import Circle from "./Circle";
 import AnimatedButton from "./AnimatedButton";
 import MedicalCard from "./MedicalCard";
-import cardImg1 from "../assets/cardImg1.svg";
+import cardImg1 from "../assets/cardImg1.webp";
 import cardImg2 from "../assets/cardImg2.svg";
 import cardImg3 from "../assets/Property 1=3.svg";
-import cardImg4 from "../assets/cardImg4.svg";
+import cardImg4 from "../assets/cardImg4.webp";
 import Review from "./Review";
 import phase31 from "../assets/phase31.png";
 import phase32 from "../assets/phase32.png";
@@ -24,11 +24,11 @@ import phase5_circle from "../assets/Group 9.png";
 import Steps from "./Steps";
 import StorySection from "./StorySection";
 // import input from "../assets/Frame 1707335232.png";
-import input_secImg1 from "../assets/Group 8.png";
+import input_secImg1 from "../assets/Group 8.webp";
 import input_secImg2 from "../assets/Group 9 (1).png";
-import phase6img from "../assets/Ellipse 16.png";
-import phase6img2 from "../assets/Ellipse 16 (1).png";
-import circle1 from "../assets/circle1.png";
+import phase6img from "../assets/Ellipse 16.webp";
+import phase6img2 from "../assets/Ellipse 16 (1).webp";
+import circle1 from "../assets/circle1.webp";
 import circle2 from "../assets/circle2.png";
 import multiImgPhone from "../assets/multiImgPhone.svg"
 import skinimg from "../assets/girlSkin.png"
