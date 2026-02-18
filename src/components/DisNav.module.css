@@ -149,7 +149,7 @@
   display: none;
 }
 
-@media screen and (min-width: 786px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   .Navmain {
     padding-left: 1%;
     /* background-color: antiquewhite; */
@@ -170,7 +170,7 @@
   }
 }
 
-@media screen and (min-width: 250px) and (max-width: 786px) {
+@media screen and (min-width: 250px) and (max-width: 600px) {
   .Navmain {
     /* width: calc(360px - 10%); */
     /* padding: 5%; */

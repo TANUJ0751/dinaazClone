@@ -117,7 +117,7 @@
   }
 }
 
-@media screen and (min-width: 786px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   .textArea_button{
     margin-top: 24px;
   }
@@ -235,7 +235,7 @@
   }
 }
 
-@media screen and (min-width: 250px) and (max-width: 786px) {
+@media screen and (min-width: 250px) and (max-width: 600px) {
   .phase1 {
     background-position: 90% center;
     padding-left: 20px;

@@ -108,7 +108,7 @@
   right: 25vw;
   top: 45vw;
 }
-@media screen and (min-width: 786px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   .pahse5Seaction3_Text p {
     width: 506px !important;
       font-size: 14px ;
@@ -241,7 +241,7 @@
   padding-top: 5vh;
 }
 
-@media screen and (min-width: 786px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   .phase2 {
     padding-left: 60px;
     padding-right: 60px;
@@ -373,7 +373,7 @@
   display: block;
  }
 
-@media screen and (min-width: 786px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
  
   /* .breakLine{
     display: none !important;
@@ -423,7 +423,7 @@
   }
 }
 
-@media screen and (min-width: 786px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   .phase4Card > div:nth-child(4) {
     display: none !important;
   }
@@ -950,7 +950,7 @@
   height: auto;
 }
 
-@media screen and (min-width: 250px) and (max-width: 786px) {
+@media screen and (min-width: 250px) and (max-width: 600px) {
   .pahse5Seaction2_img {
     width: 100%;
   }
@@ -1060,7 +1060,7 @@
 
 
 
-@media screen and (min-width: 250px) and (max-width: 786px) {
+@media screen and (min-width: 250px) and (max-width: 600px) {
 
   .breakLine{
     display: none !important;

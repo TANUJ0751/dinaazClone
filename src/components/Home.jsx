@@ -31,8 +31,6 @@ const Home = () => {
               <CallButton />
               <div className={sty_home.specialMobileFont}>
                 <AnimatedButton
-          buttonText="Book A Consultation" 
-                  
                   bgColor="rgb(222, 148, 51)"
                   textColor="white"
                   hoverBg="rgb(205, 138, 49)"
@@ -100,8 +98,6 @@ const Home = () => {
               </p>
               <div className={sty_home.buttonWrapper }>
                 <AnimatedButton
-          buttonText="Book A Consultation" 
-
                   bgColor="#ffffff13"
                   textColor="black"
                   hoverBg="rgb(21, 144, 153)"

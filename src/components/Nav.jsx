@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import sty_nav from "./Nav.module.css"
 import AnimatedButton from './AnimatedButton'
 import logo from "../assets/logo.svg"
-// import Callus from './Callus'
+import Callus from './Callus'
 import logo2 from "../assets/navLogo (3).png"
 
 
@@ -23,7 +23,6 @@ const Nav = () => {
         {/* Desktop Button Container */}
         <div className={sty_nav.desktopOnly}>
           <AnimatedButton
-          buttonText="Book A Consultation" 
             bgColor="rgb(222, 148, 51)"
             textColor="white"
             hoverBg="rgb(205, 138, 49)"
@@ -33,13 +32,7 @@ const Nav = () => {
 
         {/* Mobile Button Container */}
         <div className={sty_nav.mobileOnly}>
-           <AnimatedButton
-           buttonText="Call us" 
-            bgColor="rgb(222, 148, 51)"
-            textColor="white"
-            hoverBg="rgb(205, 138, 49)"
-            hoverText="#ffffff"
-          />
+          <Callus />
         </div>
       </div>
     </div>

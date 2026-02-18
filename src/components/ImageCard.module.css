@@ -58,7 +58,7 @@
  
 }
 
-@media screen and (min-width: 786px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   .imageBox {
     width: 168px;
     min-height: 180px;
@@ -79,7 +79,7 @@
   }
 }
 
-@media screen and (min-width: 250px) and (max-width: 786px) {
+@media screen and (min-width: 250px) and (max-width: 600px) {
   .imageBox {
     width: 131px;
   }

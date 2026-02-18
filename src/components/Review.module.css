@@ -117,7 +117,7 @@
   opacity: 0;
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 600px) {
   .reviewItemText {
     display: none !important;
   }
