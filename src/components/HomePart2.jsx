@@ -155,6 +155,8 @@ const HomePart2 = () => {
 
         <center className={styles.phase2Button}>
           <AnimatedButton
+          buttonText="Book A Consultation" 
+
             bgColor="rgb(222, 148, 51)"
             textColor="white"
             hoverBg="rgb(205, 138, 49)"
@@ -361,6 +363,8 @@ const HomePart2 = () => {
 
         <center className={styles.pahse5Seaction1_button}>
           <AnimatedButton
+          buttonText="Book A Consultation" 
+
             bgColor="rgb(222, 148, 51)"
             textColor="white"
             hoverBg="rgb(205, 138, 49)"
@@ -410,6 +414,8 @@ const HomePart2 = () => {
             {" "}
             <div className={styles.pahse5Seaction3_button}>
               <AnimatedButton
+          buttonText="Book A Consultation" 
+
                 bgColor="rgb(222, 148, 51)"
                 textColor="white"
                 hoverBg="rgb(205, 138, 49)"
@@ -429,6 +435,8 @@ const HomePart2 = () => {
               Your Skin & Hair Deserve Medical Expertise , Not Experiments
             </h1>
             <AnimatedButton
+          buttonText="Book A Consultation" 
+
               bgColor="#ffffff"
               textColor="black"
               hoverBg="#ffffff"

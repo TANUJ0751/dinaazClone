@@ -80,7 +80,7 @@
   line-height: 0;
 }
 
-@media screen and (min-width: 250px) and (max-width: 600px){
+@media screen and (min-width: 250px) and (max-width: 786px){
     .sty_form_container{
         width: 320px;
     }
