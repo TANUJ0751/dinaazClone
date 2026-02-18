@@ -21,6 +21,7 @@ const App = () => {
     <div>
 
       <BrowserRouter>
+      <Nav/>
        
        <Routes>
         <Route path='/' element={<Home/>} />

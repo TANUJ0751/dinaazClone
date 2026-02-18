@@ -4,14 +4,14 @@ import AnimatedButton from "./AnimatedButton";
 // import heroImg from "../assets/hero.png";
 import girlImg from "../assets/doc-Photoroom 1.png";
 // import CallButton from "./CallButton";
-import Nav from "./Nav";
+// import Nav from "./Nav";
 import coverBack from "../assets/coverBack.png"
 import HomePart2 from "./HomePart2";
 
 const Home = () => {
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
       <div className={sty_home.homeMain}>
         {/* <img src={heroImg} alt="hero" /> */}
         <div className={sty_home.phase1}> 

@@ -9,13 +9,13 @@ import star from "../assets/star.png";
 import AnimatedButton from "./AnimatedButton";
 import MedicalCard from "./MedicalCard";
 import cardImg1 from "../assets/cardImg1.webp";
-import cardImg2 from "../assets/cardImg2.svg";
+import cardImg2 from "../assets/cardImg2.png";
 import cardImg3 from "../assets/Property 1=3.svg";
 import cardImg4 from "../assets/cardImg4.webp";
 import Review from "./Review";
 import phase31 from "../assets/phase31.png";
 import phase32 from "../assets/phase32.png";
-import multiImg from "../assets/multiImg.svg";
+import multiImg from "../assets/multiImg.png";
 import hairIcon from "../assets/icons.png";
 import TreatmentCard from "./TreatmentCard";
 import phase5Img from "../assets/img.png";
@@ -29,7 +29,7 @@ import phase6img from "../assets/Ellipse 16.webp";
 import phase6img2 from "../assets/Ellipse 16 (1).webp";
 import circle1 from "../assets/circle1.webp";
 import circle2 from "../assets/circle2.png";
-import multiImgPhone from "../assets/multiImgPhone.svg"
+import multiImgPhone from "../assets/multiImgPhone.png"
 import skinimg from "../assets/girlSkin.png"
 import washimg from "../assets/wash.png"
 import Form from "./Form"

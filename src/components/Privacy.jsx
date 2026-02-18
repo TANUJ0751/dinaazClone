@@ -1,13 +1,13 @@
 import React from 'react'
 import sty_privacy from "./Privacy.module.css"
-import Nav from './Nav'
+// import Nav from './Nav'
 
 
 const Privacy = () => {
   return (
     <div>
       {/* <DisNav /> */}
-      <Nav/>
+      {/* <Nav/> */}
 
 
       <div className={sty_privacy.container}>

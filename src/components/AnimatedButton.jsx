@@ -17,11 +17,11 @@ const AnimatedButton = ({
   const [isOpen, setIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
-const togglePopup = () => {
-  if (showPopup) {   
-    setIsOpen(!isOpen);
-  }
-};
+  const togglePopup = () => {
+    if (showPopup) {
+      setIsOpen(!isOpen);
+    }
+  };
 
 
   const defaultBg = bgColor || "#007a7a";

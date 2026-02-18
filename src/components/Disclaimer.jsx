@@ -1,12 +1,12 @@
 // Disclaimer.jsx
 
-import Nav from './Nav';
+// import Nav from './Nav';
 import styles from './sty_dis.module.css';
 
 const Disclaimer = () => {
   return (<>
     {/* <DisNav /> */}
-    <Nav/>
+    {/* <Nav/> */}
 
     <div className={styles.container}>
 
