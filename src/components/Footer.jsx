@@ -16,6 +16,7 @@ const Footer = () => {
                 src={logo}
                 alt="Logo"
                 height="200px"
+                loading="lazy"
               />
             </div>
             <p className={sty_last.description}>

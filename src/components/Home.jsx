@@ -17,7 +17,8 @@ const Home = () => {
         <div className={sty_home.phase1}> 
           
           
-        <div className={sty_home.coverImg}>  <img 
+        <div className={sty_home.coverImg}>
+  <img 
     src={coverBack} 
     alt="Top Layer" 
     className={sty_home.upperImg} 

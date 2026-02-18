@@ -61,7 +61,7 @@ const HomePart2 = () => {
             <div className={styles.imageArea}>
               <div className={styles.imagePart1}>
                 <div className={styles.CircleText}>
-                  <img src={circle1} alt="" />
+                  <img src={circle1} alt=""  loading="lazy" />
                 </div>
                 <div className={styles.img1}>
                   <ImageCard
@@ -110,7 +110,7 @@ const HomePart2 = () => {
             </div>
           </div>
 
-          <img src={star} alt="" className={styles.startImg} />
+          <img src={star} alt="" className={styles.startImg} loading="lazy" />
 
 
         </div>
@@ -121,7 +121,8 @@ const HomePart2 = () => {
       <div className={styles.phase2}>
         <div className={styles.phase2_head}>
           <div className={styles.phase2_circle}>
-            <img src={circle2} alt="" />
+            <img src={circle2} alt="" loading="lazy"
+ />
           </div>
 
           <div className={styles.phase2text}>
@@ -230,7 +231,7 @@ const HomePart2 = () => {
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
                     />
                   </svg>
@@ -245,7 +246,7 @@ const HomePart2 = () => {
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
                     />
                   </svg>
@@ -259,11 +260,13 @@ const HomePart2 = () => {
                 <img
                   src={currentImage}
                   alt="Current"
+                 
                   style={{
                     width: "250px",
                     height: "250px",
                     borderRadius: "10px",
                     transition: "opacity 0.7s ease-in-out",
+
                   }}
                 />
               </div>
@@ -283,8 +286,8 @@ const HomePart2 = () => {
             </h1>
           </div>
           <div className={styles.imgDiv}>
-            <img src={multiImg} alt="" className={styles.desktopImg} />
-            <img src={multiImgPhone} className={styles.mobileImg} alt="Mobile" />
+            <img src={multiImg} alt="" loading="lazy"  className={styles.desktopImg} />
+            <img src={multiImgPhone} loading="lazy" className={styles.mobileImg} alt="Mobile" />
           </div>
         </div>
 
@@ -341,7 +344,7 @@ const HomePart2 = () => {
 
       <div className={styles.phase5}>
         <div className={styles.phase5Circle}>
-          <img src={phase5_circle} alt="" />
+          <img src={phase5_circle} alt="" loading="lazy" />
         </div>
         <div className={styles.phase5TextArea}>
           <div className={styles.phase5Text}>
@@ -352,7 +355,7 @@ const HomePart2 = () => {
 
         <div className={styles.pahse5Seaction1}>
           <div className={styles.pahse5Seaction1_img}>
-            <img src={phase5Img} alt="" />
+            <img src={phase5Img} alt="" loading="lazy" />
           </div>
           <div className={styles.pahse5Seaction1_step}>
             <Steps />
@@ -380,10 +383,10 @@ const HomePart2 = () => {
 
         <div className={styles.pahse5Seaction3}>
           <div className={styles.input_secImg1}>
-            <img src={input_secImg1} alt="" />
+            <img src={input_secImg1} alt="" loading="lazy" />
           </div>
           <div className={styles.input_secImg2}>
-            <img src={input_secImg2} alt="" />
+            <img src={input_secImg2} alt="" loading="lazy" />
           </div>
 
           <div className={styles.pahse5Seaction3Head}>
@@ -438,8 +441,8 @@ const HomePart2 = () => {
           </div>
           <div className={styles.phase6Box_img}>
             {/* <img src={phase6img} alt=""  />  */}
-            <img src={phase6img} alt="Laptop View" className={styles.phase6Img_Desktop} />
-            <img src={phase6img2} alt="Mobile View" className={styles.phase6Img_Mobile} />
+            <img src={phase6img} alt="Laptop View"  loading="lazy" className={styles.phase6Img_Desktop} />
+            <img src={phase6img2} alt="Mobile View" loading="lazy" className={styles.phase6Img_Mobile} />
           </div>
         </div>
       </div>
