@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import sty_nav from "./Nav.module.css"
 import AnimatedButton from './AnimatedButton'
 import logo from "../assets/logo.svg"
-import Callus from './Callus'
 import logo2 from "../assets/navLogo (3).png"
 
 
@@ -32,7 +31,13 @@ const Nav = () => {
 
         {/* Mobile Button Container */}
         <div className={sty_nav.mobileOnly}>
-          <Callus />
+          <AnimatedButton
+          buttonText = "Call Us" 
+            bgColor="rgb(222, 148, 51)"
+            textColor="white"
+            hoverBg="rgb(205, 138, 49)"
+            hoverText="#ffffff"
+          />
         </div>
       </div>
     </div>

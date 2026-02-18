@@ -118,7 +118,7 @@ font-family: 'Inter', sans-serif;
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 786px) {
   .container {
     flex-direction: column-reverse; 
     gap: 30px;
@@ -187,7 +187,7 @@ font-family: 'Inter', sans-serif;
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1024px){
+@media screen and (min-width: 786px) and (max-width: 1024px){
  .subheading{
   font-size:12px ;
  }

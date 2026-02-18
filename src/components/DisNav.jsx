@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import styles from './DisNav.module.css'
 import logo from "../assets/logo.png"
 import logo2 from "../assets/navLogo (3).png"
-import Callus from './Callus'
+// import Callus from './Callus'
 import AnimatedButton from './AnimatedButton'
 import MegaMenu from './MegaMenu'
 
@@ -63,7 +63,13 @@ const DisNav = () => {
           <AnimatedButton bgColor="rgb(222, 148, 51)" textColor="white" />
         </div>
         <div className={styles.mobileOnly}>
-          <Callus />
+         <AnimatedButton
+          buttonText = "Call Us" 
+            bgColor="rgb(222, 148, 51)"
+            textColor="white"
+            hoverBg="rgb(205, 138, 49)"
+            hoverText="#ffffff"
+          />
         </div>
       </div>
     </div>

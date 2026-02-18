@@ -31,12 +31,7 @@ const StorySection = () => {
           <p className={styles.footerText}>
             Dinaaz was created to make ethical dermatological care accessible to everyone.
           </p>
-<CallButton
-  style={{
-    color: "white"
-    
-  }}
-/>
+<CallButton/>
 
         </div>
 
