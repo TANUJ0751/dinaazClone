@@ -85,21 +85,29 @@
 }
 
 .bottom {
+  /* background-color: #4D4D4D; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  height: 68%;
-   transform: rotate(-1deg);  
+  height: 65%;
+   transform: rotate(-2deg);  
   /* padding-top: 100px; */
   background-image: url("../assets/bottomImg1.svg"); 
-  background-size: 100% auto;               
+  background-size: 100% auto !important;               
   background-repeat: no-repeat;
   background-size: cover;     
   background-position: center;
   position: absolute;
-  bottom: -29vh;
+  border-radius: 20px; 
+  overflow: hidden;   
+  bottom: -45%;
+
   transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.box::before {
+
 }
 
 .bottom ul {
@@ -117,6 +125,10 @@
 
 .card:hover .bottom {
   bottom: 0vh;
+    padding-top: 2%;
+   transform: rotate(-1deg);  
+
+
     
 }
 .card:hover .bottom ul {
@@ -160,14 +172,21 @@
     /* margin: 15px auto; */
   }
 
+
   .top {
-    height: 18vh;
+    padding-bottom: 7px;
+    /* height: 18vh; */
+    height: 28%;
     top: -0.5vh;
   }
 
   .bottom {
-    height: 45vh;
-    bottom: -33vh; 
+    padding-top: 12px;
+    height: 67% ;
+    /* background-color: #4D4D4D; */
+  bottom: -48%; 
+  border-radius: 15px; 
+
   }
 
   .top_part img {
@@ -196,6 +215,15 @@
     top: 2vh;
     left: 2%;
   }
+
+     .card:hover .top{
+       transform: rotate(0deg);  
+
+   }
+    .card:hover .bottom{
+       /* transform: rotate(0deg);   */
+
+   }
 }
 
 
@@ -207,12 +235,27 @@
     height: 420px; 
     margin: 10px auto;
   }
+.top {
+  padding-bottom: 10px;
+    height: 30%;
+    top: -1vh;
+    transition: background 0.5s ease, transform 0.4s ease;
+   /* transform: rotate(0deg);   */
 
+  }
+  .top h1{
+    font-size: 18px;
+  }
   .bottom {
+    padding-top: 10px;
+   transform: rotate(2deg);  
+
     position: absolute;
-    bottom: -50%; 
-    height: 68%;
-    width: 100%;
+    bottom: -45%; 
+    height: 73%;
+    /* width: 100%; */
+  border-radius: 5px !important; 
+
     /* transform: rotate(-2deg); */
     transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
@@ -230,11 +273,7 @@
     color: gray !important; 
   }
 
-  .top {
-    height: 30%;
-    top: -1vh;
-    transition: background 0.5s ease, transform 0.4s ease;
-  }
+  
 
   .top_part {
     top: 5vh;
@@ -251,6 +290,14 @@
     width: 40px;
     height: 40px;
   }
+   .card:hover .top{
+       transform: rotate(0deg);  
+
+   }
+    .card:hover .bottom{
+       transform: rotate(0deg);  
+
+   }
 
   .arrow {
     width: 35px;
