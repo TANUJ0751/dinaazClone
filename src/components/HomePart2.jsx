@@ -6,7 +6,6 @@ import img2 from "../assets/Property 1=image 13.png";
 import img3 from "../assets/Property 1=image 14.png";
 import ImageCard from "./ImageCard";
 import star from "../assets/star.png";
-import Circle from "./Circle";
 import AnimatedButton from "./AnimatedButton";
 import MedicalCard from "./MedicalCard";
 import cardImg1 from "../assets/cardImg1.webp";

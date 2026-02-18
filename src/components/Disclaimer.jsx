@@ -1,5 +1,5 @@
 // Disclaimer.jsx
-import DisNav from './DisNav';
+
 import Nav from './Nav';
 import styles from './sty_dis.module.css';
 

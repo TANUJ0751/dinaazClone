@@ -1,5 +1,4 @@
 import React from 'react'
-import DisNav from './DisNav'
 import sty_privacy from "./Privacy.module.css"
 import Nav from './Nav'
 
