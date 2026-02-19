@@ -48,6 +48,7 @@ const HomePart2 = () => {
 
   return (
     <div className={styles.HomePart2_main}>
+      <div className={styles.backimg}>
       <div className={styles.phase1}>
         <div className={styles.pahse3Main}>
           <div className={styles.phase1_mainTextArea}>
@@ -162,7 +163,7 @@ const HomePart2 = () => {
           />
         </center>
       </div>
-
+</div>
       {/* --------------------------------------------------------------------- */}
 
       <div className={styles.phase3}>

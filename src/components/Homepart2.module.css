@@ -6,6 +6,13 @@
   /* padding-bottom: 10vh; */
 }
 
+.backimg{
+  background-image: url("../assets/Frame\ 1707335215.png");
+   background-size: cover;       
+  background-position: center;   
+  background-repeat: no-repeat; 
+}
+
 .phase1 {
   position: relative;
   padding-top: 80px;
@@ -13,15 +20,21 @@
   padding-right: 80px;
   padding-bottom: 37vw;
   /* background-color: rgb(216, 235, 237); */
-  background-image: url("../assets/Frame\ 1707335215.png");
+  /* background-image: url("../assets/Frame\ 1707335215.png"); */
   overflow: hidden;
 }
 
 .startImg {
   position: absolute;
-  width: 90%;
-  top: 0vh;
+  right: 0.5%;
+
+  /* width: 90%; */
+  width: 900px;
+  height: 1200px;
+  /* top: 0vh; */
+  top: -4vw;
   filter: opacity(0.4) brightness(6);
+  transform: rotate(80deg); 
 }
 .pahse3Main {
   display: flex;
@@ -100,13 +113,13 @@
 
 .img2 {
   position: absolute;
-  right: 55vw;
-  top: 40vw;
+  right: 47vw;
+  top: 43vw;
 }
 .img3 {
   position: absolute;
-  right: 25vw;
-  top: 45vw;
+  right: 15vw;
+  top: 50vw;
 }
 @media screen and (min-width: 786px) and (max-width: 1024px) {
   .pahse5Seaction3_Text p {
@@ -184,7 +197,7 @@
   padding-left: 80px;
   padding-right: 80px;
   /* background-color: rgb(216, 235, 237); */
-  background-image: url("../assets/Frame\ 1707335215.png");
+  /* background-image: url("../assets/Frame\ 1707335215.png"); */
   padding-bottom: 10vh;
   /* overflow: hidden; */
 }

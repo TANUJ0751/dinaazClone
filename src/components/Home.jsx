@@ -20,8 +20,10 @@ const Home = () => {
         <div className={sty_home.coverImg}>
   <img 
     src={coverBack} 
-    alt="Top Layer" 
-    className={sty_home.upperImg} 
+  alt="Top Layer" 
+  className={sty_home.upperImg}
+  fetchpriority="high"
+  decoding="async"
   />
   </div>
 

@@ -1,5 +1,6 @@
 .Navmain {
-  height: 119px;
+  /* height: 119px; */
+  max-height: 80px;
   background-color: white;
   display: flex;
   align-items: center;
