@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./Steps.module.css";
 
 const stepsData = [
@@ -26,33 +26,48 @@ const stepsData = [
 
 const Steps = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
+  const containerRef = useRef(null);
 
-  const handleClick = () => {
-    if (!hasAnimated) {
-      setHasAnimated(true);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimated) {
+            setHasAnimated(true);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
     }
-  };
+
+    return () => {
+      if (containerRef.current) {
+        observer.unobserve(containerRef.current);
+      }
+    };
+  }, [hasAnimated]);
 
   return (
-    <div className={styles.container} onClick={handleClick}>
+    <div className={styles.container} ref={containerRef}>
       {stepsData.map((step, index) => (
         <div
           key={step.number}
           className={`${styles.step} ${hasAnimated ? styles.animate : ""}`}
           style={{ "--i": index }}
         >
-
           {index !== stepsData.length - 1 && (
             <div className={styles.line_container}>
-              <div className={styles.line_bg}></div> {/* Grey Line */}
-              <div className={styles.line_active}></div> {/* Teal Moving Line */}
+              <div className={styles.line_bg}></div>
+              <div className={styles.line_active}></div>
             </div>
           )}
 
-          {/* Circle Number */}
           <div className={styles.circle}>{step.number}</div>
 
-          {/* Text Content */}
           <div className={styles.content}>
             <h3>{step.title}</h3>
             <p>{step.description}</p>

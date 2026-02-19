@@ -31,23 +31,28 @@
 }
 
 .sty_form_input {
-  background-color: #f9f9f9;
-  border: 1px solid #eeeeee;
+  background-color: #F5F5F5;
+  border: 1.5px solid #E8E8E8;
   padding: 12px 14px;
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 15px;
   outline: none;
   color: #333;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.sty_form_input:focus {
+  border-color: #15929A;
+  background-color: #ffffff;
 }
 
 .sty_form_input::placeholder {
-  color: #c0c0c0;
+  color: #BDBDBD;
 }
 
-
 .sty_form_active .sty_form_input {
-  /* border: 2px solid #4a90e2; */
-  background-color: #fff;
+  background-color: #ffffff;
+  border-color: #15929A;
 }
 
 .sty_form_button_container {

@@ -1,15 +1,10 @@
-/* Review.module.css - Complete CSS */
+/* Review.module.css */
 
 .circleWrapper {
   position: relative;
   width: 250px;
   height: 230px;
   font-family: "Instrument Sans", sans-serif;
-
-  /* background-color: palegreen;   */
-  /* margin: 50px auto; */
-  /* overflow-y: hidden;        */
-  /* overflow-x: visible;          */
 }
 
 .reviewItem {
@@ -28,7 +23,6 @@
 .reviewItemText {
   color: #161616;
   min-width: 130px;
-  /* background-color: wheat; */
   padding: 3px;
   border-radius: 8px;
   overflow: visible;
@@ -46,7 +40,7 @@
   position: absolute;
   width: 130px;
   height: 80px;
-  transition: all 1s ease-in-out;
+  transition: all 0.7s ease-in-out;
   pointer-events: none;
   z-index: 5;
 }
@@ -58,59 +52,26 @@
   object-fit: cover;
 }
 
-/* POSITION SET 1 */
-.pos1 .p1 {
+/* Positions based on offset from current (0 = current, 1 = next, etc.) */
+.offset0 {
   top: 0%;
   left: 110%;
   transform: translateX(-70%);
+  opacity: 1;
 }
-.pos1 .p2 {
+.offset1 {
   left: 95%;
   top: 60%;
   transform: translateY(-70%);
+  opacity: 1;
 }
-.pos1 .p3 {
+.offset2 {
   top: 75%;
   left: 105%;
   transform: translateX(-50%);
+  opacity: 0.6;
 }
-.pos1 .p4 {
-  left: 70%;
-  top: 120%;
-  transform: translateY(-50%);
-}
-
-/* POSITION SET 2 */
-.pos2 .p1 {
-  top: -30%;
-  left: 100%;
-  transform: translateX(-70%);
-}
-.pos2 .p2 {
-  top: 0%;
-  left: 110%;
-  transform: translateX(-70%);
-}
-.pos2 .p3 {
-  left: 95%;
-  top: 60%;
-  transform: translateY(-70%);
-}
-.pos2 .p4 {
-  top: 75%;
-  left: 105%;
-  transform: translateX(-50%);
-}
-
-.pos2 .p1 {
-  top: -30%;
-  left: 100%;
-  transform: translateX(-70%);
-  opacity: 0; /* Upar jate waqt gayab ho jaye */
-}
-
-/* Jab p4 niche nikal jaye, use fade-out karna (optional) */
-.pos1 .p4 {
+.offset3 {
   left: 70%;
   top: 120%;
   transform: translateY(-50%);
@@ -129,49 +90,6 @@
     padding: 0;
   }
 
-  .pos1 .p1 {
-    top: 5%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-  }
-  .pos1 .p2 {
-    top: 50%;
-    left: 95%;
-    transform: translate(-50%, -50%);
-  }
-  .pos1 .p3 {
-    top: 92%;
-    left: 92%;
-    transform: translate(-50%, -50%);
-  }
-  .pos1 .p4 {
-    top: 110%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-  }
-
-  /* 3. POSITION SET 2 (Border aligned) */
-  .pos2 .p1 {
-    top: -8%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .pos2 .p2 {
-    top: 5%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-  }
-  .pos2 .p3 {
-    top: 50%;
-    left: 95%;
-    transform: translate(-50%, -50%);
-  }
-  .pos2 .p4 {
-    top: 100%;
-    left: 88%;
-    transform: translate(-50%, -50%);
-  }
-
   .circle {
     width: 230px !important;
     height: 230px !important;
@@ -182,5 +100,30 @@
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
+  }
+
+  .offset0 {
+    top: 5%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  .offset1 {
+    top: 50%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  .offset2 {
+    top: 92%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+  }
+  .offset3 {
+    top: 110%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
   }
 }

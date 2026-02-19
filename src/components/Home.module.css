@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-position: right;
   padding: 80px;
-  overflow: hidden;
+  overflow: visible;
   box-sizing: border-box;
   gap: 40px;
 }
@@ -99,10 +99,11 @@
   overflow: hidden;
   background: white;
   transform: rotate(-5deg);
-  /* padding: 15px 0;   */
-  bottom: 20px;
-  width: 100%;
-  right: 0px;
+  bottom: -20px;
+  left: -5%;
+  width: 110%;
+  z-index: 10;
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.18);
 }
 
 .ticker {
@@ -279,13 +280,11 @@
   }
 
   .tickerWrapper {
-    width: 110%;
+    width: 120%;
     height: 64px;
-    /* padding: 10px 0;  */
-    padding-left: 16px;
-    padding-right: 16px;
-    bottom: 0px;
-    left: -2%;
+    bottom: -16px;
+    left: -10%;
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.18);
   }
 
   .ticker span {

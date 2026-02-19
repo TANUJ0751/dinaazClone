@@ -30,8 +30,8 @@
 
 .logo1 {
   display: block;
-  width: 300px;
-  height: 59px;
+  width: 220px;
+  height: auto;
 }
 
 /* .logo1{
@@ -101,7 +101,7 @@
 
   .logo1 {
     display: block !important;
-    width: clamp(245px, 30vw, 300px) !important;
+    width: clamp(180px, 22vw, 220px) !important;
     height: auto !important;
   }
 }

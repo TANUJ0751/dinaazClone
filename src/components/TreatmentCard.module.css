@@ -85,24 +85,20 @@
 }
 
 .bottom {
-  /* background-color: #4D4D4D; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
   height: 65%;
-   transform: rotate(-2deg);  
-  /* padding-top: 100px; */
-  background-image: url("../assets/bottomImg1.svg"); 
-  background-size: 100% auto !important;               
+  transform: rotate(0deg);
+  background-image: url("../assets/bottomImg1.svg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: cover;     
   background-position: center;
   position: absolute;
-  border-radius: 20px; 
-  overflow: hidden;   
-  bottom: -45%;
-
+  border-radius: 20px;
+  overflow: hidden;
+  bottom: -50%;
   transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -124,12 +120,9 @@
 
 
 .card:hover .bottom {
-  bottom: 0vh;
-    padding-top: 2%;
-   transform: rotate(-1deg);  
-
-
-    
+  bottom: 0;
+  padding-top: 2%;
+  transform: rotate(0deg);
 }
 .card:hover .bottom ul {
   color: #4D4D4D;
@@ -248,15 +241,11 @@
   }
   .bottom {
     padding-top: 10px;
-   transform: rotate(2deg);  
-
+    transform: rotate(0deg);
     position: absolute;
-    bottom: -45%; 
+    bottom: -50%;
     height: 73%;
-    /* width: 100%; */
-  border-radius: 5px !important; 
-
-    /* transform: rotate(-2deg); */
+    border-radius: 20px !important;
     transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 

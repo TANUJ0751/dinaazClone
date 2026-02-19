@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useCallback } from "react";
 import styles from "./Homepart2.module.css";
 import backImg from "../assets/Property 1=rest.png";
 import img1 from "../assets/Property 1=image 12.png";
@@ -12,165 +12,151 @@ import cardImg1 from "../assets/cardImg1.webp";
 import cardImg2 from "../assets/cardImg2.png";
 import cardImg3 from "../assets/Property 1=3.svg";
 import cardImg4 from "../assets/cardImg4.webp";
-import Review from "./Review";
-import phase31 from "../assets/phase31.png";
-import phase32 from "../assets/phase32.png";
+import Review, { reviews } from "./Review";
 import multiImg from "../assets/multiImg.png";
 import hairIcon from "../assets/icons.png";
 import TreatmentCard from "./TreatmentCard";
 import phase5Img from "../assets/img.png";
-import phase5_circle from "../assets/Group 9.png";
 import Steps from "./Steps";
 import StorySection from "./StorySection";
-// import input from "../assets/Frame 1707335232.png";
-import input_secImg1 from "../assets/Group 8.webp";
-import input_secImg2 from "../assets/Group 9 (1).png";
 import phase6img from "../assets/Ellipse 16.webp";
 import phase6img2 from "../assets/Ellipse 16 (1).webp";
-import circle1 from "../assets/circle1.webp";
-import circle2 from "../assets/circle2.png";
-import multiImgPhone from "../assets/multiImgPhone.png"
-import skinimg from "../assets/girlSkin.png"
-import washimg from "../assets/wash.png"
-import Form from "./Form"
+import multiImgPhone from "../assets/multiImgPhone.png";
+import skinimg from "../assets/girlSkin.png";
+import washimg from "../assets/wash.png";
+import Form from "./Form";
 
 const HomePart2 = () => {
-  const images = [phase31, phase32];
+  const [currentReview, setCurrentReview] = useState(reviews[0]);
+  const [fade, setFade] = useState(true);
 
-  const [currentImage, setCurrentImage] = useState(images[0]);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev === images[0] ? images[1] : images[0]));
-    }, 3000);
-    return () => clearInterval(interval);
+  const handleReviewChange = useCallback((review) => {
+    setFade(false);
+    setTimeout(() => {
+      setCurrentReview(review);
+      setFade(true);
+    }, 300);
   }, []);
 
   return (
     <div className={styles.HomePart2_main}>
       <div className={styles.backimg}>
-      <div className={styles.phase1}>
-        <div className={styles.pahse3Main}>
-          <div className={styles.phase1_mainTextArea}>
-            <div className={styles.phase1_textarea1}>
-              <p>THE REAL PROBLEM</p>
-              <h1>Why Most Hair & Skin Treatments Fail</h1>
+        <div className={styles.phase1}>
+          <div className={styles.pahse3Main}>
+            <div className={styles.phase1_mainTextArea}>
+              <div className={styles.phase1_textarea1}>
+                <p>THE REAL PROBLEM</p>
+                <h1>Why Most Hair & Skin Treatments Fail</h1>
+              </div>
+
+              <div className={styles.imageArea}>
+                <div className={styles.imagePart1}>
+                  <div className={styles.CircleText}></div>
+                  <div className={styles.img1}>
+                    <ImageCard
+                      backImg={backImg}
+                      frontImg={img1}
+                      text="Salon treatments with no diagnosis"
+                    />
+                  </div>
+                </div>
+                <div className={styles.imagePart2}>
+                  <div className={styles.img2}>
+                    <ImageCard
+                      backImg={backImg}
+                      frontImg={img2}
+                      text="Expensive procedures without understanding the root cause"
+                    />
+                  </div>
+                  <div className={styles.img3}>
+                    <ImageCard
+                      backImg={backImg}
+                      frontImg={img3}
+                      text="One-size-fits-all packages"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.phase1_textarea2}>
+                <div className={styles.infoSection}>
+                  <p className={styles.introText}>
+                    Many patients come to us after trying:
+                  </p>
+                  <ul className={styles.treatmentList}>
+                    <li>Salon treatments with no diagnosis</li>
+                    <li>One-size-fits-all packages</li>
+                    <li>
+                      Expensive procedures without understanding the root cause
+                    </li>
+                  </ul>
+                  <p className={styles.summaryText}>
+                    Skin and hair problems often look similar but require very
+                    different medical treatments. Without proper diagnosis,
+                    results are unpredictable, and sometimes harmful.
+                  </p>
+                </div>
+              </div>
             </div>
 
+            <img src={star} alt="" className={styles.startImg} loading="lazy" />
+          </div>
+        </div>
 
-            <div className={styles.imageArea}>
-              <div className={styles.imagePart1}>
-                <div className={styles.CircleText}>
-                  <img src={circle1} alt=""  loading="lazy" />
-                </div>
-                <div className={styles.img1}>
-                  <ImageCard
-                    backImg={backImg}
-                    frontImg={img1}
-                    text=" salon treatments with no diagnosis"
-                  />
-                </div>
-              </div>
-              <div className={styles.imagePart2}>
-                <div className={styles.img2}>
-                  <ImageCard
-                    backImg={backImg}
-                    frontImg={img2}
-                    text=" Expensive procedures without understanding the root cause"
-                  />
-                </div>
-                <div className={styles.img3}>
-                  <ImageCard
-                    backImg={backImg}
-                    frontImg={img3}
-                    text="One-size-fits-all packages "
-                  />
-                </div>
-              </div>
-            </div>
+        {/* ----------------------------------------------------------------------- */}
 
-            <div className={styles.phase1_textarea2}>
-              <div className={styles.infoSection}>
-                <p className={styles.introText}>
-                  Many patients come to us after trying:
-                </p>
-                <ul className={styles.treatmentList}>
-                  <li>Salon treatments with no diagnosis</li>
-                  <li>One-size-fits-all packages</li>
-                  <li>
-                    Expensive procedures without understanding the root cause
-                  </li>
-                </ul>
-                <p className={styles.summaryText}>
-                  Skin and hair problems often look similar but require very
-                  different medical treatments. Without proper diagnosis,
-                  results are unpredictable, and sometimes harmful.
-                </p>
-              </div>
+        <div className={styles.phase2}>
+          <div className={styles.phase2_head}>
+            <div className={styles.phase2_circle}></div>
+
+            <div className={styles.phase2text}>
+              <h3>KEY DIFFERENCES</h3>
+              <h1>What Sets Us Apart</h1>
             </div>
           </div>
 
-          <img src={star} alt="" className={styles.startImg} loading="lazy" />
+          <div className={styles.phase2ImageSection}>
+            <MedicalCard
+              title="Dermatologist Diagnosis First"
+              description="Every concern is medically evaluated before treatment begins."
+              img={cardImg1}
+            />
+            <MedicalCard
+              title="Customized Treatment Plans"
+              description="No fixed packages. No unnecessary procedures."
+              img={cardImg2}
+            />
+            <MedicalCard
+              title="Long-Term Skin & Hair Health"
+              description="We focus on sustainable results, not short-term cosmetic fixes."
+              img={cardImg3}
+            />
+            <MedicalCard
+              title="Ethical Medical Advice"
+              description="Sometimes, the right decision is not to treat, and we're honest about that."
+              img={cardImg4}
+            />
+          </div>
 
-
+          <center className={styles.phase2Button}>
+            <AnimatedButton
+              bgColor="#DD9233"
+              textColor="white"
+              hoverBg="rgb(205, 138, 49)"
+              hoverText="#ffffff"
+            />
+          </center>
         </div>
       </div>
 
-      {/* ----------------------------------------------------------------------- */}
-
-      <div className={styles.phase2}>
-        <div className={styles.phase2_head}>
-          <div className={styles.phase2_circle}>
-            <img src={circle2} alt="" loading="lazy"
- />
-          </div>
-
-          <div className={styles.phase2text}>
-            <h3>KEY DIFFERENCES</h3>
-            <h1>What Sets Us Apart</h1>
-          </div>
-        </div>
-
-        <div className={styles.phase2ImageSection}>
-          <MedicalCard
-            title="Dermatologist Diagnosis First"
-            description="Every concern is medically evaluated before treatment begins."
-            img={cardImg1}
-          />
-          <MedicalCard
-            title="Customized Treatment Plans"
-            description="No fixed packages. No unnecessary procedures."
-            img={cardImg2}
-          />
-          <MedicalCard
-            title="Long-Term Skin & Hair Health"
-            description="We focus on sustainable results, not short-term cosmetic fixes."
-            img={cardImg3}
-          />
-          <MedicalCard
-            title="Ethical Medical Advice "
-            description="Sometimes, the right decision is not to treat, and we’re honest about that."
-            img={cardImg4}
-          />
-        </div>
-
-        <center className={styles.phase2Button}>
-          <AnimatedButton
-            bgColor="#DD9233"
-            textColor="white"
-            hoverBg="rgb(205, 138, 49)"
-            hoverText="#ffffff"
-          />
-        </center>
-      </div>
-</div>
       {/* --------------------------------------------------------------------- */}
 
       <div className={styles.phase3}>
         <div className={styles.phase3section1}>
           <p>TESTIMONIALS</p>
           <h1>
-            What Our Patients Say <br className={styles.breakLine} /> About Our Services
+            What Our Patients Say <br className={styles.breakLine} /> About Our
+            Services
           </h1>
         </div>
 
@@ -178,8 +164,7 @@ const HomePart2 = () => {
           <div className={styles.container}>
             {/* LEFT SIDE */}
             <div className={styles.left}>
-              
-              <Review />
+              <Review onReviewChange={handleReviewChange} />
             </div>
 
             {/* CENTER */}
@@ -190,18 +175,20 @@ const HomePart2 = () => {
                   width="50"
                   height="40"
                   fill="currentColor"
-                  class="bi bi-quote"
                   viewBox="0 0 16 16"
                 >
                   <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
                 </svg>
               </div>
 
-              <p className={styles.text}>
-                Comparing to other clinics I don’t know but personally I
-                preferred this clinic so I took consultation and it was so good
-                later I took hair transplantation and also gfc I can see good
-                grow
+              <p
+                className={styles.text}
+                style={{
+                  opacity: fade ? 1 : 0,
+                  transition: "opacity 0.3s ease",
+                }}
+              >
+                {currentReview.text}
               </p>
 
               <div className={styles.quoteBottom}>
@@ -210,16 +197,23 @@ const HomePart2 = () => {
                   width="50"
                   height="40"
                   fill="currentColor"
-                  class="bi bi-quote"
                   viewBox="0 0 16 16"
                 >
                   <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
                 </svg>
               </div>
-              <div className={styles.reviewItemText}>
-                <h4>Sandeep IV</h4>
-                <p>4.9 ⭐ | 26/12/2025</p>
+
+              <div
+                className={styles.reviewItemText}
+                style={{
+                  opacity: fade ? 1 : 0,
+                  transition: "opacity 0.3s ease",
+                }}
+              >
+                <h4>{currentReview.name}</h4>
+                <p>{currentReview.rating}</p>
               </div>
+
               <div className={styles.arrows}>
                 <button className={styles.arrow}>
                   <svg
@@ -227,7 +221,6 @@ const HomePart2 = () => {
                     width="16"
                     height="26"
                     fill="#0c5858"
-                    class="bi bi-arrow-left"
                     viewBox="0 0 16 16"
                   >
                     <path
@@ -242,7 +235,6 @@ const HomePart2 = () => {
                     width="16"
                     height="26"
                     fill="#0c5858"
-                    class="bi bi-arrow-right"
                     viewBox="0 0 16 16"
                   >
                     <path
@@ -256,17 +248,17 @@ const HomePart2 = () => {
 
             {/* RIGHT SIDE */}
             <div className={styles.right}>
-              <div style={{ textAlign: "center", padding: "50px" }}>
+              <div className={styles.rightImgWrapper}>
                 <img
-                  src={currentImage}
-                  alt="Current"
-                 
+                  src={currentReview.resultImg}
+                  alt={currentReview.name}
                   style={{
                     width: "250px",
                     height: "250px",
                     borderRadius: "10px",
-                    transition: "opacity 0.7s ease-in-out",
-
+                    opacity: fade ? 1 : 0,
+                    transition: "opacity 0.3s ease-in-out",
+                    objectFit: "cover",
                   }}
                 />
               </div>
@@ -274,9 +266,7 @@ const HomePart2 = () => {
           </div>
         </div>
 
-
-        {/* --------------------------------------------------------------------------         */}
-
+        {/* -------------------------------------------------------------------------- */}
 
         <div className={styles.phase3section3}>
           <div className={styles.textArea}>
@@ -286,14 +276,15 @@ const HomePart2 = () => {
             </h1>
           </div>
           <div className={styles.imgDiv}>
-            <img src={multiImg} alt="" loading="lazy"  className={styles.desktopImg} />
-            <img src={multiImgPhone} loading="lazy" className={styles.mobileImg} alt="Mobile" />
+            <img src={multiImg} alt="" loading="lazy" className={styles.desktopImg} />
+            <img
+              src={multiImgPhone}
+              loading="lazy"
+              className={styles.mobileImg}
+              alt="Mobile"
+            />
           </div>
         </div>
-
-
-
-
 
         <div className={styles.phase4}>
           <div className={styles.phase4TextArea}>
@@ -312,7 +303,6 @@ const HomePart2 = () => {
                 "Scalp & trichology care",
               ]}
             />
-
             <TreatmentCard
               icon={skinimg}
               title1="Skin"
@@ -324,7 +314,6 @@ const HomePart2 = () => {
                 "Anti-aging & skin rejuvenation",
               ]}
             />
-
             <TreatmentCard
               icon={washimg}
               title1="Aesthetic"
@@ -333,7 +322,6 @@ const HomePart2 = () => {
                 "Botox & fillers (medically guided)",
                 "Non-surgical facial enhancements",
                 "Skin tightening & rejuvenation",
-
               ]}
             />
           </div>
@@ -343,13 +331,15 @@ const HomePart2 = () => {
       {/* ------------------------------------------------------------------------------------ */}
 
       <div className={styles.phase5}>
-        <div className={styles.phase5Circle}>
-          <img src={phase5_circle} alt="" loading="lazy" />
-        </div>
+        {/* Blur circle via CSS only - no image */}
+        <div className={styles.phase5Circle}></div>
+
         <div className={styles.phase5TextArea}>
           <div className={styles.phase5Text}>
             <p>OUR PROCESS</p>
-            <h1>What to Expext At <br className={styles.phase5LineBreak} /> Dinaaz </h1>
+            <h1>
+              What to Expext At <br className={styles.phase5LineBreak} /> Dinaaz
+            </h1>
           </div>
         </div>
 
@@ -371,55 +361,45 @@ const HomePart2 = () => {
           />
         </center>
 
-
         <div className={styles.pahse5Seaction2}>
           <div className={styles.pahse5Seaction2_img}>
             <StorySection />
           </div>
         </div>
 
-
-
-
         <div className={styles.pahse5Seaction3}>
-          <div className={styles.input_secImg1}>
-            <img src={input_secImg1} alt="" loading="lazy" />
-          </div>
-          <div className={styles.input_secImg2}>
-            <img src={input_secImg2} alt="" loading="lazy" />
-          </div>
+          {/* Blur bubbles via CSS */}
+          <div className={styles.input_secImg1}></div>
+          <div className={styles.input_secImg2}></div>
 
           <div className={styles.pahse5Seaction3Head}>
-            {" "}
             <div className={styles.pahse5Seaction3_Text}>
               <span>CONSULT US</span>
               <h1>
                 Not Sure What <br /> Tretment You Need?
               </h1>
               <p>
-                Hair and skin concerns can be confusing . A proper diagnosis can
-                save time,  money,and prevent unnecessary procedures
+                Hair and skin concerns can be confusing. A proper diagnosis can
+                save time, money, and prevent unnecessary procedures
               </p>
             </div>
           </div>
           <center>
-            {" "}
             <div className={styles.pahse5Seaction3_input}>
               <Form />
             </div>
           </center>
 
           <center>
-            {" "}
             <div className={styles.pahse5Seaction3_button}>
               <AnimatedButton
                 bgColor="#DD9233"
                 textColor="white"
                 hoverBg="rgb(205, 138, 49)"
                 hoverText="#ffffff"
-                 showPopup={false} 
+                showPopup={false}
               />
-            </div>{" "}
+            </div>
           </center>
         </div>
       </div>
@@ -440,9 +420,18 @@ const HomePart2 = () => {
             />
           </div>
           <div className={styles.phase6Box_img}>
-            {/* <img src={phase6img} alt=""  />  */}
-            <img src={phase6img} alt="Laptop View"  loading="lazy" className={styles.phase6Img_Desktop} />
-            <img src={phase6img2} alt="Mobile View" loading="lazy" className={styles.phase6Img_Mobile} />
+            <img
+              src={phase6img}
+              alt="Laptop View"
+              loading="lazy"
+              className={styles.phase6Img_Desktop}
+            />
+            <img
+              src={phase6img2}
+              alt="Mobile View"
+              loading="lazy"
+              className={styles.phase6Img_Mobile}
+            />
           </div>
         </div>
       </div>
