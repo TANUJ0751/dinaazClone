@@ -17,7 +17,7 @@
 .imageContainer {
   width: 100%;
   flex: 1;
-  border-radius: 12px;
+  
   overflow: hidden;
   min-height: 0;
 }
