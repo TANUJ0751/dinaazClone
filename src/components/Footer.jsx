@@ -91,7 +91,7 @@ const Footer = () => {
               <span>PRIVACY POLICY</span>
             </Link>
             <span className={sty_last.divider}>|</span>
-            <Link to="/Terms-and-condition" className={sty_last.Terms}>   <span  >DISCLAIMER</span>
+            <Link to="/Terms-and-condition" className={sty_last.Terms}>   <span>TERMS AND CONDITIONS</span>
             </Link>
           </div>
           <p className={sty_last.copyright}>©Copyright 2026 Dinaaz Hair and Skin. All rights reserved.</p>
